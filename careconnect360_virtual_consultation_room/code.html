@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-tertiary": "#ffffff",
+          "inverse-surface": "#2d3133",
+          "outline-variant": "#bdc9c6",
+          "surface-container": "#eceef0",
+          "primary-fixed-dim": "#80d5cb",
+          "on-tertiary-container": "#91fdef",
+          "surface-container-low": "#f2f4f6",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#131b2e",
+          "on-secondary-container": "#5c647a",
+          "on-surface-variant": "#3e4947",
+          "secondary": "#565e74",
+          "on-primary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "outline": "#6e7977",
+          "surface-tint": "#006a63",
+          "secondary-fixed-dim": "#bec6e0",
+          "surface-dim": "#d8dadc",
+          "on-primary-fixed": "#00201d",
+          "tertiary": "#005c54",
+          "surface-container-high": "#e6e8ea",
+          "on-surface": "#191c1e",
+          "on-background": "#191c1e",
+          "primary-fixed": "#9cf2e8",
+          "on-tertiary-fixed-variant": "#005049",
+          "tertiary-fixed": "#89f5e7",
+          "background": "#f7f9fb",
+          "secondary-container": "#dae2fd",
+          "on-primary-container": "#a3faef",
+          "tertiary-fixed-dim": "#6bd8cb",
+          "on-error-container": "#93000a",
+          "surface-bright": "#f7f9fb",
+          "surface-container-highest": "#e0e3e5",
+          "tertiary-container": "#00776d",
+          "on-primary-fixed-variant": "#00504a",
+          "surface": "#f7f9fb",
+          "on-secondary-fixed-variant": "#3f465c",
+          "on-secondary": "#ffffff",
+          "inverse-on-surface": "#eff1f3",
+          "secondary-fixed": "#dae2fd",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#00201d",
+          "inverse-primary": "#80d5cb",
+          "error": "#ba1a1a",
+          "primary-container": "#0f766e",
+          "primary": "#005c55",
+          "surface-variant": "#e0e3e5"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin": "2rem",
+          "space-2xl": "3rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem",
+          "space-md": "1rem",
+          "gutter-sm": "1rem",
+          "space-xl": "2rem",
+          "space-sm": "0.5rem",
+          "gutter": "1.5rem",
+          "margin-sm": "1rem"
+        },
+        "fontFamily": {
+          "display": ["Inter"],
+          "headline-3": ["Inter"],
+          "caption-caps": ["Inter"],
+          "label-regular": ["Inter"],
+          "headline-2": ["Inter"],
+          "body-medium": ["Inter"],
+          "headline-1": ["Inter"],
+          "label-medium": ["Inter"],
+          "display-mobile": ["Inter"],
+          "body-regular": ["Inter"]
+        },
+        "fontSize": {
+          "display": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "headline-3": ["16px", {"lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+          "caption-caps": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600"}],
+          "label-regular": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "headline-2": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+          "body-medium": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500"}],
+          "headline-1": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}],
+          "label-medium": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+          "display-mobile": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-regular": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">vital_signs</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-primary tracking-tight leading-none">CareConnect<span class="text-secondary font-headline-3">360</span></span><span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant tracking-wider leading-none mt-space-xs">Clinical Encounter</span></div></div><div class="hidden lg:block w-px h-6 bg-surface-container-highest"></div><div class="hidden md:flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-xl"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><div class="flex items-baseline gap-space-xs"><span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant">Patient:</span><span class="font-headline-3 text-headline-3 text-on-surface text-[14px]">Eleanor Vance</span><span class="font-label-regular text-label-regular text-secondary">(DOB: 04/19/1958)</span></div></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low text-primary"><span class="material-symbols-outlined text-[16px]">lock</span><span class="font-caption-caps text-caption-caps uppercase tracking-wide">HIPAA Level-4 WebRTC Encrypted</span></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-high"><span class="material-symbols-outlined text-error text-[16px] animate-pulse">fiber_manual_record</span><span class="font-headline-3 text-headline-3 text-on-surface text-[13px] tabular-nums font-mono">18:42</span></div><div class="hidden xl:flex items-center gap-space-xs text-on-surface-variant px-space-sm py-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">wifi_tethering</span><div class="flex flex-col text-left"><span class="font-caption-caps text-caption-caps leading-none text-on-surface">1440p HD</span><span class="font-caption-caps text-caption-caps text-secondary leading-none mt-space-xs">18ms · 0% loss</span></div></div><nav class="flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-on-surface font-headline-3 rounded-lg"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-surface-container-high text-on-surface font-headline-3 rounded-lg" data-path="consultation-room" href="#">Consultation</a><a class="font-body-medium text-body-medium px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="chart-review" href="#">EHR Chart</a><a class="font-body-medium text-body-medium px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="encounter-notes" href="#">Clinical Notes</a></nav><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive View Switcher Bar (Clinical Prototype Controller) -->
+<div class="w-full bg-surface-container-high px-gutter py-space-xs flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-secondary flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+        Interactive State Preview:
+      </span>
+<div class="flex items-center gap-space-xs overflow-x-auto py-0.5">
+<button class="state-btn active-state-btn px-space-sm py-1 rounded-full font-label-medium text-label-medium bg-primary text-on-primary shadow-sm transition-all" id="btn-state-active" onclick="switchState('active')">
+          Active Video Call
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-medium text-label-medium bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" id="btn-state-waiting" onclick="switchState('waiting')">
+          Waiting Room State
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-medium text-label-medium bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" id="btn-state-permission" onclick="switchState('permission')">
+          Camera Permission Denied
+        </button>
+<button class="state-btn px-space-sm py-1 rounded-full font-label-medium text-label-medium bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-all" id="btn-state-reconnecting" onclick="switchState('reconnecting')">
+          Disconnected / Reconnecting
+        </button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-caption-caps text-caption-caps uppercase text-secondary">Latency:</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="inline-block w-1 h-2.5 bg-primary rounded-xs"></span>
+<span class="inline-block w-1 h-3.5 bg-primary rounded-xs"></span>
+<span class="inline-block w-1 h-4.5 bg-primary rounded-xs"></span>
+<span class="inline-block w-1 h-5 bg-primary rounded-xs"></span>
+<span class="font-label-medium text-label-medium ml-1 text-on-surface">24ms · 60 FPS</span>
+</div>
+</div>
+</div>
+<!-- Telehealth Header Context Bar -->
+<div class="w-full bg-surface-container-lowest px-gutter py-space-sm shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-headline-3 text-headline-3">
+          MS
+        </div>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center ring-2 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-2 text-headline-2 text-on-surface truncate">Dr. Marcus Sterling, MD</h1>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps uppercase tracking-wide">
+            Interventional Cardiology
+          </span>
+<span class="font-label-regular text-label-regular text-secondary truncate">St. Jude Memorial Health Network</span>
+</div>
+<div class="flex items-center gap-space-md text-secondary font-label-regular text-label-regular mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span>
+<span>Room CC-9021</span>
+</span>
+<span class="hidden sm:inline">·</span>
+<span class="hidden sm:flex items-center gap-1 text-secondary">
+<span>Patient: Eleanor Vance (MRN #849204)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Live Telehealth Metas -->
+<div class="flex items-center gap-space-sm shrink-0 flex-wrap">
+<!-- Live Telehealth Pulsing Badge -->
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-primary">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-caption-caps text-caption-caps tracking-wider uppercase font-semibold">Active Encounter</span>
+</div>
+<!-- Duration Pill with scheduled notice -->
+<div class="flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span class="font-headline-3 text-headline-3 text-[14px] font-mono tabular-nums" id="call-timer">18:42</span>
+<span class="font-caption-caps text-caption-caps text-secondary hidden lg:inline">/ 50m slot</span>
+</div>
+<!-- Quick Chart Switcher Trigger -->
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors flex items-center gap-1" onclick="toggleSidebarTab('info')">
+<span class="material-symbols-outlined text-[16px] text-primary">clinical_notes</span>
+<span class="hidden sm:inline">Quick Vitals</span>
+</button>
+</div>
+</div>
+<!-- Main Viewport: Multi-pane Consultation Space -->
+<div class="w-full flex-1 flex flex-col lg:flex-row relative overflow-hidden bg-inverse-surface">
+<!-- Center Video Stage Section -->
+<div class="flex-1 relative flex flex-col items-center justify-between p-space-sm sm:p-space-md min-h-[580px] lg:min-h-[calc(100vh-172px)]">
+<!-- Video Stage Background / Feed Container -->
+<div class="relative w-full flex-1 rounded-xl overflow-hidden bg-black flex items-center justify-center shadow-xl" id="video-canvas-container">
+<!-- STATE 1: ACTIVE VIDEO CALL FEED (Default) -->
+<div class="absolute inset-0 w-full h-full flex flex-col justify-between" id="view-active-call">
+<!-- Doctor Video Stream Mockup with Photo -->
+<div class="absolute inset-0 w-full h-full overflow-hidden">
+<img class="w-full h-full object-cover object-top opacity-95 scale-100 transition-transform duration-700 hover:scale-105" data-alt="Doctor Marcus Sterling, an authoritative male cardiologist in his late 40s wearing a crisp white consultation coat and stethoscope around his neck, seated in a high-tech modern hospital clinic office with clinical displays and warm diffused natural window lighting, facing the camera attentively during a telehealth video consultation. Cinematic composition, teal and warm slate clinical palette, sharp focus, professional medical environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvuPTrARJCy2uRxdEDJcuMZVao1uzFgZK-grtfxHOkpPag7dh6RTEZ3md-ExgthDyccb_Rgz0yIFg-zVREkAiY2NAjk2NFabQuWZxiYI-4VKpWF4UOt5axn6lUf8jsxmpYJgOj7q8EV2rqW2D52anO7pCeIPh1h_AGdWRBzeF10UIiOcbewWdv5UKHzC9srBtvRAUdMmorGn122CjQwnnzazslDF-DLhcsZLhQVsFh"/>
+<!-- Soft gradient vignette overlay for legible overlays -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none"></div>
+</div>
+<!-- Top HUD Overlay -->
+<div class="relative z-10 p-space-md flex items-start justify-between w-full pointer-events-none">
+<!-- Doctor Details Badge & Audio Equalizer Indicator -->
+<div class="flex items-center gap-space-sm bg-inverse-surface/80 backdrop-blur-md px-space-md py-space-xs rounded-xl shadow-md pointer-events-auto">
+<div class="flex items-center gap-space-xs text-on-primary">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">ecg_heart</span>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-on-primary text-[14px]">Dr. Marcus Sterling, MD</span>
+<span class="font-caption-caps text-caption-caps px-1.5 py-0.5 rounded bg-primary text-on-primary">Host</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-surface-container-high block">St. Jude Cardiology Core · 1080p WebRTC</span>
+</div>
+</div>
+<div class="h-6 w-px bg-outline-variant/30 mx-1"></div>
+<!-- Simulated Audio Equalizer Bars -->
+<div class="flex items-end gap-0.5 h-4 w-5 pb-0.5">
+<span class="w-1 bg-primary-fixed rounded-full animate-pulse h-2"></span>
+<span class="w-1 bg-primary-fixed rounded-full animate-pulse h-4" style="animation-delay: 150ms;"></span>
+<span class="w-1 bg-primary-fixed rounded-full animate-pulse h-3" style="animation-delay: 300ms;"></span>
+<span class="w-1 bg-primary-fixed rounded-full animate-pulse h-1" style="animation-delay: 450ms;"></span>
+</div>
+</div>
+<!-- Patient Real-Time Biometric HUD Overlay (Collapsible) -->
+<div class="pointer-events-auto hidden sm:flex flex-col gap-space-xs bg-inverse-surface/85 backdrop-blur-md px-space-md py-space-xs rounded-xl text-on-primary shadow-lg transition-all" id="quick-vitals-hud">
+<div class="flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-1.5 text-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-surface-container-high">Live Telemetry (Withings Hub)</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"></span>
+</div>
+<div class="flex items-center gap-space-md pt-1">
+<div>
+<span class="font-caption-caps text-caption-caps text-outline-variant block">Heart Rate</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-2 text-headline-2 text-on-primary">72</span>
+<span class="font-label-regular text-label-regular text-surface-container-highest">bpm</span>
+</div>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div>
+<span class="font-caption-caps text-caption-caps text-outline-variant block">Blood Pressure</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-2 text-headline-2 text-on-primary">118/76</span>
+<span class="font-label-regular text-label-regular text-surface-container-highest">mmHg</span>
+</div>
+</div>
+<div class="h-6 w-px bg-outline-variant/30"></div>
+<div>
+<span class="font-caption-caps text-caption-caps text-outline-variant block">SpO2</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-2 text-headline-2 text-on-primary">99%</span>
+<span class="font-label-regular text-label-regular text-surface-container-highest">ambient</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Left In-Stream Indicators -->
+<div class="relative z-10 p-space-md flex items-end justify-between w-full pointer-events-none">
+<div class="flex items-center gap-space-xs pointer-events-auto">
+<div class="flex items-center gap-space-xs bg-inverse-surface/80 backdrop-blur-md px-space-sm py-1 rounded-lg text-on-primary font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">lock</span>
+<span>HIPAA Encrypted Stream (AES-256)</span>
+</div>
+<div class="hidden md:flex items-center gap-space-xs bg-inverse-surface/80 backdrop-blur-md px-space-sm py-1 rounded-lg text-on-primary font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">wifi</span>
+<span>Bitrate: 3,420 kbps</span>
+</div>
+</div>
+<!-- Screen Share Preview Trigger (Doctor is not currently screen sharing) -->
+<button class="pointer-events-auto flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md text-on-surface px-space-md py-1.5 rounded-lg shadow hover:bg-surface-container-lowest transition-colors font-label-medium text-label-medium" onclick="toggleScreenShareModal()">
+<span class="material-symbols-outlined text-[18px] text-primary">screen_share</span>
+<span>Present Records to Patient</span>
+</button>
+</div>
+<!-- Picture-in-Picture: Eleanor Vance (Self View Window) -->
+<div class="absolute top-16 right-4 sm:top-20 sm:right-6 w-40 sm:w-56 aspect-[4/3] rounded-xl overflow-hidden shadow-2xl bg-surface-container-highest z-20 group transition-transform hover:scale-105 cursor-grab" id="pip-self-tile">
+<img class="w-full h-full object-cover" data-alt="Elderly female patient Eleanor Vance in her late 60s with silver gray hair, gentle and composed demeanor, sitting in a naturally lit living room with soft indoor plants in the background, looking directly into the camera during a telemedicine session. Warm clinical lighting, authentic home telehealth portrait, crisp and empathetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTIrg-vR-ak7Rxuk72fPxcXUTGN_LDhmHxlZ_A-WUdw0C0PIhjAy_mr6KvyC-YRHluyefWRi_dNR2sa3klrygqAim4EMKFYGRQ8jIplnrGbJriQYKMmBFQFdLXWh7nKOb85sTCZrXq_UXGufhYJen0npzTIyro9WOAYkVzaXNWet1GWViwrvXok1rmSgQTj_IrETuuOns2VazGJDYFB4kkcC5qQJ5socE3JkY6eDLf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20 pointer-events-none"></div>
+<!-- PiP Overlay Details -->
+<div class="absolute top-2 left-2 flex items-center gap-1 bg-black/60 backdrop-blur-sm px-1.5 py-0.5 rounded text-on-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption-caps text-caption-caps text-[10px]">Self View</span>
+</div>
+<div class="absolute top-2 right-2 flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-6 h-6 rounded bg-black/60 hover:bg-black/90 flex items-center justify-center text-on-primary" title="Flip camera">
+<span class="material-symbols-outlined text-[14px]">flip_camera_ios</span>
+</button>
+<button class="w-6 h-6 rounded bg-black/60 hover:bg-black/90 flex items-center justify-center text-on-primary" title="Minimize">
+<span class="material-symbols-outlined text-[14px]">picture_in_picture_alt</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-primary">
+<span class="font-label-medium text-label-medium text-[11px] truncate">Eleanor Vance (You)</span>
+<span class="material-symbols-outlined text-[14px] text-primary-fixed" id="pip-mic-icon">mic</span>
+</div>
+</div>
+</div>
+<!-- STATE 2: WAITING ROOM STATE (Hidden by default) -->
+<div class="hidden absolute inset-0 w-full h-full bg-surface-container-lowest flex flex-col items-center justify-center p-space-xl text-center z-20" id="view-waiting-room">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary animate-spin">progress_activity</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps uppercase tracking-wider mb-space-sm">
+            Triage Completed · Queue Position: #1
+          </span>
+<h2 class="font-headline-1 text-headline-1 text-on-surface max-w-lg mb-space-xs">
+            Dr. Marcus Sterling will admit you to the consultation room shortly
+          </h2>
+<p class="font-body-regular text-body-regular text-secondary max-w-md mb-space-lg">
+            Your camera, microphone, and secure network encryption were checked and verified. Please remain on this screen.
+          </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-md p-space-md rounded-xl bg-surface-container-low max-w-md w-full text-left">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+<div>
+<div class="font-headline-3 text-headline-3 text-[14px] text-on-surface">Equipment Diagnostic Passed</div>
+<div class="font-label-regular text-label-regular text-secondary">Logitech HD Pro · Built-in Mic (Echo Cancelled)</div>
+</div>
+</div>
+</div>
+<!-- STATE 3: CAMERA PERMISSION DENIED (Hidden by default) -->
+<div class="hidden absolute inset-0 w-full h-full bg-surface-container-lowest flex flex-col items-center justify-center p-space-xl text-center z-20" id="view-permission-denied">
+<div class="w-20 h-20 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[40px]">videocam_off</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-error-container text-error font-caption-caps text-caption-caps uppercase tracking-wider mb-space-sm">
+            Hardware Access Blocked
+          </span>
+<h2 class="font-headline-1 text-headline-1 text-on-surface max-w-lg mb-space-xs">
+            Browser blocked camera or microphone access
+          </h2>
+<p class="font-body-regular text-body-regular text-secondary max-w-md mb-space-lg">
+            CareConnect360 requires camera permission to transmit encrypted video to Dr. Sterling. Click the lock or camera icon in your browser URL address bar to grant permissions.
+          </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-headline-3 text-headline-3 text-[14px] shadow hover:bg-primary-container transition-colors" onclick="switchState('active')">
+              Retry Camera Connection
+            </button>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container text-on-surface font-headline-3 text-headline-3 text-[14px] hover:bg-surface-container-high transition-colors" onclick="switchState('active')">
+              Continue Audio-Only
+            </button>
+</div>
+</div>
+<!-- STATE 4: DISCONNECTED / RECONNECTING STATE (Hidden by default) -->
+<div class="hidden absolute inset-0 w-full h-full bg-inverse-surface/95 backdrop-blur-md flex flex-col items-center justify-center p-space-xl text-center z-20 text-on-primary" id="view-reconnecting">
+<div class="w-20 h-20 rounded-full bg-surface-variant/20 flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary-fixed-dim animate-spin">sync</span>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-variant/30 text-primary-fixed font-caption-caps text-caption-caps uppercase tracking-wider mb-space-sm">
+            Network Interruption Detected
+          </span>
+<h2 class="font-headline-1 text-headline-1 text-on-primary max-w-lg mb-space-xs">
+            Re-establishing Encrypted WebRTC Peer Stream
+          </h2>
+<p class="font-body-regular text-body-regular text-surface-container-high max-w-md mb-space-lg">
+            Attempting reconnect (Attempt 2 of 4) via backup gateway US-EAST-04. Audio will restore automatically once signal stabilizes.
+          </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm">
+<button class="px-space-lg py-space-sm rounded-lg bg-primary-fixed text-on-primary-fixed font-headline-3 text-headline-3 text-[14px] shadow hover:bg-primary-fixed-dim transition-colors" onclick="switchState('active')">
+              Force Stream Refresh
+            </button>
+<a class="px-space-md py-space-sm rounded-lg bg-surface-container-highest/20 text-on-primary font-headline-3 text-headline-3 text-[14px] hover:bg-surface-container-highest/40 transition-colors flex items-center gap-1.5" href="tel:+18005553920">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+<span>Switch to Telehealth Phone Bridge</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CENTER-BOTTOM FLOATING CALL CONTROL TOOLBAR (Clinical Accessible Dock) -->
+<div class="w-full flex justify-center py-space-sm relative z-30">
+<div class="flex items-center gap-2 sm:gap-3 bg-surface-container-lowest shadow-2xl px-space-md py-2 sm:py-2.5 rounded-2xl border-none">
+<!-- Mic Toggle Button -->
+<div class="relative group">
+<button class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" id="ctrl-mic" onclick="toggleMicrophone()">
+<span class="material-symbols-outlined text-[22px]" id="ctrl-mic-icon">mic</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Mute Mic (Cmd+D)
+            </div>
+</div>
+<!-- Camera Toggle Button -->
+<div class="relative group">
+<button class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" id="ctrl-cam" onclick="toggleCamera()">
+<span class="material-symbols-outlined text-[22px]" id="ctrl-cam-icon">videocam</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Stop Camera (Cmd+E)
+            </div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest mx-0.5 sm:mx-1"></div>
+<!-- Audio Device Output Selector Trigger -->
+<div class="relative group">
+<button class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleAudioDeviceMenu()">
+<span class="material-symbols-outlined text-[22px]">volume_up</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Speaker Output
+            </div>
+</div>
+<!-- Screen Share Button -->
+<div class="relative group">
+<button class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleScreenShareModal()">
+<span class="material-symbols-outlined text-[22px]">screen_share</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Share Records/Screen
+            </div>
+</div>
+<!-- In-Call Chat Drawer Toggle with Unread Badge -->
+<div class="relative group">
+<button class="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-primary-fixed text-on-primary-fixed shadow-sm" id="ctrl-chat-btn" onclick="toggleSidebar()">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-error text-on-error font-caption-caps text-caption-caps flex items-center justify-center text-[10px] font-bold" id="chat-unread-badge">1</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Encounter Chat
+            </div>
+</div>
+<!-- EHR Chart & Notes Shortcut Trigger -->
+<div class="relative group hidden sm:block">
+<button class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center transition-all bg-surface-container text-on-surface hover:bg-surface-container-high" onclick="toggleSidebarTab('info')">
+<span class="material-symbols-outlined text-[22px]">folder_shared</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Shared Records
+            </div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest mx-0.5 sm:mx-1"></div>
+<!-- End Call Destructive Action -->
+<div class="relative group">
+<button class="px-space-md sm:px-space-lg h-11 sm:h-12 rounded-xl bg-error text-on-error font-headline-3 text-headline-3 text-[14px] flex items-center gap-space-xs hover:bg-red-700 transition-colors shadow-md" onclick="openEndCallModal()">
+<span class="material-symbols-outlined text-[20px]">call_end</span>
+<span class="hidden sm:inline">End Consultation</span>
+</button>
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 px-2 py-1 bg-inverse-surface text-on-primary font-caption-caps text-caption-caps rounded shadow pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+              Leave Encounter
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- COLLAPSIBLE RIGHT SIDE DRAWER (Chat & Clinical Quick-Info) -->
+<aside class="w-full lg:w-96 bg-surface-container-lowest flex flex-col shrink-0 transition-all duration-300 shadow-xl lg:h-[calc(100vh-172px)] overflow-hidden" id="telehealth-sidebar">
+<!-- Drawer Header & Tabs -->
+<div class="p-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-1 bg-surface-container p-1 rounded-xl w-full">
+<button class="flex-1 py-1.5 px-space-sm rounded-lg font-headline-3 text-headline-3 text-[13px] bg-surface-container-lowest text-on-surface shadow-xs transition-all flex items-center justify-center gap-1.5" id="tab-btn-chat" onclick="switchSidebarTab('chat')">
+<span class="material-symbols-outlined text-[16px] text-primary">forum</span>
+<span>Clinical Chat</span>
+</button>
+<button class="flex-1 py-1.5 px-space-sm rounded-lg font-headline-3 text-headline-3 text-[13px] text-secondary hover:text-on-surface transition-all flex items-center justify-center gap-1.5" id="tab-btn-info" onclick="switchSidebarTab('info')">
+<span class="material-symbols-outlined text-[16px]">overview</span>
+<span>Quick-Info & Vitals</span>
+</button>
+</div>
+</div>
+<!-- TAB PANEL 1: SECURE CLINICAL CHAT -->
+<div class="flex-1 flex flex-col justify-between overflow-hidden" id="tab-content-chat">
+<!-- Messages Scroll Container -->
+<div class="flex-1 overflow-y-auto p-space-md flex flex-col gap-space-md" id="chat-messages-container">
+<!-- System HIPAA Audit Notice -->
+<div class="p-space-sm rounded-xl bg-surface-container-low text-center">
+<div class="flex items-center justify-center gap-1 text-primary font-caption-caps text-caption-caps uppercase tracking-wider mb-0.5">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+<span>HIPAA Audit Trail Active</span>
+</div>
+<p class="font-label-regular text-label-regular text-secondary">
+              Direct encounter session started at 10:30 AM EST. All shared messages and files are automatically archived into Eleanor Vance's Electronic Health Record.
+            </p>
+</div>
+<!-- Doctor Message Item -->
+<div class="flex flex-col items-start gap-1 max-w-[85%]">
+<div class="flex items-center gap-1.5">
+<span class="font-label-medium text-label-medium text-on-surface">Dr. Marcus Sterling</span>
+<span class="font-caption-caps text-caption-caps text-secondary">10:32 AM</span>
+</div>
+<div class="p-space-md rounded-2xl rounded-tl-xs bg-surface-container-high text-on-surface font-body-regular text-body-regular shadow-xs">
+              Hello Eleanor, I can hear and see you clearly. Looking at your latest telemetry from yesterday, your resting heart rate and blood pressure look very well controlled under the current regimen.
+            </div>
+</div>
+<!-- Patient Message Item -->
+<div class="flex flex-col items-end gap-1 max-w-[85%] self-end">
+<div class="flex items-center gap-1.5">
+<span class="font-caption-caps text-caption-caps text-secondary">10:35 AM</span>
+<span class="font-label-medium text-label-medium text-primary">Eleanor Vance (You)</span>
+</div>
+<div class="p-space-md rounded-2xl rounded-tr-xs bg-primary text-on-primary font-body-regular text-body-regular shadow-xs">
+              Thank you Dr. Sterling! I had a quick question regarding the dosage timing for Atorvastatin. Should I continue taking it right before bed or can I take it with breakfast?
+            </div>
+</div>
+<!-- Doctor Message with Clinical Document Attachment -->
+<div class="flex flex-col items-start gap-1 max-w-[90%]">
+<div class="flex items-center gap-1.5">
+<span class="font-label-medium text-label-medium text-on-surface">Dr. Marcus Sterling</span>
+<span class="font-caption-caps text-caption-caps text-secondary">10:37 AM</span>
+</div>
+<div class="p-space-md rounded-2xl rounded-tl-xs bg-surface-container-high text-on-surface font-body-regular text-body-regular shadow-xs flex flex-col gap-space-sm w-full">
+<span>Taking it with dinner or right before bed is optimal for lipid synthesis inhibition. I am also attaching your 14-day telemetry summary for your records:</span>
+<!-- Attachment Card -->
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-xl shadow-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">picture_as_pdf</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="font-headline-3 text-headline-3 text-[13px] text-on-surface truncate">Cardio_Telemetry_Summary_Nov2024.pdf</div>
+<div class="font-caption-caps text-caption-caps text-secondary uppercase">2.4 MB · Verified Lab Report</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-primary transition-colors" title="Download report">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Chat Input Bar -->
+<div class="p-space-sm bg-surface-container-lowest">
+<form class="flex items-center gap-space-xs" onsubmit="handleSendMessage(event)">
+<button class="w-10 h-10 rounded-xl bg-surface-container text-secondary hover:text-primary hover:bg-surface-container-high flex items-center justify-center transition-colors" title="Attach clinical reading or photo" type="button">
+<span class="material-symbols-outlined text-[20px]">attach_file</span>
+</button>
+<input class="flex-1 h-10 px-space-md rounded-xl bg-surface-container-low text-on-surface font-body-regular text-body-regular placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest transition-colors" id="chat-input-text" placeholder="Type encrypted message to Dr. Sterling..." type="text"/>
+<button class="w-10 h-10 rounded-xl bg-primary text-on-primary hover:bg-primary-container flex items-center justify-center transition-colors shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</form>
+<div class="flex items-center justify-between px-space-xs pt-1">
+<span class="font-caption-caps text-caption-caps text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-primary">verified</span>
+              Electronic Health Record Synced
+            </span>
+<span class="font-caption-caps text-caption-caps text-secondary">Press Enter to send</span>
+</div>
+</div>
+</div>
+<!-- TAB PANEL 2: ENCOUNTER QUICK-INFO & PATIENT SUMMARY -->
+<div class="hidden flex-1 overflow-y-auto p-space-md flex flex-col gap-space-md" id="tab-content-info">
+<!-- Patient Summary Card -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase text-secondary">Active Patient Record</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-caption-caps text-caption-caps font-semibold">Active Care Plan</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center font-headline-2 text-headline-2 text-primary">
+              EV
+            </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Eleanor Vance</div>
+<div class="font-label-regular text-label-regular text-secondary">Age: 66 · Female · DOB: 04/19/1958</div>
+<div class="font-caption-caps text-caption-caps text-primary">MRN: #849204 · Primary: Dr. Sterling</div>
+</div>
+</div>
+</div>
+<!-- Telemetry & Vitals History Component -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-3 text-headline-3 text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">monitoring</span>
+<span>Real-Time Biometrics</span>
+</h3>
+<span class="font-caption-caps text-caption-caps text-primary">Synced 2m ago</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-caption-caps text-caption-caps text-secondary block">Resting Heart Rate</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-1 text-headline-1 text-on-surface">72</span>
+<span class="font-label-regular text-label-regular text-secondary">bpm</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-primary">Normal Sinus Rhythm</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-caption-caps text-caption-caps text-secondary block">Blood Pressure</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-1 text-headline-1 text-on-surface">118/76</span>
+<span class="font-label-regular text-label-regular text-secondary">mmHg</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-primary">Optimal Target</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-caption-caps text-caption-caps text-secondary block">Blood Oxygen (SpO2)</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-1 text-headline-1 text-on-surface">99%</span>
+<span class="font-label-regular text-label-regular text-secondary">room air</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-primary">Stable</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-caption-caps text-caption-caps text-secondary block">Weight (7-Day Avg)</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-1 text-headline-1 text-on-surface">144.2</span>
+<span class="font-label-regular text-label-regular text-secondary">lbs</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-secondary">-0.4 lbs trend</span>
+</div>
+</div>
+<!-- Inline Telemetry SVG Sparkline -->
+<div class="mt-space-xs p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-caption-caps text-caption-caps text-secondary block mb-1">Weekly Pulse Stability Index</span>
+<svg class="w-full h-8 text-primary overflow-visible" viewbox="0 0 280 40">
+<path d="M0,28 L30,26 L60,30 L90,18 L120,22 L150,15 L180,24 L210,19 L240,21 L280,18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="280" cy="18" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+</div>
+<!-- Prescribed Medications Quick Look -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<h3 class="font-headline-3 text-headline-3 text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">medication</span>
+<span>Active Regimen</span>
+</h3>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-medium text-label-medium text-on-surface">Atorvastatin 20mg</div>
+<div class="font-caption-caps text-caption-caps text-secondary">Once daily at bedtime</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption-caps text-caption-caps">Adherent</span>
+</div>
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div>
+<div class="font-label-medium text-label-medium text-on-surface">Metoprolol Tartrate 25mg</div>
+<div class="font-caption-caps text-caption-caps text-secondary">Twice daily with meals</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-caption-caps text-caption-caps">Adherent</span>
+</div>
+</div>
+</div>
+<!-- Consultation Summary Entry Point Link -->
+<div class="p-space-md rounded-2xl bg-primary-fixed/30 flex flex-col gap-space-xs">
+<div class="font-headline-3 text-headline-3 text-on-surface text-[14px]">After-Visit Summary Preview</div>
+<p class="font-label-regular text-label-regular text-secondary">Clinical encounter notes will be automatically summarized by Dr. Sterling upon call completion.</p>
+<button class="mt-space-xs py-2 px-space-md rounded-xl bg-primary text-on-primary font-label-medium text-label-medium hover:bg-primary-container transition-colors text-center" onclick="openEndCallModal()">
+            Review Orders & Conclude
+          </button>
+</div>
+</div>
+</aside>
+</div>
+<!-- MODAL 1: END CALL CONFIRMATION DIALOG (Accessible Dialog) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/60 backdrop-blur-sm" id="modal-end-call">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-md transform transition-all animate-in fade-in zoom-in-95">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">call_end</span>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-2 text-headline-2 text-on-surface">End Clinical Encounter?</h2>
+<p class="font-body-regular text-body-regular text-secondary mt-1">
+            You currently have approximately <strong>31 minutes</strong> remaining in this scheduled window with Dr. Marcus Sterling.
+          </p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="font-headline-3 text-headline-3 text-[13px] text-on-surface">What happens next:</div>
+<ul class="font-label-regular text-label-regular text-secondary list-disc list-inside space-y-1">
+<li>Clinical encounter summary will be compiled.</li>
+<li>Prescription refills discussed will be transmitted to CVS Pharmacy.</li>
+<li>After-Visit Summary (AVS) document will be made available in your patient portal.</li>
+</ul>
+</div>
+<div class="flex flex-col-reverse sm:flex-row items-center justify-end gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl bg-surface-container text-on-surface font-headline-3 text-headline-3 text-[14px] hover:bg-surface-container-high transition-colors" onclick="closeEndCallModal()">
+          Return to Call
+        </button>
+<button class="w-full sm:w-auto px-space-lg py-space-sm rounded-xl bg-error text-on-error font-headline-3 text-headline-3 text-[14px] hover:bg-red-700 transition-colors shadow-sm" onclick="finishCallAndShowSummary()">
+          Leave & View Summary
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 2: SCREEN SHARE PREVIEW DIALOG -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/60 backdrop-blur-sm" id="modal-screenshare">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary">screen_share</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Share Clinical Records with Doctor</h2>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface" onclick="toggleScreenShareModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-regular text-body-regular text-secondary">
+        Select a secure clinical document, third-party biometric dashboard, or browser tab to broadcast in real time to Dr. Sterling's workstation.
+      </p>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer flex flex-col items-center text-center gap-space-xs">
+<span class="material-symbols-outlined text-[32px] text-primary">monitor</span>
+<span class="font-headline-3 text-headline-3 text-[13px] text-on-surface">Entire Screen</span>
+<span class="font-caption-caps text-caption-caps text-secondary">Full consultation display</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer flex flex-col items-center text-center gap-space-xs">
+<span class="material-symbols-outlined text-[32px] text-primary">tab</span>
+<span class="font-headline-3 text-headline-3 text-[13px] text-on-surface">Patient Portal Tab</span>
+<span class="font-caption-caps text-caption-caps text-secondary">Blood pressure logs</span>
+</div>
+</div>
+<div class="flex justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container text-on-surface font-label-medium text-label-medium" onclick="toggleScreenShareModal()">
+          Cancel
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl bg-primary text-on-primary font-headline-3 text-headline-3 text-[14px]" onclick="toggleScreenShareModal()">
+          Start Sharing Stream
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 3: AFTER-VISIT SUMMARY PREVIEW (Post-Call View) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/75 backdrop-blur-md overflow-y-auto" id="modal-post-call-summary">
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-2xl p-space-xl shadow-2xl flex flex-col gap-space-lg my-auto">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">task_alt</span>
+</div>
+<div>
+<span class="font-caption-caps text-caption-caps uppercase text-primary">Encounter Successfully Concluded</span>
+<h2 class="font-headline-1 text-headline-1 text-on-surface">After-Visit Summary & Orders (AVS)</h2>
+</div>
+</div>
+<button class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary hover:text-on-surface" onclick="closeSummaryAndRestart()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Eleanor Vance (MRN #849204)</div>
+<div class="font-label-regular text-label-regular text-secondary">Provider: Dr. Marcus Sterling, MD · Cardiology Telehealth</div>
+</div>
+<div class="text-right">
+<div class="font-label-medium text-label-medium text-primary">Session Duration: 18m 42s</div>
+<div class="font-caption-caps text-caption-caps text-secondary">Signed via Digital EHR #AVS-89102</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface mb-1">Physician Clinical Assessment</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+            Patient demonstrates excellent compliance with current cardioprotective regimen. Blood pressure well controlled at 118/76 mmHg. Advised to take Atorvastatin 20mg at bedtime with water. Re-check lipid panel in 6 months.
+          </p>
+</div>
+<div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface mb-2">Orders Transmitted</h3>
+<div class="flex flex-col gap-space-xs">
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">Atorvastatin Calcium 20mg Oral Tablet (90 Day Refill)</span>
+<span class="font-caption-caps text-caption-caps text-primary">Transmitted: CVS Pharmacy #4092</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">Routine Comprehensive Metabolic Panel + Lipid Panel</span>
+<span class="font-caption-caps text-caption-caps text-secondary">Due: May 2025</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors" onclick="closeSummaryAndRestart()">
+          Return to Room Test
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl bg-primary text-on-primary font-headline-3 text-headline-3 text-[14px] flex items-center gap-space-xs shadow hover:bg-primary-container transition-colors" onclick="alert('Downloading signed PDF After-Visit Summary...')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download Signed PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- DROPDOWN MENU: AUDIO DEVICE SELECTION (Hidden by default) -->
+<div class="hidden fixed bottom-24 left-1/2 -translate-x-1/2 z-50 bg-surface-container-lowest rounded-xl shadow-2xl p-space-sm w-72 flex flex-col gap-1" id="audio-device-menu">
+<div class="px-space-sm py-1 font-caption-caps text-caption-caps uppercase text-secondary">Audio Output Destination</div>
+<button class="w-full text-left px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-between text-on-surface font-label-medium text-label-medium" onclick="toggleAudioDeviceMenu()">
+<span>Built-in Speakers (MacBook Pro)</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check</span>
+</button>
+<button class="w-full text-left px-space-sm py-2 rounded-lg hover:bg-surface-container flex items-center justify-between text-on-surface font-label-medium text-label-medium" onclick="toggleAudioDeviceMenu()">
+<span>AirPods Pro (Bluetooth)</span>
+</button>
+<button class="w-full text-left px-space-sm py-2 rounded-lg hover:bg-surface-container flex items-center justify-between text-on-surface font-label-medium text-label-medium" onclick="toggleAudioDeviceMenu()">
+<span>External Display Audio</span>
+</button>
+</div>
+<!-- Interactive Logic Script for Telehealth Prototype States & Controls -->
+<script>
+    let isMicMuted = false;
+    let isCamDisabled = false;
+    let isSidebarOpen = true;
+
+    function switchState(stateName) {
+      // Hide all states
+      document.getElementById('view-active-call').classList.add('hidden');
+      document.getElementById('view-waiting-room').classList.add('hidden');
+      document.getElementById('view-permission-denied').classList.add('hidden');
+      document.getElementById('view-reconnecting').classList.add('hidden');
+
+      // Update switcher buttons styling
+      document.querySelectorAll('.state-btn').forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'active-state-btn');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+
+      const currentBtn = document.getElementById('btn-state-' + stateName);
+      if (currentBtn) {
+        currentBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        currentBtn.classList.add('bg-primary', 'text-on-primary', 'active-state-btn');
+      }
+
+      // Show chosen state
+      if (stateName === 'active') {
+        document.getElementById('view-active-call').classList.remove('hidden');
+      } else if (stateName === 'waiting') {
+        document.getElementById('view-waiting-room').classList.remove('hidden');
+      } else if (stateName === 'permission') {
+        document.getElementById('view-permission-denied').classList.remove('hidden');
+      } else if (stateName === 'reconnecting') {
+        document.getElementById('view-reconnecting').classList.remove('hidden');
+      }
+    }
+
+    function toggleMicrophone() {
+      isMicMuted = !isMicMuted;
+      const btn = document.getElementById('ctrl-mic');
+      const icon = document.getElementById('ctrl-mic-icon');
+      const pipIcon = document.getElementById('pip-mic-icon');
+
+      if (isMicMuted) {
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.classList.add('bg-error-container', 'text-error');
+        icon.textContent = 'mic_off';
+        if (pipIcon) {
+          pipIcon.textContent = 'mic_off';
+          pipIcon.classList.remove('text-primary-fixed');
+          pipIcon.classList.add('text-error');
+        }
+      } else {
+        btn.classList.remove('bg-error-container', 'text-error');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+        icon.textContent = 'mic';
+        if (pipIcon) {
+          pipIcon.textContent = 'mic';
+          pipIcon.classList.remove('text-error');
+          pipIcon.classList.add('text-primary-fixed');
+        }
+      }
+    }
+
+    function toggleCamera() {
+      isCamDisabled = !isCamDisabled;
+      const btn = document.getElementById('ctrl-cam');
+      const icon = document.getElementById('ctrl-cam-icon');
+      const pipTile = document.getElementById('pip-self-tile');
+
+      if (isCamDisabled) {
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.classList.add('bg-error-container', 'text-error');
+        icon.textContent = 'videocam_off';
+        if (pipTile) pipTile.classList.add('opacity-30', 'grayscale');
+      } else {
+        btn.classList.remove('bg-error-container', 'text-error');
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+        icon.textContent = 'videocam';
+        if (pipTile) pipTile.classList.remove('opacity-30', 'grayscale');
+      }
+    }
+
+    function toggleSidebar() {
+      const sidebar = document.getElementById('telehealth-sidebar');
+      const unreadBadge = document.getElementById('chat-unread-badge');
+      if (sidebar.classList.contains('hidden') || sidebar.style.display === 'none') {
+        sidebar.classList.remove('hidden');
+        sidebar.style.display = 'flex';
+        isSidebarOpen = true;
+      } else {
+        sidebar.classList.add('hidden');
+        sidebar.style.display = 'none';
+        isSidebarOpen = false;
+      }
+      if (unreadBadge) unreadBadge.classList.add('hidden');
+    }
+
+    function switchSidebarTab(tabName) {
+      const chatTab = document.getElementById('tab-content-chat');
+      const infoTab = document.getElementById('tab-content-info');
+      const chatBtn = document.getElementById('tab-btn-chat');
+      const infoBtn = document.getElementById('tab-btn-info');
+
+      if (tabName === 'chat') {
+        chatTab.classList.remove('hidden');
+        infoTab.classList.add('hidden');
+        chatBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+        chatBtn.classList.remove('text-secondary');
+        infoBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+        infoBtn.classList.add('text-secondary');
+      } else {
+        infoTab.classList.remove('hidden');
+        chatTab.classList.add('hidden');
+        infoBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+        infoBtn.classList.remove('text-secondary');
+        chatBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-xs');
+        chatBtn.classList.add('text-secondary');
+      }
+    }
+
+    function toggleSidebarTab(tabName) {
+      const sidebar = document.getElementById('telehealth-sidebar');
+      if (sidebar.classList.contains('hidden') || sidebar.style.display === 'none') {
+        sidebar.classList.remove('hidden');
+        sidebar.style.display = 'flex';
+      }
+      switchSidebarTab(tabName);
+    }
+
+    function handleSendMessage(e) {
+      e.preventDefault();
+      const input = document.getElementById('chat-input-text');
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const container = document.getElementById('chat-messages-container');
+      const newBubble = document.createElement('div');
+      newBubble.className = "flex flex-col items-end gap-1 max-w-[85%] self-end animate-in fade-in";
+      newBubble.innerHTML = `
+        <div class="flex items-center gap-1.5">
+          <span class="font-caption-caps text-caption-caps text-secondary">Just now</span>
+          <span class="font-label-medium text-label-medium text-primary">Eleanor Vance (You)</span>
+        </div>
+        <div class="p-space-md rounded-2xl rounded-tr-xs bg-primary text-on-primary font-body-regular text-body-regular shadow-xs">
+          ${msg.replace(/</g, "<").replace(/>/g, ">")}
+        </div>
+      `;
+      container.appendChild(newBubble);
+      input.value = '';
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function openEndCallModal() {
+      document.getElementById('modal-end-call').classList.remove('hidden');
+    }
+
+    function closeEndCallModal() {
+      document.getElementById('modal-end-call').classList.add('hidden');
+    }
+
+    function finishCallAndShowSummary() {
+      closeEndCallModal();
+      document.getElementById('modal-post-call-summary').classList.remove('hidden');
+    }
+
+    function closeSummaryAndRestart() {
+      document.getElementById('modal-post-call-summary').classList.add('hidden');
+      switchState('active');
+    }
+
+    function toggleScreenShareModal() {
+      const modal = document.getElementById('modal-screenshare');
+      modal.classList.toggle('hidden');
+    }
+
+    function toggleAudioDeviceMenu() {
+      const menu = document.getElementById('audio-device-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Keyboard shortcuts for doctor/patient ergonomics
+    document.addEventListener('keydown', function(e) {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'd') {
+        e.preventDefault();
+        toggleMicrophone();
+      }
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'e') {
+        e.preventDefault();
+        toggleCamera();
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.03)] py-space-md"><div class="w-full px-gutter flex flex-col sm:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md text-secondary"><span class="font-label-regular text-label-regular">© 2024 CareConnect360 Telehealth Platform. All rights reserved.</span><span class="hidden md:inline font-label-regular text-label-regular">Session Node: US-EAST-04</span></div><div class="flex items-center gap-space-lg text-secondary"><span class="font-label-medium text-label-medium flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>TLS 1.3 Certified</span><span class="font-label-medium text-label-medium flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span>WebRTC v2.4 Active</span></div></div></footer></body></html>

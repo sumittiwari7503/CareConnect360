@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-surface":"#191c1e","on-surface-variant":"#3e4947","on-primary":"#ffffff","on-secondary":"#ffffff","secondary-container":"#dae2fd","primary-container":"#0f766e","on-error":"#ffffff","on-primary-fixed":"#00201d","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","on-background":"#191c1e","error":"#ba1a1a","inverse-surface":"#2d3133","secondary-fixed-dim":"#bec6e0","surface-variant":"#e0e3e5","tertiary-fixed":"#89f5e7","outline-variant":"#bdc9c6","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","on-error-container":"#93000a","primary-fixed":"#9cf2e8","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005049","tertiary-container":"#00776d","tertiary":"#005c54","tertiary-fixed-dim":"#6bd8cb","surface":"#f7f9fb","surface-container-high":"#e6e8ea","surface-dim":"#d8dadc","surface-bright":"#f7f9fb","surface-container-low":"#f2f4f6","on-tertiary-container":"#91fdef","primary":"#005c55","on-secondary-fixed":"#131b2e","secondary":"#565e74","inverse-primary":"#80d5cb","on-tertiary-fixed":"#00201d","on-primary-container":"#a3faef","on-primary-fixed-variant":"#00504a","background":"#f7f9fb","surface-container-highest":"#e0e3e5","surface-tint":"#006a63","on-tertiary":"#ffffff","outline":"#6e7977","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xl":"2rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-2xl":"3rem"},fontFamily:{"headline-3":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"caption-caps":["Inter"],"body-medium":["Inter"],"display":["Inter"],"body-regular":["Inter"],"display-mobile":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"]},fontSize:{"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="prescriptions" href="#">Prescriptions</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg bg-primary-container text-on-primary font-semibold transition-colors font-body-medium text-body-medium" data-path="careconnect360---billing-&amp;-invoices" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive State Controller Bar (Clinical Demo Utility) -->
+<div class="mb-6 bg-surface-container-lowest shadow-sm rounded-xl p-3 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Live Simulation Mode:</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold" id="current-state-indicator">Failed Payment / Retry Required</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold" id="btn-state-failed" onclick="setInvoiceState('failed')">
+        Declined (Default)
+      </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-paid" onclick="setInvoiceState('paid')">
+        Settled (Receipt)
+      </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface" id="btn-state-dispute" onclick="setInvoiceState('dispute')">
+        Dispute in Review
+      </button>
+</div>
+</div>
+<!-- Breadcrumb Navigation -->
+<div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+<nav aria-label="Breadcrumb" class="flex items-center gap-1.5 text-on-surface-variant font-label-medium text-label-medium">
+<a class="hover:text-primary transition-colors" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Billing &amp; Accounts</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Billing &amp; Invoices</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-semibold text-on-surface">Invoice #INV-2024-9104</span>
+</nav>
+<a class="inline-flex items-center gap-1 font-body-medium text-body-medium text-primary hover:text-on-primary-fixed-variant transition-colors group" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+<span>Back to Invoices</span>
+</a>
+</div>
+<!-- Invoice Master Header & Quick Actions -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-space-lg mb-6">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-display text-display text-on-surface tracking-tight">Invoice #INV-2024-9104</h1>
+<!-- Dynamic Status Badges -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container" id="badge-failed">
+<span class="material-symbols-outlined text-[16px] text-error">sync_problem</span>
+<span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">Payment Pending • Retry Needed</span>
+</div>
+<div class="hidden inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed" id="badge-paid">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">Paid &amp; Reconciled</span>
+</div>
+<div class="hidden inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant" id="badge-dispute">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">balance</span>
+<span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">Audit &amp; Dispute in Review</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-on-surface-variant font-label-medium text-label-medium">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+            Issued: Nov 07, 2024, 11:30 AM IST
+          </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">event_repeat</span>
+            Settlement Term: Net 5 Days
+          </span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Level-4 Digital Signature Hash: #904A-F2C8
+          </span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-body-medium text-body-medium shadow-sm" onclick="triggerToast('Downloading official PDF invoice...')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-body-medium text-body-medium shadow-sm" onclick="window.print()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors font-body-medium text-body-medium shadow-sm" onclick="triggerToast('Invoice sent to e.vance@clinicalmail.org')">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Email Copy</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors font-body-medium text-body-medium" id="btn-dispute-trigger" onclick="openDisputeModal()">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Dispute Charge</span>
+</button>
+</div>
+</div>
+</div>
+<!-- State Banner: Payment Required / Failure State -->
+<div class="mb-6 p-space-lg rounded-xl bg-error-container/60 shadow-sm relative overflow-hidden transition-all duration-300" id="banner-action-required">
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-error-container text-error flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<div class="flex flex-col gap-1 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="font-headline-3 text-headline-3 text-on-error-container font-semibold">Payment Action Required</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-caption-caps text-caption-caps font-semibold">Declined by Issuer</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant leading-relaxed">
+            Transaction attempt on <strong>Nov 07, 2024 at 10:32 AM IST</strong> was declined by your issuing institution (Reason: <code class="bg-surface-container-lowest/80 px-1 py-0.5 rounded text-on-error-container font-mono text-[12px]">Insufficient pre-authorization funds / Sec-Token Timeout</code>). Please retry or select another payment gateway to prevent coverage lapse.
+          </p>
+<div class="flex flex-wrap items-center gap-4 mt-2 font-label-medium text-label-medium text-on-surface-variant">
+<span><strong>Amount Due:</strong> ₹1,999.00 INR</span>
+<span>•</span>
+<span class="text-error font-semibold"><strong>Strict Deadline:</strong> November 12, 2024 (5 Days Remaining)</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-2.5 shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-all font-body-medium text-body-medium shadow-md font-semibold" onclick="scrollToRetry()">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+<span>Retry Payment Now (₹1,999)</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-low text-on-surface transition-all font-body-medium text-body-medium shadow-sm" onclick="scrollToRetry()">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span>Change Payment Method</span>
+</button>
+</div>
+</div>
+</div>
+<!-- State Banner: Paid / Settled State -->
+<div class="hidden mb-6 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm relative overflow-hidden transition-all duration-300" id="banner-settled">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Payment Fully Settled &amp; Reconciled</span>
+<span class="font-body-regular text-body-regular text-on-surface-variant">Auth Code: <code class="font-mono text-primary font-semibold">AUTH-992014-IND</code> • Settlement Ref #TXN-773910 via UPI AutoPay</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-medium text-label-medium">Receipt #REC-8849-01</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-medium text-label-medium font-semibold shadow-sm transition-colors" onclick="triggerToast('Downloading Official Tax Receipt...')">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Download Receipt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- State Banner: Dispute State -->
+<div class="hidden mb-6 p-space-lg rounded-xl bg-surface-container-highest shadow-sm relative overflow-hidden transition-all duration-300" id="banner-dispute-alert">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-on-surface text-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Dispute Case #DSP-2024-41 Under Review</span>
+<span class="font-body-regular text-body-regular text-on-surface-variant">Submitted on Nov 08, 2024 • Hospital Revenue Cycle Team investigating line item: Digital Dermoscopy facility billing.</span>
+</div>
+</div>
+<span class="px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-caption-caps text-caption-caps uppercase tracking-wider font-semibold">Resolution ETA: 48 Hours</span>
+</div>
+</div>
+<!-- Clinical & Billing Metadata 4-Column Responsive Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter mb-6">
+<!-- Card 1: Patient Information -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-5 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Patient Information</span>
+<span class="material-symbols-outlined text-primary text-[20px]">person</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Eleanor Vance</h2>
+<div class="grid grid-cols-2 gap-2 mt-2 font-label-medium text-label-medium text-on-surface-variant">
+<div>
+<span class="block text-outline text-[11px]">MRN Identifier</span>
+<span class="font-semibold text-on-surface font-mono">#849204</span>
+</div>
+<div>
+<span class="block text-outline text-[11px]">Date of Birth</span>
+<span class="text-on-surface">Oct 14, 1988 (36y)</span>
+</div>
+<div>
+<span class="block text-outline text-[11px]">State / Residency</span>
+<span class="text-on-surface">MA Resident (USA)</span>
+</div>
+<div>
+<span class="block text-outline text-[11px]">Account Status</span>
+<span class="text-primary font-semibold">Active Portal ID</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg px-2.5 py-1.5 text-on-surface-variant font-caption-caps text-caption-caps flex items-center justify-between">
+<span>Verified Identity: Level-3 OTP</span>
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+</div>
+</div>
+<!-- Card 2: Provider / Practice -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-5 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Provider &amp; Clinic</span>
+<span class="material-symbols-outlined text-primary text-[20px]">medical_services</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Dr. Elena Vance, MD</h2>
+<span class="font-label-medium text-label-medium text-primary font-semibold">Dermatology &amp; Teledermatology</span>
+<div class="flex flex-col gap-1 mt-2 font-label-medium text-label-medium text-on-surface-variant">
+<span class="text-on-surface">Metro Health Medical Center</span>
+<span class="text-outline text-[11px]">Dermatology Pavilion, Suite 410</span>
+<div class="flex items-center justify-between text-[11px] text-outline mt-1 font-mono">
+<span>NPI: 1942084721</span>
+<span>Tax ID: XX-XXX8492</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg px-2.5 py-1.5 text-on-surface-variant font-caption-caps text-caption-caps flex items-center justify-between">
+<span>License Verified: MA #49202</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</div>
+</div>
+<!-- Card 3: Clinical Encounter -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-5 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Encounter Reference</span>
+<span class="material-symbols-outlined text-primary text-[20px]">videocam</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Telehealth Video</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-mono text-[11px]">#ENC-9021-V</span>
+</div>
+<div class="flex flex-col gap-1.5 mt-2 font-label-medium text-label-medium text-on-surface-variant">
+<div class="flex items-center justify-between">
+<span class="text-outline text-[11px]">Date of Service</span>
+<span class="text-on-surface font-semibold">Nov 07, 2024</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-outline text-[11px]">Duration</span>
+<span class="text-on-surface">10:30 AM – 11:20 AM IST (50m)</span>
+</div>
+<div class="mt-1 p-2 rounded bg-surface-container-low">
+<span class="block text-outline text-[10px] uppercase tracking-wider">Primary Diagnosis (ICD-10)</span>
+<span class="font-semibold text-on-surface text-[12px]">L30.9 — Dermatitis, unspecified</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg px-2.5 py-1.5 text-on-surface-variant font-caption-caps text-caption-caps flex items-center justify-between">
+<span>Clinical Chart Locked &amp; Signed</span>
+<span class="material-symbols-outlined text-[14px] text-primary">lock</span>
+</div>
+</div>
+<!-- Card 4: Insurance & Payer -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl p-5 flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Payer &amp; Claim Status</span>
+<span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+</div>
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Aetna Choice POS II</h2>
+<span class="font-label-medium text-label-medium text-on-surface-variant">Group: <strong class="text-on-surface">#8492-AX</strong> • Member: <strong class="text-on-surface">••••••9024</strong></span>
+<div class="mt-2 p-2 rounded bg-surface-container-low flex flex-col gap-1 text-[11px]">
+<div class="flex items-center justify-between font-label-medium text-label-medium">
+<span class="text-on-surface-variant">Adjudication</span>
+<span class="text-primary font-semibold">60% Plan Covered</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 57.5%"></div>
+</div>
+<span class="text-outline text-[10px]">Claim #CLM-89204 (EDI 270/271 Cleared)</span>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg px-2.5 py-1.5 text-on-surface-variant font-caption-caps text-caption-caps flex items-center justify-between">
+<span>In-Network Tier 1 Contract</span>
+<span class="material-symbols-outlined text-[14px] text-primary">task_alt</span>
+</div>
+</div>
+</div>
+<!-- Itemized Clinical Fee Breakdown Table Section -->
+<div class="bg-surface-container-lowest shadow-sm rounded-xl overflow-hidden mb-6">
+<div class="p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-low/40">
+<div class="flex flex-col">
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold">Itemized Clinical Fee Breakdown</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Compliant with CMS No Surprises Act &amp; Telehealth Fee Schedule Guidelines</p>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Standard Insurance Contract Rates Applied</span>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-regular text-body-regular">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption-caps text-caption-caps uppercase tracking-wider">
+<th class="py-3.5 px-6 font-semibold">Code &amp; Description</th>
+<th class="py-3.5 px-4 font-semibold">Rendering Clinician</th>
+<th class="py-3.5 px-4 font-semibold text-right">Standard Fee</th>
+<th class="py-3.5 px-4 font-semibold text-right">Contract Discount</th>
+<th class="py-3.5 px-4 font-semibold text-right">Insurance Paid</th>
+<th class="py-3.5 px-6 font-semibold text-right">Patient Responsibility</th>
+</tr>
+</thead>
+<tbody class="text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6 align-top">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">CPT 99214 — Detailed Telemedicine Consultation</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">45–50 min comprehensive evaluation &amp; management via high-res video</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-on-surface-variant font-label-medium text-label-medium">
+              Dr. Elena Vance, MD
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-surface-variant">
+              ₹3,800.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-primary">
+              -₹800.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-secondary-container font-semibold">
+              -₹1,800.00
+            </td>
+<td class="py-4 px-6 align-top text-right font-mono font-semibold text-on-surface">
+              ₹1,200.00
+            </td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-surface-container-lowest">
+<td class="py-4 px-6 align-top">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">CPT 99423 — Digital Dermoscopy Tele-imaging</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Multi-lesion photographic high-dynamic range capture and review</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-on-surface-variant font-label-medium text-label-medium">
+              Dr. Elena Vance, MD
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-surface-variant">
+              ₹1,500.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-primary">
+              -₹300.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-secondary-container font-semibold">
+              -₹700.00
+            </td>
+<td class="py-4 px-6 align-top text-right font-mono font-semibold text-on-surface">
+              ₹500.00
+            </td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-4 px-6 align-top">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Telehealth Technology &amp; Facility Fee</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Encrypted HIPAA WebRTC line, high-fidelity real-time chart synchronization</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-on-surface-variant font-label-medium text-label-medium">
+              Metro Health Tech
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-surface-variant">
+              ₹599.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-primary">
+              -₹100.00
+            </td>
+<td class="py-4 px-4 align-top text-right font-mono text-on-secondary-container font-semibold">
+              -₹200.00
+            </td>
+<td class="py-4 px-6 align-top text-right font-mono font-semibold text-on-surface">
+              ₹299.00
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Adjudication Summary & Patient Totals Grid -->
+<div class="p-space-lg bg-surface-container-low/60 flex flex-col lg:flex-row justify-between items-start gap-8">
+<!-- Explanatory Adjudication Note -->
+<div class="max-w-md flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">info</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Understanding Your Bill</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant leading-relaxed">
+          Your insurer, <strong>Aetna Choice POS II</strong>, has adjudicated this claim under in-network teledermatology provisions. After contractual adjustments, they covered ₹2,700.00. The remaining balance represents your active deductible and specialist co-pay responsibility.
+        </p>
+<div class="p-3 bg-surface-container rounded-lg flex items-center justify-between text-on-surface-variant font-caption-caps text-caption-caps">
+<span>Claim Adjudication EOB Reference</span>
+<span class="font-mono text-on-surface font-semibold">EOB-2024-991A</span>
+</div>
+</div>
+<!-- Financial Calculation Block -->
+<div class="w-full lg:w-96 bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-2.5">
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Total Gross Billed:</span>
+<span class="font-mono text-on-surface">₹5,899.00</span>
+</div>
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Contractual Network Adjustment:</span>
+<span class="font-mono text-primary font-semibold">-₹1,200.00</span>
+</div>
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Net Insurance Eligible:</span>
+<span class="font-mono text-on-surface">₹4,699.00</span>
+</div>
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Insurance Paid (Aetna POS II):</span>
+<span class="font-mono text-on-secondary-container font-semibold">-₹2,700.00</span>
+</div>
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Copay / Deductible Responsibility:</span>
+<span class="font-mono text-on-surface">₹1,999.00</span>
+</div>
+<div class="flex items-center justify-between font-label-medium text-label-medium text-on-surface-variant">
+<span>Amount Previously Paid:</span>
+<span class="font-mono text-on-surface" id="label-previously-paid">₹0.00</span>
+</div>
+<div class="my-1.5 h-px bg-surface-container-high"></div>
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Current Balance Due:</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Due by Nov 12, 2024</span>
+</div>
+<span class="font-headline-1 text-headline-1 font-bold font-mono text-error" id="balance-due-display">₹1,999.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Layout: Split Column for Audit Trail Timeline & Payment Method Retry Gateway -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-12">
+<!-- Left Column: Payment Timeline & Audit Trail (5 Columns) -->
+<div class="lg:col-span-5 bg-surface-container-lowest shadow-sm rounded-xl p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">timeline</span>
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Payment Audit Trail</h2>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Timezone: IST (UTC+5:30)</span>
+</div>
+<!-- Vertical Timeline Items -->
+<div class="relative pl-6 flex flex-col gap-6 before:content-[''] before:absolute before:left-2 before:top-2.5 before:bottom-2.5 before:w-0.5 before:bg-surface-container-high">
+<!-- Step 1 -->
+<div class="relative flex items-start gap-3">
+<span class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>
+</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Invoice Generated</span>
+<span class="font-caption-caps text-caption-caps text-outline">11:30 AM</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Automated billing trigger created after consultation with Dr. Elena Vance.</p>
+<span class="font-mono text-[11px] text-outline mt-1">Ref: #GEN-849204-9104</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-3">
+<span class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-surface-container-lowest">
+<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>
+</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Claim Auto-Adjudicated</span>
+<span class="font-caption-caps text-caption-caps text-outline">11:32 AM</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Aetna Clearinghouse approved ₹2,700.00 claim responsibility directly.</p>
+<span class="font-mono text-[11px] text-outline mt-1">EDI 835 Remittance Cleared</span>
+</div>
+</div>
+<!-- Step 3 (Failed/Pending/Paid dynamic) -->
+<div class="relative flex items-start gap-3" id="timeline-step-3">
+<span class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-error flex items-center justify-center ring-4 ring-surface-container-lowest" id="step-3-icon-box">
+<span class="material-symbols-outlined text-[10px] text-on-error">close</span>
+</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-medium text-body-medium font-semibold text-error" id="step-3-title">Auto-Debit Attempt Declined</span>
+<span class="font-caption-caps text-caption-caps text-outline">11:35 AM</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5" id="step-3-desc">Default card Visa •••• 4092 pre-authorization failed with issuing bank code 51.</p>
+<span class="font-mono text-[11px] text-error mt-1" id="step-3-meta">Gateway Err: 51_INSUFFICIENT_FUNDS</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-3" id="timeline-step-4">
+<span class="absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center ring-4 ring-surface-container-lowest" id="step-4-icon-box">
+<span class="material-symbols-outlined text-[10px] text-outline">schedule</span>
+</span>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface-variant" id="step-4-title">Awaiting Patient Settlement</span>
+<span class="font-caption-caps text-caption-caps text-outline">Nov 12 Due</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5" id="step-4-desc">Please resolve balance to maintain uninterrupted telemedicine access.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 bg-surface-container-low rounded-lg p-3 text-on-surface-variant font-label-medium text-label-medium flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">security</span>
+<span>All financial audit entries are cryptographically signed under HIPAA Title II.</span>
+</div>
+</div>
+<!-- Right Column: Interactive Payment Method Selector & Retry Form (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest shadow-sm rounded-xl p-space-lg flex flex-col justify-between" id="payment-gateway-container">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">credit_score</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-3 text-headline-3 text-on-surface font-semibold">Select Settlement Method</h2>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Instant encrypted payment execution</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 font-caption-caps text-caption-caps font-semibold text-primary bg-primary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+            256-Bit TLS
+          </span>
+</div>
+<!-- Payment Method Options -->
+<form class="space-y-3 mt-4" id="payment-retry-form" onsubmit="handlePaymentSubmit(event)">
+<!-- Option 1: Saved Visa (Previously declined) -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="visa_4092"/>
+<div class="w-10 h-7 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center font-bold text-[11px] tracking-wider text-secondary">
+                VISA
+              </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Visa Signature ending •••• 4092</span>
+<span class="font-caption-caps text-caption-caps text-error">Declined earlier (Insufficient Funds)</span>
+</div>
+</div>
+<span class="font-label-regular text-label-regular text-outline">Exp 08/27</span>
+</label>
+<!-- Option 2: Saved Mastercard -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<input checked="" class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="mc_9104"/>
+<div class="w-10 h-7 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center font-bold text-[11px] tracking-wider text-error">
+                MC
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Mastercard World Elite ending •••• 9104</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed/40 text-on-primary-fixed font-caption-caps text-[10px] font-semibold">Recommended</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Default fallback card • Ready</span>
+</div>
+</div>
+<span class="font-label-regular text-label-regular text-outline">Exp 11/29</span>
+</label>
+<!-- Option 3: Instant UPI -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="upi"/>
+<div class="w-10 h-7 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center font-bold text-[11px] tracking-wider text-primary">
+                UPI
+              </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Instant UPI / Dynamic QR Code</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">PhonePe, Google Pay, Paytm, BHIM</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">qr_code_2</span>
+</label>
+<!-- Option 4: Net Banking -->
+<label class="flex items-center justify-between p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<input class="w-4 h-4 text-primary focus:ring-primary accent-primary" name="payment_method" type="radio" value="netbanking"/>
+<div class="w-10 h-7 rounded bg-surface-container-lowest shadow-sm flex items-center justify-center font-bold text-[11px] tracking-wider text-on-surface-variant">
+                NET
+              </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Net Banking (Direct Debit)</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">HDFC, ICICI, SBI, Axis &amp; 40+ Indian Banks</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-outline group-hover:text-primary transition-colors">account_balance</span>
+</label>
+<!-- CVV verification toggle for selected card -->
+<div class="mt-4 p-3.5 rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3" id="cvv-input-section">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">pin</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold">CVV / Security Code</span>
+</div>
+<div class="flex items-center gap-2">
+<input class="w-20 text-center font-mono py-1.5 px-2 rounded-lg bg-surface-container-lowest text-on-surface outline-none focus:ring-2 focus:ring-primary shadow-sm font-semibold" maxlength="4" placeholder="•••" type="password" value="482"/>
+<span class="font-caption-caps text-caption-caps text-outline">3 digits on card back</span>
+</div>
+</div>
+<!-- Submit CTA -->
+<div class="pt-4">
+<button class="w-full py-3.5 px-4 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-all font-body-medium text-body-medium font-semibold flex items-center justify-center gap-2 shadow-md" id="btn-submit-retry" type="submit">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Authorize Payment of ₹1,999.00</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Regulatory & HIPAA Compliance Footnote -->
+<div class="mt-6 pt-3 text-center">
+<p class="font-caption-caps text-caption-caps text-on-surface-variant leading-relaxed">
+          Simulated Demo Payment Gateway. No live charges will occur. Conforms with Level-4 HIPAA, PCI-DSS Level 1 &amp; RBI Data Localization compliance standards.
+        </p>
+</div>
+</div>
+</div>
+<!-- Interactive Dispute Charge Modal (Drawer-style overlay) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/60 backdrop-blur-sm hidden flex items-center justify-center p-4" id="modal-dispute">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full shadow-2xl p-space-lg relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">flag</span>
+</div>
+<div>
+<h3 class="font-headline-2 text-headline-2 text-on-surface font-semibold">Dispute Itemized Charge</h3>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Invoice #INV-2024-9104</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeDisputeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+          Initiating a billing inquiry places this invoice on an automatic 14-day collection pause under the Patient Financial Protection Act while our medical audit board reviews.
+        </p>
+<div>
+<label class="block font-label-medium text-label-medium text-on-surface font-semibold mb-1">Select Dispute Category</label>
+<select class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface outline-none focus:ring-2 focus:ring-primary font-body-regular text-body-regular" id="dispute-reason">
+<option>Insurance Adjudication Error (Expected higher co-pay coverage)</option>
+<option>Service Discrepancy (Tele-dermoscopy photo evaluation question)</option>
+<option>Duplicate Line Item Encounter Billing</option>
+<option>Facility Fee Waiver Request</option>
+</select>
+</div>
+<div>
+<label class="block font-label-medium text-label-medium text-on-surface font-semibold mb-1">Clinical or Financial Remarks</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline outline-none focus:ring-2 focus:ring-primary font-body-regular text-body-regular" placeholder="Please explain why this charge requires adjustment..." rows="3"></textarea>
+</div>
+<div class="p-3 rounded-lg bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Review Board SLA: Investigation report returned within 48 business hours.</span>
+</div>
+<div class="flex items-center justify-end gap-2.5 mt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-medium text-body-medium transition-colors" onclick="closeDisputeModal()">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-medium text-body-medium font-semibold transition-colors shadow-sm" onclick="submitDisputeForm()">
+            Submit Formal Dispute
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction Toast Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast-notification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed" id="toast-icon">check_circle</span>
+<span class="font-body-medium text-body-medium font-medium" id="toast-message">Action successful</span>
+</div>
+</div>
+</div>
+<script>
+  // Prototype State Controller Logic
+  function setInvoiceState(state) {
+    const badgeFailed = document.getElementById('badge-failed');
+    const badgePaid = document.getElementById('badge-paid');
+    const badgeDispute = document.getElementById('badge-dispute');
+
+    const bannerAction = document.getElementById('banner-action-required');
+    const bannerSettled = document.getElementById('banner-settled');
+    const bannerDispute = document.getElementById('banner-dispute-alert');
+
+    const balanceDisplay = document.getElementById('balance-due-display');
+    const previouslyPaid = document.getElementById('label-previously-paid');
+    const stateIndicator = document.getElementById('current-state-indicator');
+
+    const btnFailed = document.getElementById('btn-state-failed');
+    const btnPaid = document.getElementById('btn-state-paid');
+    const btnDispute = document.getElementById('btn-state-dispute');
+
+    const step3Box = document.getElementById('step-3-icon-box');
+    const step3Title = document.getElementById('step-3-title');
+    const step3Desc = document.getElementById('step-3-desc');
+    const step3Meta = document.getElementById('step-3-meta');
+
+    const step4Box = document.getElementById('step-4-icon-box');
+    const step4Title = document.getElementById('step-4-title');
+    const step4Desc = document.getElementById('step-4-desc');
+
+    // Reset styles on controller buttons
+    [btnFailed, btnPaid, btnDispute].forEach(btn => {
+      btn.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface";
+    });
+
+    if (state === 'failed') {
+      btnFailed.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold";
+      stateIndicator.textContent = "Declined / Retry Required";
+      badgeFailed.classList.remove('hidden');
+      badgePaid.classList.add('hidden');
+      badgeDispute.classList.add('hidden');
+
+      bannerAction.classList.remove('hidden');
+      bannerSettled.classList.add('hidden');
+      bannerDispute.classList.add('hidden');
+
+      balanceDisplay.textContent = "₹1,999.00";
+      balanceDisplay.className = "font-headline-1 text-headline-1 font-bold font-mono text-error";
+      previouslyPaid.textContent = "₹0.00";
+
+      // Timeline update
+      step3Box.className = "absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-error flex items-center justify-center ring-4 ring-surface-container-lowest";
+      step3Box.innerHTML = '<span class="material-symbols-outlined text-[10px] text-on-error">close</span>';
+      step3Title.textContent = "Auto-Debit Attempt Declined";
+      step3Title.className = "font-body-medium text-body-medium font-semibold text-error";
+      step3Desc.textContent = "Default card Visa •••• 4092 pre-authorization failed with bank code 51.";
+      step3Meta.textContent = "Gateway Err: 51_INSUFFICIENT_FUNDS";
+      step3Meta.className = "font-mono text-[11px] text-error mt-1";
+
+      step4Box.className = "absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-surface-container-high flex items-center justify-center ring-4 ring-surface-container-lowest";
+      step4Title.textContent = "Awaiting Patient Settlement";
+      step4Desc.textContent = "Please resolve balance to maintain uninterrupted telemedicine access.";
+    } 
+    else if (state === 'paid') {
+      btnPaid.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold";
+      stateIndicator.textContent = "Settled (Receipt Generated)";
+      badgeFailed.classList.add('hidden');
+      badgePaid.classList.remove('hidden');
+      badgeDispute.classList.add('hidden');
+
+      bannerAction.classList.add('hidden');
+      bannerSettled.classList.remove('hidden');
+      bannerDispute.classList.add('hidden');
+
+      balanceDisplay.textContent = "₹0.00";
+      balanceDisplay.className = "font-headline-1 text-headline-1 font-bold font-mono text-primary";
+      previouslyPaid.textContent = "₹1,999.00";
+
+      // Timeline update
+      step3Box.className = "absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-surface-container-lowest";
+      step3Box.innerHTML = '<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>';
+      step3Title.textContent = "Payment Retried & Authorized";
+      step3Title.className = "font-body-medium text-body-medium font-semibold text-primary";
+      step3Desc.textContent = "Mastercard •••• 9104 successfully processed for ₹1,999.00.";
+      step3Meta.textContent = "Txn Ref: #TXN-773910-SUCC";
+      step3Meta.className = "font-mono text-[11px] text-primary mt-1";
+
+      step4Box.className = "absolute -left-[27px] top-0.5 w-4 h-4 rounded-full bg-primary flex items-center justify-center ring-4 ring-surface-container-lowest";
+      step4Box.innerHTML = '<span class="material-symbols-outlined text-[10px] text-on-primary">check</span>';
+      step4Title.textContent = "Account Fully Reconciled";
+      step4Desc.textContent = "Receipt #REC-8849-01 generated and patient statement cleared.";
+    }
+    else if (state === 'dispute') {
+      btnDispute.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-on-surface shadow-sm font-semibold";
+      stateIndicator.textContent = "Under Formal Review";
+      badgeFailed.classList.add('hidden');
+      badgePaid.classList.add('hidden');
+      badgeDispute.classList.remove('hidden');
+
+      bannerAction.classList.add('hidden');
+      bannerSettled.classList.add('hidden');
+      bannerDispute.classList.remove('hidden');
+
+      balanceDisplay.textContent = "₹1,999.00 (On Hold)";
+      balanceDisplay.className = "font-headline-1 text-headline-1 font-bold font-mono text-on-surface-variant";
+      previouslyPaid.textContent = "₹0.00";
+
+      step4Title.textContent = "Dispute Case Investigation Active";
+      step4Desc.textContent = "Late fees and automated billing halts active until review concludes.";
+    }
+  }
+
+  function scrollToRetry() {
+    const el = document.getElementById('payment-gateway-container');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('ring-2', 'ring-primary', 'transition-all');
+      setTimeout(() => {
+        el.classList.remove('ring-2', 'ring-primary');
+      }, 1500);
+    }
+  }
+
+  function handlePaymentSubmit(e) {
+    e.preventDefault();
+    const submitBtn = document.getElementById('btn-submit-retry');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Authorizing Secure Gateway...</span>';
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalText;
+      setInvoiceState('paid');
+      triggerToast('Payment of ₹1,999.00 authorized successfully!');
+    }, 1200);
+  }
+
+  function openDisputeModal() {
+    document.getElementById('modal-dispute').classList.remove('hidden');
+  }
+
+  function closeDisputeModal() {
+    document.getElementById('modal-dispute').classList.add('hidden');
+  }
+
+  function submitDisputeForm() {
+    closeDisputeModal();
+    setInvoiceState('dispute');
+    triggerToast('Dispute Case #DSP-2024-41 created and assigned to audit.');
+  }
+
+  function triggerToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-message');
+    toastMsg.textContent = message;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+</script></main></div></body></html>

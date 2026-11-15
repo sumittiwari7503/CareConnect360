@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-primary-fixed":"#00201d","surface":"#f7f9fb","outline-variant":"#bdc9c6","tertiary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eff1f3","surface-tint":"#006a63","on-secondary-fixed":"#131b2e","primary-fixed":"#9cf2e8","tertiary":"#005c54","on-primary-fixed-variant":"#00504a","surface-container-highest":"#e0e3e5","on-tertiary-fixed":"#00201d","surface-container":"#eceef0","on-surface-variant":"#3e4947","on-tertiary":"#ffffff","outline":"#6e7977","primary-container":"#0f766e","on-surface":"#191c1e","surface-variant":"#e0e3e5","surface-container-lowest":"#ffffff","on-background":"#191c1e","on-secondary-fixed-variant":"#3f465c","on-secondary-container":"#5c647a","primary-fixed-dim":"#80d5cb","secondary-fixed-dim":"#bec6e0","tertiary-container":"#00776d","tertiary-fixed":"#89f5e7","secondary":"#565e74","on-primary-container":"#a3faef","on-secondary":"#ffffff","error":"#ba1a1a","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005049","on-error":"#ffffff","surface-container-high":"#e6e8ea","secondary-fixed":"#dae2fd","error-container":"#ffdad6","inverse-surface":"#2d3133","primary":"#005c55","on-tertiary-container":"#91fdef","surface-dim":"#d8dadc","secondary-container":"#dae2fd","inverse-primary":"#80d5cb","surface-bright":"#f7f9fb","background":"#f7f9fb","surface-container-low":"#f2f4f6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","gutter-sm":"1rem","space-2xl":"3rem","space-xl":"2rem","space-xs":"0.25rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"headline-3":["Inter"],"body-medium":["Inter"],"body-regular":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display":["Inter"]},fontSize:{"headline-3":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-regular":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-regular":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-2":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"caption-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-medium":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-1":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center justify-between bg-inverse-surface"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-inverse-on-surface leading-tight">CareConnect360</span><span class="font-caption-caps text-caption-caps text-outline-variant tracking-wider uppercase">V3.2 Enterprise</span></div></div><span class="material-symbols-outlined text-outline-variant text-[20px]">verified_user</span></div><div class="px-gutter pt-space-md pb-space-sm"><span class="font-caption-caps text-caption-caps uppercase text-outline-variant tracking-wider">Administrative Modules</span></div><nav class="px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-3"><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="careconnect360-admin-dashboard" href="#">Overview</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="doctor-management" href="#">Doctors</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="patient-management" href="#">Patients</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="appointment-management" href="#">Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="reports" href="#">Reports</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md bg-inverse-surface/80 flex flex-col gap-space-md"><div class="bg-surface-container-highest/10 rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed text-[16px]">security</span><span class="font-caption-caps text-caption-caps uppercase text-primary-fixed">Governance Active</span></div><span class="font-label-regular text-label-regular text-outline-variant">SOC2 Type II &amp; HIPAA Certified</span></div><div class="flex flex-col gap-space-xs"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors" data-path="audit-log-export" href="#"><span class="font-label-medium text-label-medium">Audit Log Quick Export</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span></a><button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-error/15 text-error-container hover:bg-error/25 transition-colors" type="button"><span class="font-label-medium text-label-medium">Emergency Lockout</span><span class="material-symbols-outlined text-[16px]">power_settings_new</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface placeholder:text-outline focus:outline-none shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="Search platform by doctor NPI, patient MRN, transaction ID, or facility..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-xl"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant">HIPAA AUDIT LEVEL-4 • BAA ACTIVE • 99.98% UPTIME</span></div><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-secondary-container rounded-xl"><span class="material-symbols-outlined text-on-secondary-container text-[16px]">dns</span><span class="font-label-medium text-label-medium text-on-secondary-container">Production Cluster US-East</span></div></div><div class="flex items-center gap-space-sm"><button class="relative w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button></div><div class="flex items-center gap-space-md pl-space-md"><div class="flex flex-col text-right"><div class="flex items-center gap-space-xs justify-end"><span class="font-headline-3 text-headline-3 text-on-surface">Sarah Jenkins, MPH</span><span class="px-space-xs py-0.5 rounded-lg bg-primary-container text-on-primary-container font-caption-caps text-caption-caps">SUPER ADMIN</span></div><span class="font-label-regular text-label-regular text-on-surface-variant">Chief Healthcare Administrator &amp; Compliance Officer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Interactive State Bar / Control Switcher -->
+<div class="w-full mb-space-md bg-surface-container-low rounded-xl p-space-sm flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant">Prototype View Controls:</span>
+<div class="inline-flex bg-surface-container-lowest p-0.5 rounded-lg shadow-sm">
+<button class="px-space-sm py-1 rounded-md text-caption-caps font-caption-caps bg-primary-container text-on-primary-container transition-all" id="btn-state-default" onclick="setViewMode('default')">Default View</button>
+<button class="px-space-sm py-1 rounded-md text-caption-caps font-caption-caps text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-dirty" onclick="setViewMode('dirty')">Unsaved Changes</button>
+<button class="px-space-sm py-1 rounded-md text-caption-caps font-caption-caps text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-error" onclick="setViewMode('error')">Validation Alert</button>
+<button class="px-space-sm py-1 rounded-md text-caption-caps font-caption-caps text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-saved" onclick="setViewMode('saved')">Saved Notification</button>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-label-regular font-label-regular text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span> NIST SP 800-63A Verified</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary inline-block"></span> 45 CFR § 164.502(b) Active</span>
+</div>
+</div>
+<!-- Breadcrumb Navigation -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-label-medium font-label-medium text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Account Portal</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Preferences</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-headline-3 text-headline-3">Account Settings &amp; Security</span>
+</nav>
+<div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant text-label-medium font-label-medium">
+<span class="material-symbols-outlined text-primary text-[16px]">verified</span>
+<span>Enterprise Multi-Tenant Security Policy Active</span>
+</div>
+</div>
+<!-- Notification Banner (Saved / Error / Unsaved States) -->
+<div class="w-full mb-space-lg transition-all duration-300" id="status-banner">
+<div class="hidden w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md" id="banner-dirty">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[22px]">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-3 text-headline-3 text-on-surface">Unsaved Modifications Detected</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps">3 Fields Modified</span>
+</div>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Changes will auto-revert in 04:59 to prevent PHI cache drift. All changes cryptographically hashed.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center shrink-0">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-medium text-label-medium transition-colors" onclick="setViewMode('default')" type="button">Discard Changes</button>
+<button class="px-space-md py-2 rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary-container font-label-medium text-label-medium transition-colors flex items-center gap-1" onclick="setViewMode('saved')" type="button">
+<span class="material-symbols-outlined text-[16px]">cloud_done</span> Save All Changes
+        </button>
+</div>
+</div>
+<div class="hidden w-full bg-surface-container-lowest rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-md" id="banner-saved">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[22px]">check_circle</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">Security Credentials &amp; Profile Successfully Synchronized</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Audit Entry #HIPAA-AUD-94029 committed to immutable ledger at 14:32:08 UTC.</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg" onclick="setViewMode('default')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="hidden w-full bg-error-container rounded-xl p-space-md shadow-md flex items-center justify-between gap-space-md" id="banner-error">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-on-error flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-error text-[22px]">error</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-error-container">Critical Password Mismatch &amp; Validation Error</span>
+<span class="font-label-regular text-label-regular text-on-error-container">The new password does not match the confirmation entry. Please review NIST complexity parameters below.</span>
+</div>
+</div>
+<button class="text-on-error-container hover:opacity-80 p-1" onclick="setViewMode('default')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Primary Tab Bar Navigation -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm mb-space-xl p-1 overflow-x-auto">
+<div class="flex items-center gap-1 min-w-max" role="tablist">
+<button aria-selected="true" class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-surface-container font-headline-3 text-headline-3 text-primary transition-all" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Personal &amp; Profile</span>
+</button>
+<button aria-selected="false" class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-medium text-body-medium transition-all" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span>Security &amp; Password</span>
+</button>
+<button aria-selected="false" class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-medium text-body-medium transition-all" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">notifications_active</span>
+<span>Notification Matrix</span>
+</button>
+<button aria-selected="false" class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-medium text-body-medium transition-all" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+<span>Privacy &amp; HIPAA Consents</span>
+</button>
+<button aria-selected="false" class="flex items-center gap-space-xs px-space-md py-2.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-body-medium text-body-medium transition-all" role="tab" type="button">
+<span class="material-symbols-outlined text-[18px]">devices</span>
+<span>Active Sessions</span>
+<span class="ml-1 px-1.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps">3</span>
+</button>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column (Identity, Clinical Credentials, Profile Information) - 5 Cols -->
+<div class="xl:col-span-5 flex flex-col gap-space-xl">
+<!-- Profile Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">account_circle</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Verified Clinical Identity</h2>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary-container/15 text-primary font-caption-caps text-caption-caps tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            NIST LEVEL-3
+          </span>
+</div>
+<!-- Avatar & Identity Quick Snapshot -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="relative shrink-0">
+<img class="w-20 h-20 rounded-full object-cover shadow-sm" data-alt="Close up professional portrait of Dr. Sarah Jenkins wearing crisp clinical attire, high key soft studio lighting, teal medical ambiance, confident neutral expression, sharp focus on facial features, hyper realistic corporate healthcare setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiI3yRrTTO9yW5pOMfWRCzXw1OkVzhhctnuQOd9pEKOKeLS8Xs2yPyq4X4dLSiW--93_JxSfcEixUML762lUFyBRyktXmYqhPqlRnLJOvjhBza0BMFQ6hSISrIE3Jlbi8L_t527QJEfwchK_xnn5QjxO3gfAJbiTZ0Ta8orDiSZWaUBy4By2MyYjgje0srtRyi2z6hmpyvqBNG8ieINoa7Brxtdy4kcrDcdNpotKZL"/>
+<span class="absolute bottom-0 right-0 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<div class="flex flex-col text-center sm:text-left flex-1 min-w-0">
+<h3 class="font-headline-2 text-headline-2 text-on-surface truncate">Sarah Jenkins, MPH, FACHE</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant truncate">Chief Healthcare Administrator &amp; Attending Lead</p>
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-xs mt-space-xs">
+<span class="font-caption-caps text-caption-caps text-primary bg-surface-container-lowest px-2 py-0.5 rounded-md shadow-sm">NPI: 1049285712</span>
+<span class="font-caption-caps text-caption-caps text-secondary bg-surface-container-lowest px-2 py-0.5 rounded-md shadow-sm">MRN/Staff: #849204</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-xl font-label-medium text-label-medium transition-colors flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span> Upload New Photo
+          </button>
+<button class="py-2 px-space-md bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface-variant rounded-xl font-label-medium text-label-medium transition-colors" type="button">
+            Remove
+          </button>
+</div>
+<!-- Identity Field Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Legal Full Name</label>
+<input class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="text" value="Sarah Elizabeth Jenkins"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Preferred Clinical Title / Honorific</label>
+<input class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="text" value="Dr. Jenkins"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Legal Gender Marker</label>
+<select class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none">
+<option selected="">Female (F)</option>
+<option>Male (M)</option>
+<option>Non-Binary / Gender Diverse (X)</option>
+<option>Undisclosed</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant flex items-center justify-between">
+<span>Date of Birth</span>
+<span class="text-caption-caps font-caption-caps text-outline flex items-center gap-0.5"><span class="material-symbols-outlined text-[12px]">lock</span> Protected PHI</span>
+</label>
+<input class="w-full px-space-md py-2 bg-surface-container rounded-xl font-body-regular text-body-regular text-on-surface-variant cursor-not-allowed" disabled="" type="text" value="••/••/1982 (Verified)"/>
+</div>
+</div>
+<!-- Contact & Telemetry Channels -->
+<div class="flex flex-col gap-space-md">
+<h4 class="font-headline-3 text-headline-3 text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">contacts</span>
+            Verified Communication Endpoints
+          </h4>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Primary Primary Clinical Email</label>
+<div class="flex items-center gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">mail</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="email" value="sarah.jenkins@careconnect360.health"/>
+</div>
+<span class="px-space-sm py-2 rounded-xl bg-primary-container/15 text-primary font-caption-caps text-caption-caps flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">verified</span> VERIFIED
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Direct Telehealth Line (Mobile / SMS)</label>
+<div class="flex items-center gap-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">smartphone</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="tel" value="+1 (617) 555-0192"/>
+</div>
+<span class="px-space-sm py-2 rounded-xl bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">shield</span> 2FA ACTIVE
+              </span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Hospital Facility / Administrative Office</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">apartment</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="text" value="Building 4B, Suite 710 • Boston Academic Medical Pavilion, 75 Francis St, Boston MA"/>
+</div>
+</div>
+</div>
+<!-- Emergency Proxy Section -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">emergency</span> Emergency Clinical Proxy &amp; Alternate
+            </span>
+<button class="text-primary font-caption-caps text-caption-caps hover:underline" type="button">Change Designated Proxy</button>
+</div>
+<p class="font-body-medium text-body-medium text-on-surface">Dr. Robert Chen, MD (Chief of Surgery) • +1 (617) 555-9921</p>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Holds secondary medical power-of-attorney override for emergency triage escalations.</span>
+</div>
+</section>
+<!-- Compliance Audit Trail Snapshot -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Compliance Activity Log</h3>
+</div>
+<span class="font-caption-caps text-caption-caps text-outline-variant">LIVE RECORD</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">key</span>
+<div class="flex flex-col flex-1">
+<span class="font-body-medium text-body-medium text-on-surface">FIDO2 WebAuthn Passkey Registered</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Hardware key (Touch ID on macOS 14.4) paired via Boston Node #2</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-outline">Yesterday</span>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">lock_clock</span>
+<div class="flex flex-col flex-1">
+<span class="font-body-medium text-body-medium text-on-surface">Session Auto-Timeout Policy Re-attested</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Default set to 15-minute idle lockout per HHS § 164.312(a)(2)(iii)</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-outline">Oct 28</span>
+</div>
+</div>
+<button class="w-full py-2 bg-surface-container hover:bg-surface-container-high rounded-xl text-primary font-label-medium text-label-medium flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span> Export Complete 90-Day SOC2 Audit Trail
+        </button>
+</section>
+</div>
+<!-- Right Column (Security, Password, Notification Matrix, HIPAA Consents, Sessions) - 7 Cols -->
+<div class="xl:col-span-7 flex flex-col gap-space-xl">
+<!-- Security & Password Authentication Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">security</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Authentication &amp; NIST Credentials</h2>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-full">
+            Password Age: 42 days (Cycle: 90 days)
+          </span>
+</div>
+<!-- Password Change Module -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Current Master Password</label>
+<input class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" type="password" value="••••••••••••••••"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">New Password</label>
+<input class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" placeholder="Min. 14 chars &amp; symbols" type="password"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Confirm New Password</label>
+<input class="w-full px-space-md py-2 bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface shadow-sm focus:outline-none" placeholder="Re-type new password" type="password"/>
+</div>
+</div>
+<!-- Password Strength Indicator Meter -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface-variant flex items-center gap-1">
+<span>NIST SP 800-63B Entropy Quality:</span>
+<span class="text-primary font-headline-3 text-headline-3">Excellent (High Complexity)</span>
+</span>
+<span class="font-caption-caps text-caption-caps text-primary">128-bit Shannon Entropy</span>
+</div>
+<!-- Progress Bar Metric -->
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex gap-1">
+<div class="h-full flex-1 bg-primary rounded-full"></div>
+<div class="h-full flex-1 bg-primary rounded-full"></div>
+<div class="h-full flex-1 bg-primary rounded-full"></div>
+<div class="h-full flex-1 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+<span class="font-caption-caps text-caption-caps text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check</span> 14+ characters</span>
+<span class="font-caption-caps text-caption-caps text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check</span> Upper &amp; lower case</span>
+<span class="font-caption-caps text-caption-caps text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check</span> Digits &amp; symbols</span>
+<span class="font-caption-caps text-caption-caps text-primary flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">check</span> No breached hashes</span>
+</div>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-space-md py-2 bg-primary-container hover:bg-tertiary-container text-on-primary-container font-label-medium text-label-medium rounded-xl transition-colors shadow-sm flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_reset</span> Update Master Password
+            </button>
+</div>
+</div>
+<!-- Multi-Factor Authentication (MFA / 2FA) -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Two-Factor Authentication (MFA)</h3>
+<p class="font-label-regular text-label-regular text-on-surface-variant">Mandated for all staff accessing Protected Health Information (PHI).</p>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary-container/15 text-primary font-caption-caps text-caption-caps">
+              ENFORCED • DUAL METHOD
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Method 1: TOTP App -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">phonelink_lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Authenticator App (TOTP)</span>
+<span class="font-label-regular text-label-regular text-primary font-semibold">Primary Default (100% compliant)</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary mt-2"></span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant">Configured via CareConnect Authenticator / 1Password / Cisco Duo.</p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-caption-caps text-caption-caps text-outline">Refreshed 3 days ago</span>
+<button class="text-primary font-label-medium text-label-medium hover:underline" type="button">Reconfigure</button>
+</div>
+</div>
+<!-- Method 2: Biometric Passkey / WebAuthn -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">fingerprint</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">FIDO2 Touch ID / Face ID</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Hardware Cryptographic Bound</span>
+</div>
+</div>
+<!-- Mini Toggle -->
+<button aria-pressed="true" class="w-11 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm"></span>
+</button>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant">Instant zero-phish authentication via device Secure Enclave.</p>
+<div class="flex items-center justify-between pt-2">
+<span class="font-caption-caps text-caption-caps text-outline">2 hardware devices registered</span>
+<button class="text-primary font-label-medium text-label-medium hover:underline" type="button">+ Add Key</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-Channel Notification Matrix -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">tune</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Notification &amp; Dispatch Matrix</h2>
+</div>
+<span class="text-label-medium font-label-medium text-on-surface-variant">Quiet Hours: 22:00 – 06:00 EST</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant -mt-space-sm">
+          Control how telemetry, appointment notices, and patient charts are dispatched across your verified channels.
+        </p>
+<!-- Matrix Table Container -->
+<div class="overflow-x-auto rounded-xl bg-surface-container-low p-1">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest">
+<th class="py-space-sm px-space-md font-caption-caps text-caption-caps uppercase text-on-surface-variant rounded-l-lg">Event Category</th>
+<th class="py-space-sm px-space-md text-center font-caption-caps text-caption-caps uppercase text-on-surface-variant">Email</th>
+<th class="py-space-sm px-space-md text-center font-caption-caps text-caption-caps uppercase text-on-surface-variant">SMS / Text</th>
+<th class="py-space-sm px-space-md text-center font-caption-caps text-caption-caps uppercase text-on-surface-variant rounded-r-lg">Device Push</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1: Appointments -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Telehealth &amp; Clinical Appointments</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Reminders sent 24h &amp; 1h prior to video triage consultation</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 2: Lab & Diagnostic Results -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Diagnostic Labs &amp; Pathology Alerts</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Critical pathology panels and bloodwork notifications (PHI-masked)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 3: Prescriptions -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Prescription Refill &amp; Pharmacy Routing</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">SureScripts EPCS electronic prescription status &amp; pharmacy receipts</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 4: Virtual Room Join -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Immediate Patient Room Arrival</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Alert when triage patient enters virtual waiting room</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 accent-primary cursor-pointer" type="checkbox"/>
+</td>
+</tr>
+<!-- Row 5: Mandatory Security -->
+<tr class="bg-surface-container-highest/30">
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-body-medium text-body-medium text-on-surface">Emergency Security &amp; Audit Triggers</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps">MANDATORY</span>
+</div>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Password resets, new hardware logins, and HIPAA compliance exports</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary opacity-60 cursor-not-allowed" disabled="" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary opacity-60 cursor-not-allowed" disabled="" type="checkbox"/>
+</td>
+<td class="py-space-md px-space-md text-center">
+<input checked="" class="w-4 h-4 rounded text-primary opacity-60 cursor-not-allowed" disabled="" type="checkbox"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Privacy & HIPAA Safeguards -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">policy</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Privacy &amp; HIPAA Data Safeguards</h2>
+</div>
+<span class="font-caption-caps text-caption-caps text-primary bg-primary-container/10 px-2 py-1 rounded-md">
+            45 CFR § 164.502(b) Compliant
+          </span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Control 1: Lock screen masking -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">visibility_off</span>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">Lock-Screen Medical Term Masking</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Redact diagnostic names (ICD-10) and prescription labels from mobile lock screens. Only generic alerts are rendered.</span>
+</div>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors shrink-0" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm"></span>
+</button>
+</div>
+<!-- Control 2: Inactivity Lock Timeout -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">timer</span>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">Inactivity Auto-Lock Interval</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Immediately locks session when workstation or clinical tablet is unattended.</span>
+</div>
+</div>
+<select class="px-space-md py-2 bg-surface-container-lowest rounded-xl font-label-medium text-label-medium text-on-surface shadow-sm focus:outline-none shrink-0">
+<option>5 Minutes (High Density ER)</option>
+<option selected="">15 Minutes (Hospital Standard)</option>
+<option>30 Minutes (Restricted Office)</option>
+</select>
+</div>
+<!-- Control 3: EHR Shared Network Consent -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">hub</span>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">Regional Care Team Record Access</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Permit credentialed attending specialists in Massachusetts General and Beth Israel Deaconess to view coordinated encounter notes.</span>
+</div>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors shrink-0" type="button">
+<span class="w-5 h-5 rounded-full bg-surface-container-lowest shadow-sm"></span>
+</button>
+</div>
+<!-- Control 4: PHI Data Export -->
+<div class="flex items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-high/40">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] mt-0.5">folder_zip</span>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">Download Personal PHI &amp; Access Log Archive</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Download an AES-256 encrypted archive containing your audit trails and identity logs per 45 CFR § 164.524.</span>
+</div>
+</div>
+<button class="px-space-md py-2 bg-surface-container-lowest hover:bg-surface-container text-on-surface rounded-xl font-label-medium text-label-medium shadow-sm transition-colors shrink-0 flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">lock</span> Request Encrypted ZIP
+            </button>
+</div>
+</div>
+</section>
+<!-- Active Sessions & Trusted Devices Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">devices</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Active Sessions &amp; Trusted Endpoints</h2>
+</div>
+<button class="px-space-md py-1.5 rounded-xl bg-error/10 hover:bg-error/20 text-error font-label-medium text-label-medium transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">logout</span> Revoke All Other Sessions
+          </button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Session 1: Current Laptop -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">laptop_mac</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-3 text-headline-3 text-on-surface">MacBook Pro 16" (M3 Max) • Chrome 124.0</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption-caps text-caption-caps">THIS DEVICE</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Boston, Massachusetts, United States • IP: 192.168.1.144 (Encrypted TLS 1.3)</p>
+<span class="font-caption-caps text-caption-caps text-primary mt-1">Active Now • Session expires in 11 hours</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs self-end md:self-center">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-lowest text-on-surface-variant font-label-medium text-label-medium">Trusted Hardware</span>
+</div>
+</div>
+<!-- Session 2: iPhone 15 Pro -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-on-surface-variant flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">smartphone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">iPhone 15 Pro • CareConnect iOS App v3.2</span>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Boston, MA • Push Token Registered (APNs: 9a2f...)</p>
+<span class="font-caption-caps text-caption-caps text-outline mt-1">Last active 2 hours ago • Biometrics Enabled</span>
+</div>
+</div>
+<button class="text-error hover:underline font-label-medium text-label-medium self-end md:self-center" type="button">
+              Terminate
+            </button>
+</div>
+<!-- Session 3: iPad Air -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-on-surface-variant flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">tablet_mac</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-3 text-headline-3 text-on-surface">iPad Air 5th Gen • Mobile Safari 17.4</span>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Cambridge, MA • Telehealth Consult Cart Terminal #04</p>
+<span class="font-caption-caps text-caption-caps text-outline mt-1">Last active Nov 2, 2024 • Standby Mode</span>
+</div>
+</div>
+<button class="text-error hover:underline font-label-medium text-label-medium self-end md:self-center" type="button">
+              Terminate
+            </button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Bottom Global Sticky Bar on Small/Medium Screens -->
+<div class="mt-space-2xl bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-label-regular text-label-regular">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span>CareConnect360 Security Daemon v3.2.1 • Zero-Trust Perimeter Enforced • Next Key Rotation in 48 Days</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-medium text-label-medium transition-colors" onclick="setViewMode('dirty')" type="button">
+        Test Dirty State
+      </button>
+<button class="px-space-lg py-2 rounded-xl bg-primary-container hover:bg-tertiary-container text-on-primary-container font-label-medium text-label-medium transition-colors shadow-sm flex items-center gap-1" onclick="setViewMode('saved')" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+        Save Changes
+      </button>
+</div>
+</div>
+<script>
+    function setViewMode(mode) {
+      const bannerDirty = document.getElementById('banner-dirty');
+      const bannerSaved = document.getElementById('banner-saved');
+      const bannerError = document.getElementById('banner-error');
+      
+      const btnDefault = document.getElementById('btn-state-default');
+      const btnDirty = document.getElementById('btn-state-dirty');
+      const btnError = document.getElementById('btn-state-error');
+      const btnSaved = document.getElementById('btn-state-saved');
+
+      // Reset tabs
+      [btnDefault, btnDirty, btnError, btnSaved].forEach(b => {
+        if(b) {
+          b.className = "px-space-sm py-1 rounded-md text-caption-caps font-caption-caps text-on-surface-variant hover:text-on-surface transition-all";
+        }
+      });
+
+      // Hide all banners
+      if(bannerDirty) bannerDirty.classList.add('hidden');
+      if(bannerSaved) bannerSaved.classList.add('hidden');
+      if(bannerError) bannerError.classList.add('hidden');
+
+      if (mode === 'dirty') {
+        if(bannerDirty) bannerDirty.classList.remove('hidden');
+        if(btnDirty) btnDirty.className = "px-space-sm py-1 rounded-md text-caption-caps font-caption-caps bg-primary-container text-on-primary-container transition-all";
+      } else if (mode === 'saved') {
+        if(bannerSaved) bannerSaved.classList.remove('hidden');
+        if(btnSaved) btnSaved.className = "px-space-sm py-1 rounded-md text-caption-caps font-caption-caps bg-primary-container text-on-primary-container transition-all";
+      } else if (mode === 'error') {
+        if(bannerError) bannerError.classList.remove('hidden');
+        if(btnError) btnError.className = "px-space-sm py-1 rounded-md text-caption-caps font-caption-caps bg-primary-container text-on-primary-container transition-all";
+      } else {
+        if(btnDefault) btnDefault.className = "px-space-sm py-1 rounded-md text-caption-caps font-caption-caps bg-primary-container text-on-primary-container transition-all";
+      }
+    }
+  </script>
+</div></main></div></body></html>

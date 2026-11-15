@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#00504a","secondary-container":"#dae2fd","on-error-container":"#93000a","surface-container-highest":"#e0e3e5","surface-container-high":"#e6e8ea","secondary-fixed-dim":"#bec6e0","error":"#ba1a1a","tertiary-fixed-dim":"#6bd8cb","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","inverse-primary":"#80d5cb","on-error":"#ffffff","on-primary-fixed":"#00201d","error-container":"#ffdad6","secondary":"#565e74","on-secondary-fixed":"#131b2e","on-secondary-container":"#5c647a","surface":"#f7f9fb","on-secondary":"#ffffff","inverse-surface":"#2d3133","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","tertiary-container":"#00776d","on-tertiary":"#ffffff","on-primary":"#ffffff","tertiary":"#005c54","on-tertiary-fixed-variant":"#005049","on-background":"#191c1e","primary":"#005c55","on-surface-variant":"#3e4947","surface-dim":"#d8dadc","background":"#f7f9fb","on-primary-container":"#a3faef","surface-variant":"#e0e3e5","surface-container-low":"#f2f4f6","outline":"#6e7977","primary-container":"#0f766e","surface-bright":"#f7f9fb","on-tertiary-container":"#91fdef","outline-variant":"#bdc9c6","surface-container-lowest":"#ffffff","surface-tint":"#006a63","on-surface":"#191c1e","primary-fixed":"#9cf2e8","on-tertiary-fixed":"#00201d","tertiary-fixed":"#89f5e7","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-sm":"1rem","margin-sm":"1rem","space-2xl":"3rem","space-sm":"0.5rem","space-md":"1rem","margin":"2rem"},fontFamily:{"body-regular":["Inter"],"headline-3":["Inter"],"label-regular":["Inter"],"body-medium":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"display":["Inter"],"headline-2":["Inter"]},fontSize:{"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="prescriptions" href="#">Prescriptions</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive State Banner / Demo Switcher Pill -->
+<div class="mb-6 flex flex-wrap items-center justify-between gap-4 bg-surface-container-lowest p-3 rounded-xl shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Clinical Booking Engine • Active Session</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-lg">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant px-2 uppercase font-semibold">Simulate State:</span>
+<button class="px-2.5 py-1 rounded font-label-medium text-label-medium bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all" id="btn-state-normal" onclick="switchBookingState('normal')">
+        Active Selected
+      </button>
+<button class="px-2.5 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-conflict" onclick="switchBookingState('conflict')">
+        Live Conflict Alert
+      </button>
+<button class="px-2.5 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="btn-state-loading" onclick="switchBookingState('loading')">
+        Hold Syncing
+      </button>
+</div>
+</div>
+<!-- Breadcrumb Navigation & Back Anchor -->
+<div class="flex items-center justify-between gap-4 mb-4">
+<nav class="flex items-center gap-2 text-on-surface-variant font-body-regular text-body-regular">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span>Find Doctors</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Dr. Elena Vance, MD</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-on-surface font-body-medium text-body-medium font-semibold">Schedule Appointment</span>
+</nav>
+<div class="hidden sm:flex items-center gap-2 px-3 py-1 bg-surface-container-low rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary">lock</span>
+<span class="font-caption-caps text-caption-caps">256-Bit Encrypted Telehealth Flow</span>
+</div>
+</div>
+<!-- Stepper Progress Tracker -->
+<div class="bg-surface-container-lowest rounded-xl p-5 mb-8 shadow-sm">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+<!-- Step 1 (Active) -->
+<div class="flex items-center gap-3.5 relative">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center font-headline-3 text-headline-3 shrink-0 shadow-sm shadow-primary/30">
+          1
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-caps text-caption-caps text-primary uppercase font-bold tracking-wider">Step 01 • Active</span>
+<span class="font-headline-3 text-headline-3 text-on-surface truncate">Select Date &amp; Time</span>
+</div>
+<div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-6 h-px bg-surface-container-high"></div>
+</div>
+<!-- Step 2 (Upcoming) -->
+<div class="flex items-center gap-3.5 opacity-60">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center font-headline-3 text-headline-3 shrink-0">
+          2
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Step 02</span>
+<span class="font-headline-3 text-headline-3 text-on-surface truncate">Patient &amp; Visit Details</span>
+</div>
+<div class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-6 h-px bg-surface-container-high"></div>
+</div>
+<!-- Step 3 (Upcoming) -->
+<div class="flex items-center gap-3.5 opacity-60">
+<div class="w-9 h-9 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center font-headline-3 text-headline-3 shrink-0">
+          3
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Step 03</span>
+<span class="font-headline-3 text-headline-3 text-on-surface truncate">Review &amp; Confirmation</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Split Layout (12-Col System) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Primary Scheduling Engine (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- 1. Consultation Mode Selector -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Consultation Modality</h2>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Select how you would prefer to connect with Dr. Vance</p>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps uppercase font-bold">
+            Insurance Eligible
+          </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Modality 1: Telehealth Video (Selected) -->
+<div class="cursor-pointer relative p-4 rounded-xl bg-surface-container-lowest transition-all shadow-sm hover:shadow-md ring-2 ring-primary" id="mode-telehealth" onclick="setModality('telehealth')">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">videocam</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-3 text-headline-3 text-on-surface">Telehealth Video Call</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high font-caption-caps text-caption-caps text-on-surface-variant">50 min</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-1">High-definition encrypted video link sent upon booking</p>
+<div class="mt-3 pt-3 border-t border-surface-container-high flex items-baseline justify-between">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Verified Co-Pay</span>
+<div class="text-right">
+<span class="font-headline-3 text-headline-3 text-primary font-bold">$25.00</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant line-through ml-1">$110</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modality 2: In-Clinic Visit -->
+<div class="cursor-pointer relative p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all" id="mode-inclinic" onclick="setModality('inclinic')">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">apartment</span>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-high text-transparent flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-3 text-headline-3 text-on-surface">In-Clinic Visit</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high font-caption-caps text-caption-caps text-on-surface-variant">45 min</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-1">Metro Health Pavilion, Suite 410 (Valet Available)</p>
+<div class="mt-3 pt-3 border-t border-surface-container-high flex items-baseline justify-between">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Verified Co-Pay</span>
+<div class="text-right">
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">$30.00</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant line-through ml-1">$130</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. Interactive Calendar Picker -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Select Appointment Date</h2>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Dr. Vance accepts bookings up to 45 days in advance</p>
+</div>
+<!-- Timezone Switcher -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low w-fit">
+<span class="material-symbols-outlined text-[18px] text-outline">schedule</span>
+<span class="font-label-medium text-label-medium text-on-surface-variant">Timezone:</span>
+<select class="bg-transparent font-label-medium text-label-medium text-on-surface font-semibold outline-none cursor-pointer">
+<option selected="">Eastern Time (EST, UTC-5)</option>
+<option>Central Time (CST, UTC-6)</option>
+<option>Pacific Time (PST, UTC-8)</option>
+</select>
+</div>
+</div>
+<!-- Month Navigation Header -->
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex items-center gap-3">
+<span class="font-headline-1 text-headline-1 text-on-surface tracking-tight">November 2024</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-caption-caps text-caption-caps font-bold">14 Openings</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" title="Previous Month" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-colors" title="Next Month" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Calendar Day Labels -->
+<div class="grid grid-cols-7 gap-2 mb-2 text-center">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Sun</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Mon</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Tue</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Wed</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Thu</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Fri</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold py-1">Sat</span>
+</div>
+<!-- Calendar Month Grid -->
+<div class="grid grid-cols-7 gap-2">
+<!-- Row 1: Oct 27-31 faded, Nov 1-2 -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low/40 text-outline flex flex-col items-center justify-between opacity-40 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps">27</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low/40 text-outline flex flex-col items-center justify-between opacity-40 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps">28</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low/40 text-outline flex flex-col items-center justify-between opacity-40 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps">29</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low/40 text-outline flex flex-col items-center justify-between opacity-40 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps">30</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low/40 text-outline flex flex-col items-center justify-between opacity-40 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps">31</span>
+</div>
+<!-- Nov 1 (Past/Unavailable) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between opacity-50 cursor-not-allowed">
+<span class="font-label-medium text-label-medium">1</span>
+<span class="font-caption-caps text-[9px] text-outline">Passed</span>
+</div>
+<!-- Nov 2 (Weekend Off) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between opacity-50 cursor-not-allowed">
+<span class="font-label-medium text-label-medium">2</span>
+<span class="font-caption-caps text-[9px] text-outline">Off</span>
+</div>
+<!-- Row 2: Nov 3-9 -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between opacity-50 cursor-not-allowed">
+<span class="font-label-medium text-label-medium">3</span>
+<span class="font-caption-caps text-[9px] text-outline">Off</span>
+</div>
+<!-- Nov 4 (Full) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between cursor-not-allowed opacity-75">
+<span class="font-label-medium text-label-medium">4</span>
+<span class="font-caption-caps text-[10px] text-error font-semibold">Full</span>
+</div>
+<!-- Nov 5 (Available) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface font-medium">5</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<!-- Nov 6 (Full) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between cursor-not-allowed opacity-75">
+<span class="font-label-medium text-label-medium">6</span>
+<span class="font-caption-caps text-[10px] text-error font-semibold">Full</span>
+</div>
+<!-- Nov 7 (SELECTED DAY) -->
+<div class="h-14 p-1 rounded-lg bg-primary text-on-primary shadow-md flex flex-col items-center justify-between cursor-pointer ring-2 ring-primary/40 ring-offset-2">
+<span class="font-headline-3 text-headline-3 font-bold">7</span>
+<span class="font-caption-caps text-[9px] tracking-wide uppercase font-bold text-on-primary-container">Selected</span>
+</div>
+<!-- Nov 8 (Available) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface font-medium">8</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<!-- Nov 9 (Off) -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between opacity-50 cursor-not-allowed">
+<span class="font-label-medium text-label-medium">9</span>
+<span class="font-caption-caps text-[9px] text-outline">Off</span>
+</div>
+<!-- Row 3: Nov 10-16 -->
+<div class="h-14 p-1 rounded-lg bg-surface-container-low opacity-50 flex flex-col items-center justify-between cursor-not-allowed">
+<span class="font-label-medium text-label-medium text-outline">10</span>
+<span class="font-caption-caps text-[9px] text-outline">Off</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">11</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">12</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">13</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-center justify-between cursor-not-allowed opacity-75">
+<span class="font-label-medium text-label-medium">14</span>
+<span class="font-caption-caps text-[10px] text-error font-semibold">Full</span>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container hover:bg-secondary-container cursor-pointer transition-all flex flex-col items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface">15</span>
+<div class="w-1.5 h-1.5 rounded-full bg-primary mb-1"></div>
+</div>
+<div class="h-14 p-1 rounded-lg bg-surface-container-low opacity-50 flex flex-col items-center justify-between cursor-not-allowed">
+<span class="font-label-medium text-label-medium text-outline">16</span>
+<span class="font-caption-caps text-[9px] text-outline">Off</span>
+</div>
+</div>
+<!-- Legend -->
+<div class="mt-4 pt-4 border-t border-surface-container-high flex flex-wrap items-center justify-between gap-3 text-on-surface-variant font-caption-caps text-caption-caps">
+<div class="flex items-center gap-1.5">
+<div class="w-3 h-3 rounded bg-primary"></div>
+<span>Selected Day</span>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span>Available Appointments</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-error">Full</span>
+<span>Fully Booked</span>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="w-3 h-3 rounded bg-surface-container-low"></div>
+<span>Clinic Closed / Weekend</span>
+</div>
+</div>
+</div>
+<!-- 3. Available Time Slots Grid -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<!-- Live Slot Hold Banner -->
+<div class="mb-5 p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between gap-3" id="hold-banner">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[22px]">timer</span>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface font-semibold">Slot Held for Eleanor Vance</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">We're temporarily reserving <strong class="text-primary font-semibold">10:30 AM EST</strong> to ensure you finish checkout</span>
+</div>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-primary-fixed text-on-primary-fixed font-headline-3 text-headline-3 font-bold flex items-center gap-1 tracking-mono">
+<span id="hold-timer">09:42</span>
+</div>
+</div>
+<!-- Simulated Slot Conflict Warning Banner (Hidden by default, shown in conflict state) -->
+<div class="hidden mb-5 p-3.5 rounded-xl bg-error-container text-on-error-container flex items-start gap-3" id="conflict-alert">
+<span class="material-symbols-outlined text-error text-[22px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-bold text-error">2:00 PM EST Just Taken by Another Patient</span>
+<span class="font-label-regular text-label-regular text-on-error-container mt-0.5">A concurrent telehealth hold was finalized seconds ago. Please select another slot from the available times below.</span>
+</div>
+</div>
+<!-- Filter Tabs for Slots -->
+<div class="flex items-center justify-between gap-3 mb-4">
+<div class="flex items-center gap-2">
+<span class="font-headline-3 text-headline-3 text-on-surface">Available Times for Thursday, Nov 7</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-caption-caps text-caption-caps text-on-surface-variant font-bold">6 Slots</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-medium text-label-medium font-semibold shadow-sm" type="button">All</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium" type="button">Morning</button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium" type="button">Afternoon</button>
+</div>
+</div>
+<!-- Morning Slots Section -->
+<div class="mb-4">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold block mb-2">Morning Consultations</span>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<!-- Slot 1: Available -->
+<button class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-center transition-all flex flex-col items-center" onclick="selectSlot('9:00 AM')" type="button">
+<span class="font-headline-3 text-headline-3">9:00 AM</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">50 mins • Video</span>
+</button>
+<!-- Slot 2: SELECTED -->
+<button class="p-3 rounded-xl bg-primary text-on-primary text-center transition-all flex flex-col items-center shadow-md ring-2 ring-primary/40 ring-offset-1" id="slot-1030" onclick="selectSlot('10:30 AM')" type="button">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-headline-3 text-headline-3 font-bold">10:30 AM</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-primary-container font-medium">Selected Slot</span>
+</button>
+<!-- Slot 3: Available -->
+<button class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-center transition-all flex flex-col items-center" onclick="selectSlot('11:15 AM')" type="button">
+<span class="font-headline-3 text-headline-3">11:15 AM</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">50 mins • Video</span>
+</button>
+</div>
+</div>
+<!-- Afternoon Slots Section -->
+<div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold block mb-2">Afternoon Consultations</span>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+<!-- Slot 4: Available -->
+<button class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-center transition-all flex flex-col items-center" onclick="selectSlot('1:45 PM')" type="button">
+<span class="font-headline-3 text-headline-3">1:45 PM</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">50 mins • Video</span>
+</button>
+<!-- Slot 5: Just Booked / Conflict State Slot -->
+<div class="p-3 rounded-xl bg-surface-container-low/70 text-outline text-center flex flex-col items-center cursor-not-allowed opacity-60 relative overflow-hidden" id="slot-conflict-item">
+<span class="font-headline-3 text-headline-3 line-through">2:00 PM</span>
+<span class="font-caption-caps text-[10px] text-error font-semibold mt-0.5">Just Booked</span>
+</div>
+<!-- Slot 6: Available -->
+<button class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-center transition-all flex flex-col items-center" onclick="selectSlot('3:15 PM')" type="button">
+<span class="font-headline-3 text-headline-3">3:15 PM</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">50 mins • Video</span>
+</button>
+<!-- Slot 7: Available -->
+<button class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-center transition-all flex flex-col items-center" onclick="selectSlot('4:30 PM')" type="button">
+<span class="font-headline-3 text-headline-3">4:30 PM</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">50 mins • Video</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Action Navigation Buttons -->
+<div class="flex items-center justify-between pt-2">
+<a class="px-5 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-medium text-body-medium font-semibold hover:bg-surface-container transition-all flex items-center gap-2 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Doctor Profile</span>
+</a>
+<button class="px-7 py-3 rounded-xl bg-primary text-on-primary font-body-medium text-body-medium font-semibold hover:bg-primary-container shadow-md shadow-primary/20 transition-all flex items-center gap-2" id="btn-continue" onclick="proceedToStep2()" type="button">
+<span>Continue to Visit Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- RIGHT COLUMN: Real-Time Booking Summary & Doctor Card (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6 sticky top-24">
+<!-- Doctor Profile Summary Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm relative overflow-hidden">
+<div class="flex items-start gap-4">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm" data-alt="Professional clinical headshot of Dr. Elena Vance, a female dermatologist wearing clean medical scrubs with a confident, welcoming smile against a soft neutral studio clinic backdrop, natural lighting, high resolution healthcare photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9kt5qj7FQLW8uNj3vAckwZ4Jt8iLp_z4ZfHJ-BhdRwU4e31-g-J_pPitx-pWYblmx5Z2rHMRITha_MGkvLNYzn0dtiVqXmi6l2LyTtMNz73KNvGgeuxUhM1bTQuNFJQFSwtPVL3yyJPfLBs6--uquCGsuDldRC_ltTyGbHA43tl4pWoMD2j049MVBe1bjVRAC8oMD3R7ksxchztKHxqwggJXb142HMNaK1XJfCTAS"/>
+<div class="absolute -bottom-1 -right-1 bg-surface-container-lowest p-0.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px] block">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-2 text-headline-2 text-on-surface font-bold truncate">Dr. Elena Vance, MD</h3>
+</div>
+<span class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Board Certified Dermatologist</span>
+<span class="font-caption-caps text-caption-caps text-outline">Clinical Assoc. Professor • NPI 1948203948</span>
+<div class="flex items-center gap-3 mt-2.5">
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-low">
+<span class="material-symbols-outlined text-amber-500 text-[14px]">star</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface">4.9</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">(184 reviews)</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-primary font-semibold">12 Yrs Exp</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-surface-container-high flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-regular text-label-regular">
+<span class="material-symbols-outlined text-[16px] text-primary">local_hospital</span>
+<span>Metro Health Medical Center • Dermatology Pavilion</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-regular text-label-regular">
+<span class="material-symbols-outlined text-[16px] text-primary">network_cell</span>
+<span>CareConnect Virtual Care Network (Tier 1 Provider)</span>
+</div>
+</div>
+</div>
+<!-- Live Booking Details Snapshot Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-high">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-bold tracking-wider">Current Appointment Hold</span>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-caption-caps text-caption-caps font-semibold">Reserved (Step 1 of 3)</span>
+</div>
+<div class="space-y-4 my-5">
+<!-- Snapshot: Date -->
+<div class="flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Date &amp; Day</span>
+<span class="font-body-medium text-body-medium text-on-surface font-semibold" id="snapshot-date">Thursday, Nov 7, 2024</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Next available weekday slot</span>
+</div>
+</div>
+<!-- Snapshot: Time -->
+<div class="flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Consultation Window</span>
+<span class="font-body-medium text-body-medium text-on-surface font-semibold" id="snapshot-time">10:30 AM – 11:20 AM EST</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">50 Minutes Clinical Encounter</span>
+</div>
+</div>
+<!-- Snapshot: Mode -->
+<div class="flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Encounter Mode</span>
+<span class="font-body-medium text-body-medium text-on-surface font-semibold" id="snapshot-mode">Secure Telehealth HD Video</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Browser link or CareConnect iOS/Android</span>
+</div>
+</div>
+</div>
+<!-- Transparent Billing Breakdown -->
+<div class="bg-surface-container-low rounded-xl p-4 mt-6">
+<div class="flex items-center justify-between mb-3">
+<span class="font-caption-caps text-caption-caps text-on-surface uppercase font-bold tracking-wider">Fee &amp; Insurance Estimation</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-caption-caps text-caption-caps font-bold">Aetna POS II Verified</span>
+</div>
+</div>
+<div class="space-y-2 text-on-surface-variant font-label-regular text-label-regular">
+<div class="flex items-center justify-between">
+<span>Specialist Virtual Consultation</span>
+<span class="text-on-surface font-medium">$110.00</span>
+</div>
+<div class="flex items-center justify-between text-primary">
+<span>In-Network Insurance Coverage (80%)</span>
+<span class="font-medium">-$85.00</span>
+</div>
+<div class="pt-2 border-t border-surface-container-high flex items-center justify-between font-body-medium text-body-medium text-on-surface font-bold">
+<span>Estimated Patient Co-Pay Due Today</span>
+<span class="text-headline-3 text-headline-3 text-primary">$25.00</span>
+</div>
+</div>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant mt-3 leading-relaxed">
+            *Final charges submitted directly to Aetna. You will not be charged until the clinical encounter concludes.
+          </p>
+</div>
+<!-- Flexible Cancellation Policy Banner -->
+<div class="mt-4 p-3 rounded-lg bg-surface-container-lowest flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">policy</span>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant leading-relaxed">
+<strong>CareConnect Guarantee:</strong> Free cancellation or instant rescheduling up to 24 hours prior to appointment time.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic slot hold countdown timer
+  (function initHoldTimer() {
+    let secondsLeft = 9 * 60 + 42;
+    const timerEl = document.getElementById('hold-timer');
+    if (!timerEl) return;
+    
+    setInterval(() => {
+      if (secondsLeft > 0) {
+        secondsLeft--;
+        const mins = Math.floor(secondsLeft / 60);
+        const secs = secondsLeft % 60;
+        timerEl.textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+      }
+    }, 1000);
+  })();
+
+  // Modality switch handler
+  function setModality(mode) {
+    const telehealthCard = document.getElementById('mode-telehealth');
+    const inclinicCard = document.getElementById('mode-inclinic');
+    const snapshotMode = document.getElementById('snapshot-mode');
+
+    if (mode === 'telehealth') {
+      telehealthCard.className = "cursor-pointer relative p-4 rounded-xl bg-surface-container-lowest transition-all shadow-sm ring-2 ring-primary";
+      telehealthCard.querySelector('.w-5').className = "w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center";
+      
+      inclinicCard.className = "cursor-pointer relative p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all";
+      inclinicCard.querySelector('.w-5').className = "w-5 h-5 rounded-full bg-surface-container-high text-transparent flex items-center justify-center";
+
+      if (snapshotMode) snapshotMode.textContent = "Secure Telehealth HD Video";
+    } else {
+      inclinicCard.className = "cursor-pointer relative p-4 rounded-xl bg-surface-container-lowest transition-all shadow-sm ring-2 ring-primary";
+      inclinicCard.querySelector('.w-5').className = "w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center";
+
+      telehealthCard.className = "cursor-pointer relative p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all";
+      telehealthCard.querySelector('.w-5').className = "w-5 h-5 rounded-full bg-surface-container-high text-transparent flex items-center justify-center";
+
+      if (snapshotMode) snapshotMode.textContent = "In-Clinic Visit (Metro Health Suite 410)";
+    }
+  }
+
+  // Time Slot Selection logic
+  function selectSlot(timeString) {
+    const snapshotTime = document.getElementById('snapshot-time');
+    if (snapshotTime) {
+      snapshotTime.textContent = `${timeString} – 50 min encounter`;
+    }
+
+    const holdBanner = document.getElementById('hold-banner');
+    if (holdBanner) {
+      holdBanner.classList.remove('opacity-50');
+      holdBanner.querySelector('strong').textContent = `${timeString} EST`;
+    }
+  }
+
+  // State Switcher for edge condition demo
+  function switchBookingState(state) {
+    const holdBanner = document.getElementById('hold-banner');
+    const conflictAlert = document.getElementById('conflict-alert');
+    const slotConflictItem = document.getElementById('slot-conflict-item');
+    const continueBtn = document.getElementById('btn-continue');
+    
+    // Reset active button pills
+    ['btn-state-normal', 'btn-state-conflict', 'btn-state-loading'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.className = "px-2.5 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all";
+      }
+    });
+
+    if (state === 'normal') {
+      document.getElementById('btn-state-normal').className = "px-2.5 py-1 rounded font-label-medium text-label-medium bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all";
+      if (conflictAlert) conflictAlert.classList.add('hidden');
+      if (holdBanner) holdBanner.classList.remove('hidden');
+      if (continueBtn) {
+        continueBtn.disabled = false;
+        continueBtn.innerHTML = `<span>Continue to Visit Details</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
+      }
+    } else if (state === 'conflict') {
+      document.getElementById('btn-state-conflict').className = "px-2.5 py-1 rounded font-label-medium text-label-medium bg-surface-container-lowest text-error shadow-sm font-semibold transition-all";
+      if (conflictAlert) conflictAlert.classList.remove('hidden');
+      if (holdBanner) holdBanner.classList.add('hidden');
+    } else if (state === 'loading') {
+      document.getElementById('btn-state-loading').className = "px-2.5 py-1 rounded font-label-medium text-label-medium bg-surface-container-lowest text-primary shadow-sm font-semibold transition-all";
+      if (continueBtn) {
+        continueBtn.disabled = true;
+        continueBtn.innerHTML = `<span class="inline-block animate-spin mr-1">⌛</span><span>Syncing Telehealth Provider...</span>`;
+      }
+    }
+  }
+
+  function proceedToStep2() {
+    alert("Navigating to Step 2: Patient & Visit Details (Eleanor Vance | MRN-849204). Slot held successfully.");
+  }
+</script></main></div></body></html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-surface":"#191c1e","on-surface-variant":"#3e4947","on-primary":"#ffffff","on-secondary":"#ffffff","secondary-container":"#dae2fd","primary-container":"#0f766e","on-error":"#ffffff","on-primary-fixed":"#00201d","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","on-background":"#191c1e","error":"#ba1a1a","inverse-surface":"#2d3133","secondary-fixed-dim":"#bec6e0","surface-variant":"#e0e3e5","tertiary-fixed":"#89f5e7","outline-variant":"#bdc9c6","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","on-error-container":"#93000a","primary-fixed":"#9cf2e8","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005049","tertiary-container":"#00776d","tertiary":"#005c54","tertiary-fixed-dim":"#6bd8cb","surface":"#f7f9fb","surface-container-high":"#e6e8ea","surface-dim":"#d8dadc","surface-bright":"#f7f9fb","surface-container-low":"#f2f4f6","on-tertiary-container":"#91fdef","primary":"#005c55","on-secondary-fixed":"#131b2e","secondary":"#565e74","inverse-primary":"#80d5cb","on-tertiary-fixed":"#00201d","on-primary-container":"#a3faef","on-primary-fixed-variant":"#00504a","background":"#f7f9fb","surface-container-highest":"#e0e3e5","surface-tint":"#006a63","on-tertiary":"#ffffff","outline":"#6e7977","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xl":"2rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-2xl":"3rem"},fontFamily:{"headline-3":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"caption-caps":["Inter"],"body-medium":["Inter"],"display":["Inter"],"body-regular":["Inter"],"display-mobile":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"]},fontSize:{"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="prescriptions" href="#">Prescriptions</a><a aria-current="page" class="flex items-center px-3 py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Prototype State Switcher -->
+<div class="mb-space-lg p-space-sm rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[15px]">tune</span>
+</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold">Prototype State Switcher:</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline">Simulate Clinical EHR Views</span>
+</div>
+<div class="inline-flex p-1 bg-surface-container rounded-lg gap-1" id="state-toggle-group">
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-primary font-semibold shadow-sm" id="btn-state-timeline" onclick="switchState('timeline')" type="button">
+        Record Timeline (Default)
+      </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60" id="btn-state-upload" onclick="switchState('upload')" type="button">
+        Active Upload Modal
+      </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60" id="btn-state-error" onclick="switchState('error')" type="button">
+        Upload Error State
+      </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60" id="btn-state-empty" onclick="switchState('empty')" type="button">
+        Zero Records State
+      </button>
+</div>
+</div>
+<!-- Breadcrumbs & Document Header -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<div class="flex items-center gap-2 font-caption-caps text-caption-caps text-on-surface-variant">
+<span>Patient Portal</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span>Health Records</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Electronic Medical Records &amp; Clinical Documents</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-headline-1 text-headline-1 text-on-surface">Medical Records &amp; Health Documents</h1>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+            HIPAA Level-4 Vault
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[13px] text-primary">lock</span>
+            256-Bit Encrypted
+          </span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant mt-1">
+          Access encrypted clinical consultation notes, laboratory diagnostics, medical imaging reports, and authorized patient uploads.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-body-medium text-body-medium shadow-sm transition-all active:scale-[0.99]" onclick="switchState('upload')" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_upload</span>
+          Upload Medical Record
+        </button>
+<button class="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-medium text-body-medium shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">archive</span>
+          Export Full Record (.zip / CCDA)
+        </button>
+<button class="inline-flex items-center justify-center p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface shadow-sm transition-all" title="Document Permission Settings" type="button">
+<span class="material-symbols-outlined text-[20px]">shield_person</span>
+<span class="sr-only">Permissions</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Security & Privacy Status Bar -->
+<div class="mb-space-lg p-4 rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-start md:items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">admin_panel_settings</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">HIPAA Audit Ledger &amp; Sharing Governance</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption-caps text-caption-caps text-primary font-bold">Synchronized</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant text-xs sm:text-sm">
+          Access to Eleanor Vance's records is protected by 256-bit AES encryption. Access matrix: <span class="font-semibold text-on-surface">3 Providers Authorized</span>, <span class="font-semibold text-secondary">1 Pending Release Request</span>.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium hover:bg-surface-container-highest transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+        View Audit Trail (14 Events)
+      </button>
+</div>
+</div>
+<!-- Filters, Search & View Controls -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search Field -->
+<div class="relative flex-1 max-w-xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[19px]">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" id="record-search-input" onkeyup="filterRecords()" placeholder="Search by document title, clinician, provider network, or date..." type="text"/>
+</div>
+<!-- Controls: Year & Sort -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<div class="inline-flex items-center p-1 bg-surface-container-low rounded-xl gap-1">
+<button class="px-2.5 py-1 rounded-lg font-caption-caps text-caption-caps uppercase tracking-wider bg-surface-container-lowest text-primary font-bold shadow-sm" type="button">2024 (Active)</button>
+<button class="px-2.5 py-1 rounded-lg font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface" type="button">2023</button>
+<button class="px-2.5 py-1 rounded-lg font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface" type="button">2022</button>
+<button class="px-2.5 py-1 rounded-lg font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant hover:text-on-surface" type="button">All</button>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-2 bg-surface-container-low rounded-xl text-on-surface-variant text-label-medium font-label-medium">
+<span class="material-symbols-outlined text-[16px] text-outline">sort</span>
+<span class="text-on-surface font-medium">Most Recent First</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Category Filter Chips -->
+<div class="flex flex-wrap items-center gap-2 pt-2">
+<button class="category-chip active px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-primary-container text-on-primary font-semibold shadow-sm transition-colors" onclick="filterCategory('all')" type="button">
+        All Records (18)
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterCategory('consultation')" type="button">
+        Consultation Summaries (6)
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterCategory('lab')" type="button">
+        Lab &amp; Diagnostic Reports (5)
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterCategory('imaging')" type="button">
+        Imaging &amp; Scans (3)
+      </button>
+<button class="category-chip px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterCategory('upload')" type="button">
+        Patient Uploads (4)
+      </button>
+</div>
+</div>
+<!-- MAIN DYNAMIC SECTION CONTAINER -->
+<div class="w-full" id="view-container">
+<!-- 1. RECORD TIMELINE VIEW (DEFAULT) -->
+<div class="flex flex-col gap-space-lg" id="state-timeline-view">
+<!-- Timeline Track -->
+<div class="relative pl-6 sm:pl-10 before:absolute before:left-3 sm:before:left-5 before:top-4 before:bottom-4 before:w-0.5 before:bg-surface-container-high flex flex-col gap-space-xl">
+<!-- Entry 1: Consultation & Orders -->
+<div class="record-item relative flex flex-col gap-space-sm" data-category="consultation" data-search="marcus sterling cardiology telehealth encounter 9021-v ambulatory blood pressure atorvastatin after visit summary withings cardio telemetry">
+<!-- Timeline Node Point -->
+<div class="absolute -left-6 sm:-left-10 top-5 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">stethoscope</span>
+</div>
+<!-- Date Marker -->
+<div class="flex items-center gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider font-semibold text-primary">October 28, 2024</span>
+<span class="text-outline">•</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">11:15 AM EDT</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">verified</span> Enc-Signed
+            </span>
+</div>
+<!-- Record Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<!-- Header Row -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">assignment</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<h3 class="font-headline-2 text-headline-2 text-on-surface">Consultation Summary &amp; After-Visit Orders</h3>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold">
+                      Encounter #ENC-9021-V
+                    </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 mt-1 font-body-medium text-body-medium text-on-surface-variant">
+<span class="font-semibold text-on-surface">Dr. Marcus Sterling, MD</span>
+<span>•</span>
+<span>Interventional Cardiology</span>
+<span>•</span>
+<span class="text-outline">St. Jude Memorial Health Network</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Dropdown Trigger -->
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" title="Audit Information" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" title="More Options" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Clinical Highlights Box -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-primary font-label-medium text-label-medium font-semibold">
+<span class="material-symbols-outlined text-[16px]">notes</span>
+                Clinical Assessment &amp; Telehealth Plan
+              </div>
+<p class="font-body-regular text-body-regular text-on-surface">
+                Telehealth review of 14-day ambulatory blood pressure monitoring. BP normalized at <strong class="text-primary font-semibold">118/76 mmHg</strong>. Patient tolerating treatment well without nocturnal hypotension. Continued <span class="font-medium">Atorvastatin 20mg nightly</span>. Scheduled for follow-up 6-month lipid evaluation.
+              </p>
+</div>
+<!-- Attached Documents List -->
+<div class="flex flex-col gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Attached Clinical Documents (2)</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<!-- Doc 1 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface truncate">After_Visit_Summary_Oct28.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">340 KB • Digitally Signed by Dr. Sterling</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-2">
+<button class="p-1 rounded-md text-on-surface-variant hover:text-primary transition-colors" title="Download" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+<button class="p-1 rounded-md text-on-surface-variant hover:text-primary transition-colors" title="Preview" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+<!-- Doc 2 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">monitoring</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface truncate">Withings_Cardio_Telemetry_14Day.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">1.8 MB • Verified Biometric Data</span>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 ml-2">
+<button class="p-1 rounded-md text-on-surface-variant hover:text-primary transition-colors" title="Download" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+<button class="p-1 rounded-md text-on-surface-variant hover:text-primary transition-colors" title="Preview" type="button">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="flex flex-wrap items-center justify-between pt-2 gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 font-caption-caps text-caption-caps text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px] text-primary">key</span> SHA-256 Hash Valid
+                </span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors" type="button">
+                  Share with Specialist
+                </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary text-on-primary font-label-medium text-label-medium hover:bg-primary-container transition-colors shadow-sm" type="button">
+                  View Full Summary
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 2: Pathology Diagnostic Report -->
+<div class="record-item relative flex flex-col gap-space-sm" data-category="lab" data-search="elena vance dermatology biopsy pathology report metro health medical center seborrheic keratosis histopathology clia verified">
+<!-- Timeline Node Point -->
+<div class="absolute -left-6 sm:-left-10 top-5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">biotech</span>
+</div>
+<!-- Date Marker -->
+<div class="flex items-center gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider font-semibold text-secondary">October 24, 2024</span>
+<span class="text-outline">•</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">3:40 PM EDT</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-secondary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Final Certified Result
+            </span>
+</div>
+<!-- Record Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[26px]">science</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<h3 class="font-headline-2 text-headline-2 text-on-surface">Dermatology Biopsy Pathology Report</h3>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+                      Specimen #BX-8812-D
+                    </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 mt-1 font-body-medium text-body-medium text-on-surface-variant">
+<span class="font-semibold text-on-surface">Dr. Elena Vance, MD</span>
+<span>•</span>
+<span>Dermatology Clinical Service</span>
+<span>•</span>
+<span class="text-outline">Metro Health Medical Center</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold">
+                  Benign Diagnostic Finding
+                </span>
+</div>
+</div>
+<!-- Diagnostic Findings Snippet -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center gap-1.5 text-secondary font-label-medium text-label-medium font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                Pathologist Microscopic Interpretation
+              </div>
+<p class="font-body-regular text-body-regular text-on-surface">
+<strong>Benign seborrheic keratosis</strong>, right forearm lesion. Specimen margins clear. No atypia or dysplasia detected. Routine healing expected, no secondary surgical excision necessary.
+              </p>
+</div>
+<!-- Document Row -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface truncate">Histopathology_Report_PathNet_2410.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">920 KB • CLIA Verified Lab #44D098231</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                  Download PDF
+                </button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-medium text-label-medium hover:bg-primary transition-colors" type="button">
+                  View Report
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 3: Patient Uploaded Document -->
+<div class="record-item relative flex flex-col gap-space-sm" data-category="upload" data-search="eleanor vance patient upload immunization record mass general prior vaccination history external records intake coordinator">
+<!-- Timeline Node Point -->
+<div class="absolute -left-6 sm:-left-10 top-5 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">person_check</span>
+</div>
+<!-- Date Marker -->
+<div class="flex items-center gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider font-semibold text-primary">October 15, 2024</span>
+<span class="text-outline">•</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">09:14 AM EDT</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">verified</span> Patient Upload • EHR Linked
+            </span>
+</div>
+<!-- Record Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<h3 class="font-headline-2 text-headline-2 text-on-surface">Historical Immunization Record (Mass General)</h3>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+                      Doc ID #UPL-4402
+                    </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 mt-1 font-body-medium text-body-medium text-on-surface-variant">
+<span class="font-semibold text-on-surface">Uploaded by: Eleanor Vance (Self)</span>
+<span>•</span>
+<span>Validated by Patient Intake Coordinator</span>
+<span>•</span>
+<span class="text-primary font-medium">Authorized for all CareConnect Physicians</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container font-label-medium text-label-medium transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">lock_open</span>
+                  Manage Permissions
+                </button>
+</div>
+</div>
+<!-- Upload Meta Details -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Prior_Immunization_Record_MassGeneral.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">1.2 MB • Scanned Clinical Document • Status: Active in Chart</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-lg hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors" title="Download Record" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-medium text-label-medium hover:bg-primary-container transition-colors" type="button">
+                  View Document
+                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Entry 4: Lab Chemistry Diagnostic Result -->
+<div class="record-item relative flex flex-col gap-space-sm" data-category="lab" data-search="robert chen endocrinology comprehensive metabolic panel cmp hba1c glucose lab quest diagnostics normal">
+<!-- Timeline Node Point -->
+<div class="absolute -left-6 sm:-left-10 top-5 w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">query_stats</span>
+</div>
+<!-- Date Marker -->
+<div class="flex items-center gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider font-semibold text-primary">September 12, 2024</span>
+<span class="text-outline">•</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">08:05 AM EDT</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">done_all</span> Complete
+            </span>
+</div>
+<!-- Record Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<h3 class="font-headline-2 text-headline-2 text-on-surface">Comprehensive Metabolic Panel &amp; HbA1c Lab Panel</h3>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold">
+                      Lab Order #LAB-5519-Q
+                    </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 mt-1 font-body-medium text-body-medium text-on-surface-variant">
+<span class="font-semibold text-on-surface">Dr. Robert Chen, MD</span>
+<span>•</span>
+<span>Endocrinology</span>
+<span>•</span>
+<span class="text-outline">Quest Diagnostics Central Laboratory</span>
+</div>
+</div>
+</div>
+<!-- Lab Values Sparkline Card Mini -->
+<div class="flex items-center gap-3 bg-surface-container-low px-3 py-2 rounded-xl">
+<div class="flex flex-col text-right">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">HbA1c</span>
+<span class="font-headline-3 text-headline-3 text-primary font-bold leading-none">5.6%</span>
+</div>
+<!-- Inline SVG Bar Metric Indicator -->
+<svg class="w-12 h-6" fill="none" viewbox="0 0 48 24">
+<rect class="fill-surface-container-high" height="14" rx="2" width="8" x="2" y="8"></rect>
+<rect class="fill-surface-container-high" height="17" rx="2" width="8" x="14" y="5"></rect>
+<rect class="fill-primary" height="12" rx="2" width="8" x="26" y="10"></rect>
+<rect class="fill-surface-container-high" height="15" rx="2" width="8" x="38" y="7"></rect>
+</svg>
+</div>
+</div>
+<!-- Lab Highlights Key Value Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm p-3.5 rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Hemoglobin A1c</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface mt-0.5">5.6 %</span>
+<span class="font-caption-caps text-caption-caps text-primary">Normal (&lt;5.7%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Fasting Glucose</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface mt-0.5">94 mg/dL</span>
+<span class="font-caption-caps text-caption-caps text-primary">Normal (70-99)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">eGFR (CKD-EPI)</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface mt-0.5">&gt;90 mL/min</span>
+<span class="font-caption-caps text-caption-caps text-primary">Optimal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Serum Creatinine</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface mt-0.5">0.82 mg/dL</span>
+<span class="font-caption-caps text-caption-caps text-primary">Normal (0.6-1.1)</span>
+</div>
+</div>
+<!-- Document Row -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface truncate">Quest_Diagnostics_CMP_Panel_Sept2024.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">450 KB • Verified Digital Signature</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                  Download Lab PDF
+                </button>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-medium text-label-medium hover:bg-primary transition-colors" type="button">
+                  View Lab Values
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 2. ACTIVE UPLOAD MODAL VIEW -->
+<div class="hidden flex-col gap-space-lg" id="state-upload-view">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-lg max-w-4xl mx-auto w-full">
+<!-- Modal Header -->
+<div class="flex items-start justify-between pb-space-md border-b border-surface-container">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Upload Medical Records to EHR Vault</h2>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">HIPAA Level-4 Compliant Ingestion Engine</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant transition-colors" onclick="switchState('timeline')" title="Close Upload Modal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drag & Drop Zone -->
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container transition-all">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm mb-3">
+<span class="material-symbols-outlined text-[32px]">upload_file</span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Drag &amp; drop your medical document here</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant mt-1 max-w-md">
+            Supports clinical PDF documents, laboratory reports, DICOM radiological imaging, PNG, and JPEG formats (Max 25MB).
+          </p>
+<div class="mt-4 flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-body-medium text-body-medium shadow-sm hover:bg-primary transition-colors" type="button">
+              Browse Local Files
+            </button>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary">description</span>
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Holter_Monitor_Report_Oct2024.pdf</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">(2.1 MB / 2.6 MB)</span>
+</div>
+<span class="font-label-medium text-label-medium font-bold text-primary">82%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-300" style="width: 82%;"></div>
+</div>
+<div class="flex items-center justify-between text-xs text-on-surface-variant font-caption-caps text-caption-caps">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">sync</span> Encrypting payload with TLS 1.3...
+            </span>
+<span>Approx. 3 seconds remaining</span>
+</div>
+</div>
+<!-- Metadata Tagging Form -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-medium text-label-medium text-on-surface font-semibold" for="doc-category-select">Document Category</label>
+<select class="h-10 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-regular text-body-regular outline-none shadow-sm focus:ring-2 focus:ring-primary/20" id="doc-category-select">
+<option value="consult">Consultation Summary / Doctor Orders</option>
+<option selected="" value="telemetry">Cardiology Telemetry / Holter Scans</option>
+<option value="lab">Laboratory &amp; Pathology Diagnostic</option>
+<option value="imaging">Radiology / Ultrasound / MRI / CT</option>
+<option value="immunization">Immunization &amp; Outside Health Facility</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-medium text-label-medium text-on-surface font-semibold" for="clinician-tag-select">Attributed Clinician / Provider</label>
+<select class="h-10 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-body-regular text-body-regular outline-none shadow-sm focus:ring-2 focus:ring-primary/20" id="clinician-tag-select">
+<option selected="" value="sterling">Dr. Marcus Sterling, MD (Cardiology)</option>
+<option value="vance">Dr. Elena Vance, MD (Dermatology)</option>
+<option value="chen">Dr. Robert Chen, MD (Endocrinology)</option>
+<option value="external">External / Self-Reported Facility</option>
+</select>
+</div>
+</div>
+<!-- Patient Legal Release & Verification Checkbox -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<input checked="" class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary accent-primary" id="ehr-consent" type="checkbox"/>
+<label class="font-body-regular text-body-regular text-on-surface text-sm" for="ehr-consent">
+            I confirm that this clinical record pertains to Eleanor Vance (MRN-849204) and authorize CareConnect360 clinicians to ingest and incorporate this documentation into my primary medical chart.
+          </label>
+</div>
+<!-- Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-2">
+<button class="px-4 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-medium text-body-medium hover:bg-surface-container transition-colors" onclick="switchState('timeline')" type="button">
+            Cancel
+          </button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container text-on-primary font-body-medium text-body-medium hover:bg-primary shadow-sm transition-colors" onclick="switchState('timeline')" type="button">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+            Confirm &amp; Encrypt Document
+          </button>
+</div>
+</div>
+</div>
+<!-- 3. UPLOAD ERROR STATE VIEW -->
+<div class="hidden flex-col gap-space-lg" id="state-error-view">
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-md max-w-3xl mx-auto w-full">
+<!-- Error Banner Header -->
+<div class="p-4 rounded-xl bg-error-container text-on-error-container flex items-start gap-3.5">
+<div class="w-9 h-9 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">error</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-3 text-headline-3 text-error font-bold">Document Ingestion Failed</h3>
+<p class="font-body-regular text-body-regular text-on-error-container">
+              The file <strong>Whole_Body_MRI_Scan_Series4.dcm</strong> (64.2 MB) could not be processed.
+            </p>
+</div>
+</div>
+<!-- Error Breakdown Specifications -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-3">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Identified Ingestion Violations:</span>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-error mt-0.5">cancel</span>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">File Size Exceeded (64.2 MB)</span>
+<span class="font-body-regular text-body-regular text-on-surface-variant text-sm">
+                Single document uploads via web portal are restricted to 25.0 MB maximum. For high-resolution volumetric DICOM image sets, please utilize the CareConnect PACS Gateway or request a physical transfer.
+              </span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-error mt-0.5">cancel</span>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Missing Required Attestation Signature</span>
+<span class="font-body-regular text-body-regular text-on-surface-variant text-sm">
+                Clinical documentation lacking ordering provider NPI or cryptographic cryptographic signature cannot be self-ingested into Level-4 primary charts.
+              </span>
+</div>
+</div>
+</div>
+<!-- Corrective Action Steps -->
+<div class="flex flex-col gap-2">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant font-semibold">Recommended Remediation:</span>
+<ul class="list-disc pl-5 font-body-regular text-body-regular text-on-surface-variant text-sm space-y-1">
+<li>Compress or export a PDF summary report from your imaging radiology provider.</li>
+<li>Verify document does not exceed the 25MB threshold before re-submitting.</li>
+<li>Contact Dr. Marcus Sterling's office to have raw MRI DICOMs pushed straight through EHR PACS.</li>
+</ul>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-between pt-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-medium text-body-medium hover:bg-surface-container transition-colors" onclick="switchState('timeline')" type="button">
+            Return to Timeline
+          </button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-body-medium text-body-medium hover:bg-primary shadow-sm transition-colors" onclick="switchState('upload')" type="button">
+              Try Uploading Another File
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- 4. ZERO RECORDS / EMPTY STATE VIEW -->
+<div class="hidden flex-col items-center justify-center p-space-2xl bg-surface-container-lowest rounded-2xl shadow-sm text-center" id="state-empty-view">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-outline mb-4">
+<span class="material-symbols-outlined text-[42px]">folder_off</span>
+</div>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">No Clinical Documents Found</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-md mt-1">
+        There are currently no electronic health records matching your selected filter query in Eleanor Vance's vault.
+      </p>
+<div class="mt-6 flex flex-wrap items-center justify-center gap-space-sm">
+<button class="px-4 py-2 rounded-xl bg-surface-container-low text-on-surface font-body-medium text-body-medium hover:bg-surface-container transition-colors" onclick="resetFilters()" type="button">
+          Clear All Active Filters
+        </button>
+<button class="px-4 py-2 rounded-xl bg-primary-container text-on-primary font-body-medium text-body-medium hover:bg-primary shadow-sm transition-colors" onclick="switchState('upload')" type="button">
+          Upload New Record
+        </button>
+</div>
+</div>
+</div>
+<!-- Shared Document Permissions & Security Matrix Card -->
+<div class="mt-space-2xl bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Document Permissions &amp; Care Team Access Matrix</h3>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Continuous Real-Time HIPAA Audit Verification</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 3 Providers Authorized
+      </span>
+</div>
+<!-- Provider Access Table -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Provider 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary text-on-primary flex items-center justify-center text-sm font-semibold shrink-0">
+            MS
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-bold text-on-surface truncate">Dr. Marcus Sterling, MD</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">Interventional Cardiology</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium mt-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Full Clinical Access
+            </span>
+</div>
+</div>
+<button class="w-full py-1 text-center font-caption-caps text-caption-caps text-on-surface-variant hover:text-error transition-colors" type="button">
+          Revoke Access
+        </button>
+</div>
+<!-- Provider 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-sm font-semibold shrink-0">
+            EV
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-bold text-on-surface truncate">Dr. Elena Vance, MD</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">Dermatology Clinic</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium mt-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Pathology &amp; Encounters Only
+            </span>
+</div>
+</div>
+<button class="w-full py-1 text-center font-caption-caps text-caption-caps text-on-surface-variant hover:text-error transition-colors" type="button">
+          Revoke Access
+        </button>
+</div>
+<!-- Provider 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-sm font-semibold shrink-0">
+            RC
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-medium text-label-medium font-bold text-on-surface truncate">Dr. Robert Chen, MD</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant truncate">Endocrinology Service</span>
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium mt-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Lab Results Only
+            </span>
+</div>
+</div>
+<button class="w-full py-1 text-center font-caption-caps text-caption-caps text-on-surface-variant hover:text-error transition-colors" type="button">
+          Revoke Access
+        </button>
+</div>
+</div>
+</div>
+<!-- Mandatory Fictional Demonstration Notice Footer -->
+<div class="mt-space-xl p-4 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center gap-3">
+<span class="material-symbols-outlined text-[20px] text-outline shrink-0">info</span>
+<p class="font-caption-caps text-caption-caps leading-relaxed">
+<strong>Fictional demonstration data.</strong> Records displayed are simulated for UI/UX testing and do not represent actual protected health information (PHI) or real patients. Complies with simulated Level-4 HIPAA presentation guidelines.
+    </p>
+</div>
+</div>
+<script>
+  function switchState(stateKey) {
+    const states = ['timeline', 'upload', 'error', 'empty'];
+    states.forEach(s => {
+      const el = document.getElementById('state-' + s + '-view');
+      const btn = document.getElementById('btn-state-' + s);
+      if (el) {
+        if (s === stateKey) {
+          el.classList.remove('hidden');
+          el.classList.add('flex');
+        } else {
+          el.classList.add('hidden');
+          el.classList.remove('flex');
+        }
+      }
+      if (btn) {
+        if (s === stateKey) {
+          btn.className = 'px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all bg-surface-container-lowest text-primary font-semibold shadow-sm';
+        } else {
+          btn.className = 'px-3 py-1.5 rounded-md font-label-medium text-label-medium transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/60';
+        }
+      }
+    });
+  }
+
+  function filterCategory(category) {
+    // If not in timeline view, switch back to it
+    switchState('timeline');
+
+    // Update active chip style
+    const chips = document.querySelectorAll('.category-chip');
+    chips.forEach(chip => {
+      chip.className = 'category-chip px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors';
+    });
+    event.currentTarget.className = 'category-chip active px-3 py-1.5 rounded-xl font-label-medium text-label-medium bg-primary-container text-on-primary font-semibold shadow-sm transition-colors';
+
+    const items = document.querySelectorAll('.record-item');
+    let visibleCount = 0;
+    items.forEach(item => {
+      if (category === 'all' || item.getAttribute('data-category') === category) {
+        item.style.display = 'flex';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      switchState('empty');
+    }
+  }
+
+  function filterRecords() {
+    switchState('timeline');
+    const input = document.getElementById('record-search-input');
+    const term = input.value.toLowerCase().trim();
+    const items = document.querySelectorAll('.record-item');
+    let visibleCount = 0;
+
+    items.forEach(item => {
+      const searchStr = item.getAttribute('data-search') || '';
+      if (!term || searchStr.includes(term)) {
+        item.style.display = 'flex';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0 && term) {
+      switchState('empty');
+    }
+  }
+
+  function resetFilters() {
+    const input = document.getElementById('record-search-input');
+    if (input) input.value = '';
+    const items = document.querySelectorAll('.record-item');
+    items.forEach(item => {
+      item.style.display = 'flex';
+    });
+    switchState('timeline');
+  }
+</script></main></div></body></html>

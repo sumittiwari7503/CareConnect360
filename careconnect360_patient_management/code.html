@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-primary-fixed":"#00201d","surface":"#f7f9fb","outline-variant":"#bdc9c6","tertiary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eff1f3","surface-tint":"#006a63","on-secondary-fixed":"#131b2e","primary-fixed":"#9cf2e8","tertiary":"#005c54","on-primary-fixed-variant":"#00504a","surface-container-highest":"#e0e3e5","on-tertiary-fixed":"#00201d","surface-container":"#eceef0","on-surface-variant":"#3e4947","on-tertiary":"#ffffff","outline":"#6e7977","primary-container":"#0f766e","on-surface":"#191c1e","surface-variant":"#e0e3e5","surface-container-lowest":"#ffffff","on-background":"#191c1e","on-secondary-fixed-variant":"#3f465c","on-secondary-container":"#5c647a","primary-fixed-dim":"#80d5cb","secondary-fixed-dim":"#bec6e0","tertiary-container":"#00776d","tertiary-fixed":"#89f5e7","secondary":"#565e74","on-primary-container":"#a3faef","on-secondary":"#ffffff","error":"#ba1a1a","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005049","on-error":"#ffffff","surface-container-high":"#e6e8ea","secondary-fixed":"#dae2fd","error-container":"#ffdad6","inverse-surface":"#2d3133","primary":"#005c55","on-tertiary-container":"#91fdef","surface-dim":"#d8dadc","secondary-container":"#dae2fd","inverse-primary":"#80d5cb","surface-bright":"#f7f9fb","background":"#f7f9fb","surface-container-low":"#f2f4f6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","gutter-sm":"1rem","space-2xl":"3rem","space-xl":"2rem","space-xs":"0.25rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"headline-3":["Inter"],"body-medium":["Inter"],"body-regular":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display":["Inter"]},fontSize:{"headline-3":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-regular":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-regular":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-2":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"caption-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-medium":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-1":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center justify-between bg-inverse-surface"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-inverse-on-surface leading-tight">CareConnect360</span><span class="font-caption-caps text-caption-caps text-outline-variant tracking-wider uppercase">V3.2 Enterprise</span></div></div><span class="material-symbols-outlined text-outline-variant text-[20px]">verified_user</span></div><div class="px-gutter pt-space-md pb-space-sm"><span class="font-caption-caps text-caption-caps uppercase text-outline-variant tracking-wider">Administrative Modules</span></div><nav class="px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-3"><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="careconnect360-admin-dashboard" href="#">Overview</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="doctor-management" href="#">Doctors</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-headline-3" data-path="patient-management" href="#">Patients</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="appointment-management" href="#">Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="reports" href="#">Reports</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md bg-inverse-surface/80 flex flex-col gap-space-md"><div class="bg-surface-container-highest/10 rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed text-[16px]">security</span><span class="font-caption-caps text-caption-caps uppercase text-primary-fixed">Governance Active</span></div><span class="font-label-regular text-label-regular text-outline-variant">SOC2 Type II &amp; HIPAA Certified</span></div><div class="flex flex-col gap-space-xs"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors" data-path="audit-log-export" href="#"><span class="font-label-medium text-label-medium">Audit Log Quick Export</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span></a><button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-error/15 text-error-container hover:bg-error/25 transition-colors" type="button"><span class="font-label-medium text-label-medium">Emergency Lockout</span><span class="material-symbols-outlined text-[16px]">power_settings_new</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface placeholder:text-outline focus:outline-none shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="Search platform by doctor NPI, patient MRN, transaction ID, or facility..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-xl"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant">HIPAA AUDIT LEVEL-4 • BAA ACTIVE • 99.98% UPTIME</span></div><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-secondary-container rounded-xl"><span class="material-symbols-outlined text-on-secondary-container text-[16px]">dns</span><span class="font-label-medium text-label-medium text-on-secondary-container">Production Cluster US-East</span></div></div><div class="flex items-center gap-space-sm"><button class="relative w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button></div><div class="flex items-center gap-space-md pl-space-md"><div class="flex flex-col text-right"><div class="flex items-center gap-space-xs justify-end"><span class="font-headline-3 text-headline-3 text-on-surface">Sarah Jenkins, MPH</span><span class="px-space-xs py-0.5 rounded-lg bg-primary-container text-on-primary-container font-caption-caps text-caption-caps">SUPER ADMIN</span></div><span class="font-label-regular text-label-regular text-on-surface-variant">Chief Healthcare Administrator &amp; Compliance Officer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full pb-space-2xl">
+<!-- Interactive View Switcher Bar (Prototypes & States) -->
+<div class="mb-space-lg flex flex-wrap items-center justify-between gap-space-md p-space-sm bg-surface-container-low rounded-xl shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant tracking-wider">Demo State Controls:</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs" id="state-toggles">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium shadow-sm transition-all flex items-center gap-1.5" id="btn-state-default" onclick="switchView('default')">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Default Directory
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-highest/60 font-label-medium text-label-medium transition-all flex items-center gap-1.5" id="btn-state-inspector" onclick="switchView('inspector')">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> Patient Detail Inspector
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-highest/60 font-label-medium text-label-medium transition-all flex items-center gap-1.5" id="btn-state-modal" onclick="switchView('modal')">
+<span class="w-2 h-2 rounded-full bg-error"></span> Account Lock Modal
+      </button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-highest/60 font-label-medium text-label-medium transition-all flex items-center gap-1.5" id="btn-state-empty" onclick="switchView('empty')">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> Empty Search State
+      </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-space-sm py-0.5 rounded-full bg-primary/10 text-primary font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[13px]">gavel</span> 45 CFR § 164.502(b) ENFORCED
+      </span>
+</div>
+</div>
+<!-- Breadcrumbs & Screen Header -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<nav class="flex items-center gap-space-xs text-outline font-label-regular text-label-regular">
+<a class="hover:text-primary transition-colors" href="#">Admin Portal</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Operational Management</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-label-medium text-label-medium">Patient Management</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mt-space-xs">
+<div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-1 text-headline-1 text-on-surface tracking-tight">Patient Directory &amp; Identity Governance</h1>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps uppercase">NIST SP 800-63A</span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant mt-1 max-w-3xl">
+          Supervise patient user accounts, identity verification assurance, portal access security, emergency proxy linkage, and consent disclosures.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-body-medium text-body-medium shadow-sm hover:bg-surface-container-low transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">file_download</span>
+<span>Export Registry <span class="text-outline text-label-regular">(Redacted PHI)</span></span>
+</button>
+<button class="px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary-container font-body-medium text-body-medium shadow-sm hover:bg-primary transition-all flex items-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Register New Patient</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Key Metrics Row (Clinical Governance Metric Bento) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline">Total Registered Patients</span>
+<span class="font-display text-display text-on-surface mt-1">128,450</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-regular text-label-regular">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +342 this week
+        </span>
+<span class="text-outline">Across 14 Regional Hubs</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-container-high"></div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline">Identity Verified (L3 / L4)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-on-surface">126,138</span>
+<span class="font-headline-3 text-headline-3 text-primary">98.2%</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-regular text-label-regular">
+<span class="text-outline">NIST SP 800-63A Tier</span>
+<span class="text-primary font-label-medium text-label-medium">Compliant Assurance</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary"></div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline">Active Portal Accounts</span>
+<span class="font-display text-display text-on-surface mt-1">119,420</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[22px]">app_registration</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-regular text-label-regular">
+<span class="flex items-center gap-1 text-on-secondary-container">
+<span class="material-symbols-outlined text-[14px]">shield</span> 2FA Synced: 94.1%
+        </span>
+<span class="text-outline">Web &amp; iOS/Android</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-secondary"></div>
+</div>
+<!-- Card 4 (Alert State) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-error">Security Locked Accounts</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display text-display text-error">18</span>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container font-caption-caps text-caption-caps font-semibold">ATTENTION</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">lock_reset</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-regular text-label-regular">
+<span class="text-error font-label-medium text-label-medium">Brute Force / MFA Failure</span>
+<button class="text-primary hover:underline font-label-medium text-label-medium" onclick="filterLockedOnly()">Review (18)</button>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-error"></div>
+</div>
+</div>
+<!-- HIPAA Strict Minimum Necessary Banner -->
+<div class="mb-space-md px-space-md py-space-sm bg-surface-container-high rounded-xl flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs">
+<span class="material-symbols-outlined text-[18px]">enhanced_encryption</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-primary font-bold">Privacy Shield Active • Role: Administrative Super Admin</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">
+          Clinical diagnoses, medical SOAP notes, and prescription regimens are redacted in accordance with HIPAA Minimum Necessary Rule (45 CFR § 164.502(b)).
+        </span>
+</div>
+</div>
+<div class="hidden md:flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 font-caption-caps text-caption-caps text-outline bg-surface-container-lowest px-space-sm py-1 rounded-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+        Zero PHI Spill Policy
+      </span>
+<a class="text-primary hover:underline font-label-medium text-label-medium flex items-center gap-0.5" href="#">
+        BAA Docs <span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Segment Tabs & Filter Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-md flex flex-col gap-space-md">
+<!-- Segment Tabs -->
+<div class="flex items-center justify-between border-b border-surface-container-high pb-space-xs overflow-x-auto">
+<div class="flex items-center gap-space-xs min-w-max">
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-colors flex items-center gap-2" id="tab-all" onclick="setTab('all')">
+<span>All Accounts</span>
+<span class="px-1.5 py-0.5 rounded-full bg-on-primary-container/20 text-on-primary-container font-caption-caps text-caption-caps">128,450</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-body-medium text-body-medium transition-colors flex items-center gap-2" id="tab-pending" onclick="setTab('pending')">
+<span>Identity Verification Pending</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps">2,312</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-body-medium text-body-medium transition-colors flex items-center gap-2" id="tab-locked" onclick="setTab('locked')">
+<span>Security Locked / Suspended</span>
+<span class="px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-caption-caps text-caption-caps">18</span>
+</button>
+<button class="px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-body-medium text-body-medium transition-colors flex items-center gap-2" id="tab-archive" onclick="setTab('archive')">
+<span>Deactivated / Archive</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps">68</span>
+</button>
+</div>
+<div class="hidden xl:flex items-center gap-space-sm pl-space-md">
+<span class="font-caption-caps text-caption-caps text-outline uppercase">Audit Token:</span>
+<code class="font-caption-caps text-caption-caps text-on-surface bg-surface-container px-2 py-0.5 rounded">AUTH-REV-90214</code>
+</div>
+</div>
+<!-- Search + Multi-attribute Filters -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Search Protected Index Input -->
+<div class="md:col-span-4 relative flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-outline text-[18px] pointer-events-none">search</span>
+<input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-xl font-body-regular text-body-regular text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" id="search-input" onkeyup="handleSearch(this.value)" placeholder="Search by Name, MRN, Portal ID, Phone, or Associated Payer..." type="text"/>
+</div>
+<!-- Verification Tier -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-xl font-body-medium text-body-medium text-on-surface focus:outline-none appearance-none cursor-pointer pr-8">
+<option>Assurance: All Levels</option>
+<option>NIST Level-4 Biometric</option>
+<option>NIST Level-3 Verified</option>
+<option>Self-Reported / Pending</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Account Status -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-xl font-body-medium text-body-medium text-on-surface focus:outline-none appearance-none cursor-pointer pr-8">
+<option>Security: All Statuses</option>
+<option>Active / 2FA Enforced</option>
+<option>Temporary Lock (Failed 2FA)</option>
+<option>Consent Renewal Due</option>
+<option>Deactivated</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Primary Payer / Insurance -->
+<div class="md:col-span-2">
+<div class="relative">
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-xl font-body-medium text-body-medium text-on-surface focus:outline-none appearance-none cursor-pointer pr-8">
+<option>Payer: All Payers</option>
+<option>Aetna Choice POS</option>
+<option>BlueCross BlueShield</option>
+<option>UnitedHealthcare</option>
+<option>Medicare / Advantage</option>
+<option>Harvard Pilgrim</option>
+<option>Self-Pay / Commercial</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+</div>
+<!-- Region Filter & Clear -->
+<div class="md:col-span-2 flex items-center gap-space-xs">
+<div class="relative flex-1">
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-xl font-body-medium text-body-medium text-on-surface focus:outline-none appearance-none cursor-pointer pr-8">
+<option>Region: All Hubs</option>
+<option>Greater Boston (MA)</option>
+<option>Worcester Metro</option>
+<option>Cambridge Hub</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px] pointer-events-none">arrow_drop_down</span>
+</div>
+<button class="p-2 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="resetFilters()" title="Reset Filters">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Patient Directory Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="directory-content-wrapper">
+<!-- Active Selection Action Toolbar (Hidden by default, shown when checkboxes picked) -->
+<div class="hidden px-space-md py-2.5 bg-primary/5 border-b border-surface-container flex items-center justify-between" id="bulk-actions-bar">
+<div class="flex items-center gap-space-md">
+<span class="font-body-medium text-body-medium text-primary font-semibold"><span id="selected-count">1</span> patient accounts selected</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-medium text-label-medium shadow-xs hover:bg-surface-container transition-colors">Trigger Re-Verification SMS</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-medium text-label-medium shadow-xs hover:bg-surface-container transition-colors">Force Sign-out Session</button>
+<button class="px-space-sm py-1 rounded bg-error/10 text-error font-label-medium text-label-medium hover:bg-error/20 transition-colors">Bulk Lock Access</button>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface font-label-regular text-label-regular" onclick="clearSelection()">Clear Selection</button>
+</div>
+<!-- Responsive Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-container">
+<th class="w-12 py-3 px-space-md text-center">
+<input class="rounded text-primary focus:ring-0 cursor-pointer" onchange="toggleAllCheckboxes(this)" type="checkbox"/>
+</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Patient Identity &amp; MRN</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Contact &amp; Location (Masked)</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Identity Assurance</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Primary Payer / Policy</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Portal Security Status</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Emergency Proxy Link</th>
+<th class="py-3 px-space-md font-caption-caps text-caption-caps uppercase text-outline tracking-wider text-right">Administrative Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low" id="directory-tbody">
+<!-- ROW 1: Eleanor Vance (Inspector Target) -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 text-primary font-headline-3 text-headline-3 flex items-center justify-center">
+                    EV
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-lowest" title="Portal Account Active"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-primary transition-colors text-left truncate" onclick="openInspector('eleanor')">Eleanor Vance</button>
+<span class="material-symbols-outlined text-primary text-[15px]" title="Level-3 Identity Verified">verified</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#849204</span>
+<span>•</span>
+<span>68 y/o F</span>
+<span>•</span>
+<span>Reg: Jan 2023</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">eleanor.v***@okaxis.com</span>
+<span class="text-outline font-mono">•••-•••-0192</span>
+<span class="text-on-surface-variant text-[11px]">Boston, MA (Hub-East)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+<span>NIST Level-3 Verified</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">Government ID + OTP Match</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Aetna Choice POS II</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #W-849204001</span>
+<span class="text-[11px] text-primary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Eligibility Confirmed
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Active / 2FA Enforced
+              </span>
+<div class="text-[11px] text-outline mt-0.5">Last login: Today 10:24 AM</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 font-body-medium text-body-medium text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">family_restroom</span>
+<span>David Vance</span>
+</div>
+<span class="text-outline font-label-regular text-label-regular">Son (Verified Proxy • POA)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openInspector('eleanor')" title="Manage Account &amp; Identity">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="triggerResetModal('Eleanor Vance', '#849204')" title="Reset Credentials / MFA">
+<span class="material-symbols-outlined text-[18px]">app_registration</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors" onclick="openLockModal('Eleanor Vance', '#849204')" title="Emergency Lockout">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: David K. -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container font-headline-3 text-headline-3 flex items-center justify-center">
+                    DK
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-primary transition-colors text-left truncate" onclick="openInspector('david')">David K.</button>
+<span class="material-symbols-outlined text-primary text-[15px]" title="Level-4 Identity Verified">fingerprint</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#851022</span>
+<span>•</span>
+<span>52 y/o M</span>
+<span>•</span>
+<span>Reg: Apr 2023</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">d.k***@outlook.com</span>
+<span class="text-outline font-mono">•••-•••-7729</span>
+<span class="text-on-surface-variant text-[11px]">Cambridge, MA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-primary-container text-on-primary-container font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">fingerprint</span>
+<span>NIST Level-4 Biometric</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">Biometric Proofed via Passkey</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">BlueCross BlueShield</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #BCBS-991204</span>
+<span class="text-[11px] text-primary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Copay $20 Active
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Active / 2FA Enforced
+              </span>
+<div class="text-[11px] text-outline mt-0.5">FIDO2 Hardware Key Synced</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 font-body-medium text-body-medium text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-outline">supervisor_account</span>
+<span>Maria K.</span>
+</div>
+<span class="text-outline font-label-regular text-label-regular">Spouse (Standard Contact)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="openInspector('david')">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="triggerResetModal('David K.', '#851022')">
+<span class="material-symbols-outlined text-[18px]">app_registration</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors" onclick="openLockModal('David K.', '#851022')">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: Sarah M. -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container text-on-surface-variant font-headline-3 text-headline-3 flex items-center justify-center">
+                    SM
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-primary transition-colors text-left truncate">Sarah M.</button>
+<span class="material-symbols-outlined text-primary text-[15px]">verified</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#839104</span>
+<span>•</span>
+<span>34 y/o F</span>
+<span>•</span>
+<span>Reg: Nov 2023</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">s.miller***@gmail.com</span>
+<span class="text-outline font-mono">•••-•••-9183</span>
+<span class="text-on-surface-variant text-[11px]">Newton, MA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+<span>NIST Level-3 Verified</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">SMS OTP + Driver's Lic</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">UnitedHealthcare</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #UHC-801239</span>
+<span class="text-[11px] text-primary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> In-Network Primary
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption-caps text-caption-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Active Portal
+              </span>
+<div class="text-[11px] text-outline mt-0.5">Passcode verified</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-outline font-label-regular text-label-regular italic">Self-Managed (No proxy assigned)</span>
+<button class="text-primary text-[11px] font-label-medium text-label-medium hover:underline text-left mt-0.5">+ Invite Proxy</button>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" onclick="triggerResetModal('Sarah M.', '#839104')">
+<span class="material-symbols-outlined text-[18px]">app_registration</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-error hover:bg-error-container/20 transition-colors" onclick="openLockModal('Sarah M.', '#839104')">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: Robert B. (Verification Pending) -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-3 text-headline-3 flex items-center justify-center">
+                    RB
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-outline-variant ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-primary transition-colors text-left truncate">Robert B.</button>
+<span class="material-symbols-outlined text-outline text-[15px]" title="Pending Identity Proofing">hourglass_top</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#862190</span>
+<span>•</span>
+<span>61 y/o M</span>
+<span>•</span>
+<span>Reg: Yesterday</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">r.bell***@workmail.com</span>
+<span class="text-outline font-mono">•••-•••-4401</span>
+<span class="text-on-surface-variant text-[11px]">Worcester, MA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px] text-outline">pending_actions</span>
+<span>Verification Pending</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">Government ID Upload Needed</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Medicare Part B</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #MED-940182</span>
+<span class="text-[11px] text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span> Pending Registry Validation
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                Pending Identity Proofing
+              </span>
+<div class="text-[11px] text-outline mt-0.5">No login session created yet</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="text-outline font-label-regular text-label-regular italic">Unverified Contact</span>
+<span class="text-[11px] text-outline">Awaiting self-service entry</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded-lg bg-primary/10 text-primary hover:bg-primary/20 text-label-medium font-label-medium transition-colors">
+                  Send Link
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">rule</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: Jennifer Lopez-Smith (Locked State) -->
+<tr class="bg-error-container/10 hover:bg-error-container/15 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container font-headline-3 text-headline-3 flex items-center justify-center">
+                    JL
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-error ring-2 ring-surface-container-lowest" title="Account Locked"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-error transition-colors text-left truncate" onclick="openLockModal('Jennifer Lopez-Smith', '#879102')">Jennifer Lopez-Smith</button>
+<span class="material-symbols-outlined text-error text-[15px]" title="Account Security Locked">lock</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#879102</span>
+<span>•</span>
+<span>41 y/o F</span>
+<span>•</span>
+<span>Reg: Feb 2022</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">j.l.smith***@yahoo.com</span>
+<span class="text-outline font-mono">•••-•••-5582</span>
+<span class="text-on-surface-variant text-[11px]">Boston, MA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+<span>NIST Level-3 Verified</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">Identity Confirmed</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Harvard Pilgrim</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #HP-449102</span>
+<span class="text-[11px] text-primary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Coverage Verified
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">lock</span>
+                Locked • 5 Failed 2FA Attempts
+              </span>
+<div class="text-[11px] text-error mt-0.5">Triggered 23m ago (Auto Lock)</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 font-body-medium text-body-medium text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-outline">person</span>
+<span>Mark Smith</span>
+</div>
+<span class="text-outline font-label-regular text-label-regular">Spouse (Verified Contact)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded-lg bg-surface-container-lowest text-on-surface hover:text-primary text-label-medium font-label-medium shadow-xs transition-colors" onclick="unlockAccountQuick('Jennifer Lopez-Smith')">
+                  Unlock 2FA
+                </button>
+<button class="p-1.5 rounded-lg text-error hover:bg-error-container/30 transition-colors" onclick="openLockModal('Jennifer Lopez-Smith', '#879102')" title="Manage Lock Details">
+<span class="material-symbols-outlined text-[18px]">security_update_warning</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: Arthur Pendelton (Consent Renewal Overdue) -->
+<tr class="hover:bg-surface-container-lowest/60 transition-colors group">
+<td class="py-3.5 px-space-md text-center">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer" onchange="updateSelection()" type="checkbox"/>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant font-headline-3 text-headline-3 flex items-center justify-center">
+                    AP
+                  </div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<button class="font-headline-3 text-headline-3 text-on-surface hover:text-primary transition-colors text-left truncate">Arthur Pendelton</button>
+<span class="material-symbols-outlined text-primary text-[15px]">verified</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-regular text-label-regular text-outline">
+<span class="font-mono text-on-surface-variant font-medium">#761029</span>
+<span>•</span>
+<span>79 y/o M</span>
+<span>•</span>
+<span>Reg: Sep 2021</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col font-label-regular text-label-regular">
+<span class="text-on-surface font-body-medium text-body-medium">a.pendelton***@verizon.net</span>
+<span class="text-outline font-mono">•••-•••-6102</span>
+<span class="text-on-surface-variant text-[11px]">Brookline, MA</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+<span>NIST Level-3 Verified</span>
+</div>
+<div class="text-[11px] text-outline mt-0.5">In-Person Clinic Verification</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface">Medicare Advantage</span>
+<span class="font-caption-caps text-caption-caps text-outline font-mono">POL: #MCA-90141</span>
+<span class="text-[11px] text-primary flex items-center gap-1 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Claims Authorized
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px] text-on-surface-variant">history_edu</span>
+                Consent Renewal Due
+              </span>
+<div class="text-[11px] text-outline mt-0.5">Annual Notice Expired 4d ago</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 font-body-medium text-body-medium text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span>
+<span>Susan P.</span>
+</div>
+<span class="text-outline font-label-regular text-label-regular">Daughter (Medical POA Active)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded-lg bg-surface-container text-on-surface hover:text-primary text-label-medium font-label-medium transition-colors">
+                  Re-send HIPAA
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors" title="Manage POA Documents">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Empty State Container (Toggled via Switcher or empty search) -->
+<div class="hidden p-space-2xl flex flex-col items-center justify-center text-center" id="empty-state-view">
+<div class="w-16 h-16 rounded-2xl bg-surface-container flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[32px]">person_search</span>
+</div>
+<h3 class="font-headline-2 text-headline-2 text-on-surface mb-1">No Matching Patient Records Found</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-md mb-space-lg">
+        We could not locate any patient with the criteria entered. Confirm MRN, Portal ID, or verify your administrative role security scope.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container text-on-surface font-body-medium text-body-medium hover:bg-surface-container-high transition-colors" onclick="resetFilters()">
+          Clear All Query Filters
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-primary-container text-on-primary-container font-body-medium text-body-medium hover:bg-primary transition-colors">
+          Query Master Index (MPI)
+        </button>
+</div>
+</div>
+<!-- Table Pagination & Footer Ledger Notice -->
+<div class="px-space-md py-3 bg-surface-container-low border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<span class="font-label-regular text-label-regular text-on-surface-variant">
+          Showing <span class="font-medium text-on-surface">1</span> to <span class="font-medium text-on-surface">6</span> of <span class="font-medium text-on-surface">128,450</span> patient accounts
+        </span>
+<div class="hidden sm:flex items-center gap-1.5 text-label-regular text-label-regular text-outline">
+<span>Rows per page:</span>
+<select class="bg-surface-container-lowest text-on-surface rounded px-1.5 py-0.5 focus:outline-none cursor-pointer">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-outline font-label-medium text-label-medium cursor-not-allowed opacity-60" disabled="">
+            Previous
+          </button>
+<button class="w-7 h-7 rounded bg-primary-container text-on-primary-container font-label-medium text-label-medium flex items-center justify-center">
+            1
+          </button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-medium text-label-medium hover:bg-surface-container flex items-center justify-center">
+            2
+          </button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-medium text-label-medium hover:bg-surface-container flex items-center justify-center">
+            3
+          </button>
+<span class="text-outline px-1">…</span>
+<button class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-medium text-label-medium hover:bg-surface-container flex items-center justify-center">
+            12,845
+          </button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-medium text-label-medium">
+            Next
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Immutable HIPAA Audit Ledger Footer Banner -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-xl flex items-center justify-between text-outline font-label-regular text-label-regular">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">history</span>
+<span>All directory queries, detail inspections, and credential overrides are logged to immutable HIPAA Level-4 audit ledger with administrator identity stamp (<strong class="text-on-surface">Sarah Jenkins, MPH</strong>).</span>
+</div>
+<span class="font-mono text-[11px] text-on-surface-variant hidden md:inline">AUDIT_RECORD_ID: #L4-2024-0318-992140</span>
+</div>
+<!-- ======================================================== -->
+<!-- SLIDE-OVER INSPECTOR PANEL: Eleanor Vance (MRN #849204) -->
+<!-- ======================================================== -->
+<div class="hidden fixed inset-0 bg-inverse-surface/40 backdrop-blur-xs z-50 transition-opacity" id="inspector-overlay">
+<div class="absolute inset-y-0 right-0 w-full max-w-xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between overflow-y-auto">
+<!-- Panel Top Header -->
+<div class="p-space-lg bg-surface-container-low border-b border-surface-container flex items-start justify-between">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-2xl bg-primary-container text-on-primary-container font-display text-display flex items-center justify-center">
+            EV
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-1 text-headline-1 text-on-surface">Eleanor Vance</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption-caps text-caption-caps font-bold">NIST L3</span>
+</div>
+<div class="flex items-center gap-2 font-label-regular text-label-regular text-outline mt-0.5">
+<span class="font-mono font-medium text-on-surface">MRN #849204</span>
+<span>•</span>
+<span>DOB: 11/14/1955 (68 y/o F)</span>
+</div>
+<div class="mt-1 flex items-center gap-2">
+<span class="inline-flex items-center gap-1 text-[11px] text-primary font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Portal Active
+              </span>
+<span class="text-outline text-[11px]">•</span>
+<span class="text-[11px] text-on-surface-variant">Primary Hub: Greater Boston Clinic</span>
+</div>
+</div>
+</div>
+<button class="p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-highest transition-colors" onclick="closeInspector()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Panel Body -->
+<div class="p-space-lg flex flex-col gap-space-lg overflow-y-auto flex-1">
+<!-- Privacy Boundary Callout -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">shield</span>
+<div class="flex flex-col text-label-regular text-label-regular">
+<span class="font-headline-3 text-headline-3 text-on-surface">Privacy Redaction Boundary Enforced</span>
+<span class="text-on-surface-variant mt-0.5">
+              SOAP clinical notes, lab results, and medication dispensations are restricted from this administrative view.
+            </span>
+</div>
+</div>
+<!-- Section 1: Identity & Authentication Status -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline font-bold">Identity &amp; Portal Authentication</span>
+<span class="text-[11px] text-primary font-medium">Last session: 10:24 AM Today</span>
+</div>
+<div class="bg-surface-container-lowest border border-surface-container rounded-xl p-space-md flex flex-col gap-space-md">
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<span class="font-caption-caps text-caption-caps text-outline uppercase">MFA Method</span>
+<div class="font-body-medium text-body-medium text-on-surface flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[16px]">smartphone</span>
+<span>TOTP Authenticator App</span>
+</div>
+<span class="text-[11px] text-outline">Synced to iPhone 15 Pro</span>
+</div>
+<div>
+<span class="font-caption-caps text-caption-caps text-outline uppercase">Current Client IP</span>
+<div class="font-body-medium text-body-medium text-on-surface font-mono mt-0.5">
+                  72.14.201.*** (Redacted)
+                </div>
+<span class="text-[11px] text-outline">Chrome / macOS • Boston ISP</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs border-t border-surface-container-low">
+<div>
+<span class="font-caption-caps text-caption-caps text-outline uppercase">Credential Hash</span>
+<div class="font-mono text-[12px] text-on-surface mt-0.5">Argon2id (Salted)</div>
+</div>
+<div>
+<span class="font-caption-caps text-caption-caps text-outline uppercase">Password Age</span>
+<div class="font-body-medium text-body-medium text-on-surface mt-0.5">42 days (Valid)</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Consents & Legal Disclosures -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline font-bold">Regulatory Consents &amp; Disclosures</span>
+<div class="space-y-space-xs">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div>
+<div class="font-body-medium text-body-medium text-on-surface">HIPAA Business Associate Notice &amp; Privacy Practices</div>
+<div class="text-[11px] text-outline">Signed electronically on Jan 14, 2024 • DocuSign ID #849-AK-91</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">VALID</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<div>
+<div class="font-body-medium text-body-medium text-on-surface">Telehealth Video Informed Consent</div>
+<div class="text-[11px] text-outline">Signed on Jan 14, 2024 • Annual cycle</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">VALID</span>
+</div>
+</div>
+</div>
+<!-- Section 3: Verified Emergency Proxy & Medical POA -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline font-bold">Emergency Proxy &amp; POA Link</span>
+<button class="text-primary text-[11px] font-label-medium text-label-medium hover:underline">+ Modify Proxy</button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest border border-surface-container flex items-start justify-between">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-3 text-headline-3">
+                DV
+              </div>
+<div class="flex flex-col">
+<div class="font-headline-3 text-headline-3 text-on-surface">David Vance</div>
+<div class="font-label-regular text-label-regular text-outline">Relationship: Son • Medical Power of Attorney (On File)</div>
+<div class="font-label-regular text-label-regular text-on-surface mt-1">
+                  Primary Contact: •••-•••-8491 • david.vance***@domain.com
+                </div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">POA ACTIVE</span>
+</div>
+</div>
+<!-- Section 4: Billing Account Status -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-caption-caps text-caption-caps uppercase tracking-wider text-outline font-bold">Administrative Billing Profile</span>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-8 rounded bg-surface-container-lowest flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-outline text-[20px]">credit_card</span>
+</div>
+<div>
+<div class="font-body-medium text-body-medium text-on-surface">Visa ending in 4092 (Tokenized Stripe)</div>
+<div class="text-[11px] text-outline">Exp: 09/2026 • Automatic Copay Authorization</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption-caps text-caption-caps font-semibold">ACCOUNT CURRENT</span>
+</div>
+</div>
+</div>
+<!-- Panel Footer Action Buttons -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex flex-col gap-space-xs">
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-lowest text-on-surface font-body-medium text-body-medium hover:bg-surface-container shadow-xs transition-colors flex items-center justify-center gap-1.5" onclick="triggerPasswordReset('Eleanor Vance')">
+<span class="material-symbols-outlined text-[16px] text-primary">send</span>
+            Trigger Password Reset
+          </button>
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-lowest text-on-surface font-body-medium text-body-medium hover:bg-surface-container shadow-xs transition-colors flex items-center justify-center gap-1.5" onclick="triggerMfaReset('Eleanor Vance')">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">sync_lock</span>
+            Reset 2FA Token
+          </button>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="px-space-sm py-2 rounded-xl bg-error/10 text-error font-body-medium text-body-medium hover:bg-error/20 transition-colors flex items-center justify-center gap-1.5" onclick="openLockModal('Eleanor Vance', '#849204')">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+            Lock Account Access
+          </button>
+<button class="px-space-sm py-2 rounded-xl bg-surface-container-lowest text-outline font-body-medium text-body-medium hover:text-on-surface hover:bg-surface-container shadow-xs transition-colors flex items-center justify-center gap-1.5" onclick="exportGdprData('Eleanor Vance')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+            Privacy Export (§ 164.524)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL DIALOG: Account Lock Confirmation (Jennifer / Target) -->
+<!-- ======================================================== -->
+<div class="hidden fixed inset-0 bg-inverse-surface/50 backdrop-blur-xs z-50 flex items-center justify-center p-space-md" id="modal-lock">
+<div class="w-full max-w-lg bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+<!-- Modal Top -->
+<div class="p-space-lg bg-error-container/20 border-b border-error-container/40 flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">lock_person</span>
+</div>
+<div>
+<h3 class="font-headline-1 text-headline-1 text-on-surface">Lock Patient Portal Account</h3>
+<p class="font-body-regular text-body-regular text-outline mt-0.5">
+            Target: <span class="text-on-surface font-semibold" id="modal-patient-name">Jennifer Lopez-Smith</span> (<span class="font-mono" id="modal-patient-mrn">MRN #879102</span>)
+          </p>
+</div>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="flex items-center gap-1.5 font-headline-3 text-headline-3 text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+            Security &amp; Operational Impact Notice
+          </div>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+            Locking this account prevents all patient portal logins, API access, and automatic telehealth video waiting-room launches.
+          </p>
+<ul class="list-disc list-inside font-label-regular text-label-regular text-outline space-y-1 mt-1">
+<li>Scheduled clinic consultations remain intact in the provider schedule.</li>
+<li>In-person reception staff can still verify patient identity via telephone / physical ID.</li>
+<li>All active sessions on iOS, Android, and web will be instantly invalidated.</li>
+</ul>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-caption-caps text-caption-caps uppercase text-outline font-semibold">Administrative Justification (Required for Audit Trail)</label>
+<select class="w-full px-space-md py-2 bg-surface-container-low rounded-xl font-body-regular text-body-regular text-on-surface focus:outline-none">
+<option>Repeated MFA failure (Brute force prevention)</option>
+<option>Patient reported compromised personal device</option>
+<option>Identity fraud investigation underway</option>
+<option>Administrative custody / Legal hold</option>
+</select>
+</div>
+</div>
+<!-- Modal Actions -->
+<div class="p-space-md bg-surface-container-low border-t border-surface-container flex items-center justify-end gap-space-sm">
+<button class="px-space-md py-2 rounded-xl bg-surface-container-lowest text-on-surface font-body-medium text-body-medium hover:bg-surface-container transition-colors" onclick="closeLockModal()">
+          Cancel
+        </button>
+<button class="px-space-md py-2 rounded-xl bg-error text-on-error font-body-medium text-body-medium hover:bg-error/90 transition-colors shadow-sm flex items-center gap-1" onclick="confirmAccountLock()">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+          Confirm Account Lock
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Alert (Micro-interaction) -->
+<div class="hidden fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-xl z-50 flex items-center gap-space-sm transition-all transform translate-y-2" id="toast-notification">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-medium text-body-medium" id="toast-message">Action processed successfully.</span>
+</div>
+</div>
+<!-- Client-side Interactive Prototype Script -->
+<script>
+  function switchView(viewName) {
+    // Reset state button styles
+    const states = ['default', 'inspector', 'modal', 'empty'];
+    states.forEach(st => {
+      const btn = document.getElementById('btn-state-' + st);
+      if (btn) {
+        if (st === viewName) {
+          btn.className = 'px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium shadow-sm transition-all flex items-center gap-1.5';
+        } else {
+          btn.className = 'px-space-md py-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-highest/60 font-label-medium text-label-medium transition-all flex items-center gap-1.5';
+        }
+      }
+    });
+
+    const inspector = document.getElementById('inspector-overlay');
+    const modal = document.getElementById('modal-lock');
+    const tableBody = document.getElementById('directory-tbody');
+    const emptyState = document.getElementById('empty-state-view');
+
+    if (viewName === 'default') {
+      inspector.classList.add('hidden');
+      modal.classList.add('hidden');
+      tableBody.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+    } else if (viewName === 'inspector') {
+      modal.classList.add('hidden');
+      tableBody.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      inspector.classList.remove('hidden');
+    } else if (viewName === 'modal') {
+      inspector.classList.add('hidden');
+      tableBody.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      modal.classList.remove('hidden');
+    } else if (viewName === 'empty') {
+      inspector.classList.add('hidden');
+      modal.classList.add('hidden');
+      tableBody.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+    }
+  }
+
+  function openInspector(patientId) {
+    document.getElementById('inspector-overlay').classList.remove('hidden');
+  }
+
+  function closeInspector() {
+    document.getElementById('inspector-overlay').classList.add('hidden');
+  }
+
+  function openLockModal(patientName, mrn) {
+    document.getElementById('modal-patient-name').innerText = patientName || 'Selected Patient';
+    document.getElementById('modal-patient-mrn').innerText = 'MRN ' + (mrn || '#000000');
+    document.getElementById('modal-lock').classList.remove('hidden');
+  }
+
+  function closeLockModal() {
+    document.getElementById('modal-lock').classList.add('hidden');
+  }
+
+  function confirmAccountLock() {
+    closeLockModal();
+    showToast('Account locked successfully. 2FA session invalidated and security log registered.');
+  }
+
+  function triggerPasswordReset(name) {
+    showToast('Encrypted password reset token dispatched to ' + name + ' registered email.');
+  }
+
+  function triggerMfaReset(name) {
+    showToast('2FA Authenticator state cleared for ' + name + '. Re-registration required on next login.');
+  }
+
+  function exportGdprData(name) {
+    showToast('HIPAA § 164.524 audit archive compiling for ' + name + '. Download initiated.');
+  }
+
+  function unlockAccountQuick(name) {
+    showToast('Account unlocked: 2FA lock counter reset to zero for ' + name + '.');
+  }
+
+  function triggerResetModal(name, mrn) {
+    showToast('Authentication challenge queued for ' + name + ' (' + mrn + ').');
+  }
+
+  function setTab(tabName) {
+    const tabs = ['all', 'pending', 'locked', 'archive'];
+    tabs.forEach(t => {
+      const el = document.getElementById('tab-' + t);
+      if (t === tabName) {
+        el.className = 'px-space-md py-2 rounded-lg bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-colors flex items-center gap-2';
+      } else {
+        el.className = 'px-space-md py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-body-medium text-body-medium transition-colors flex items-center gap-2';
+      }
+    });
+
+    if (tabName === 'locked') {
+      showToast('Filtering for 18 locked accounts.');
+    } else if (tabName === 'pending') {
+      showToast('Filtering for 2,312 identity verification pending records.');
+    }
+  }
+
+  function filterLockedOnly() {
+    setTab('locked');
+  }
+
+  function handleSearch(query) {
+    const tableBody = document.getElementById('directory-tbody');
+    const emptyState = document.getElementById('empty-state-view');
+    if (query.trim().toLowerCase() === 'empty' || query.trim().toLowerCase() === 'none') {
+      tableBody.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+    } else {
+      tableBody.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+    }
+  }
+
+  function resetFilters() {
+    document.getElementById('search-input').value = '';
+    handleSearch('');
+    setTab('all');
+    showToast('All directory filters cleared.');
+  }
+
+  function toggleAllCheckboxes(masterCheckbox) {
+    const boxes = document.querySelectorAll('.row-checkbox');
+    boxes.forEach(b => b.checked = masterCheckbox.checked);
+    updateSelection();
+  }
+
+  function updateSelection() {
+    const checked = document.querySelectorAll('.row-checkbox:checked');
+    const bar = document.getElementById('bulk-actions-bar');
+    const countEl = document.getElementById('selected-count');
+    if (checked.length > 0) {
+      bar.classList.remove('hidden');
+      countEl.innerText = checked.length;
+    } else {
+      bar.classList.add('hidden');
+    }
+  }
+
+  function clearSelection() {
+    const boxes = document.querySelectorAll('.row-checkbox');
+    boxes.forEach(b => b.checked = false);
+    updateSelection();
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const msgEl = document.getElementById('toast-message');
+    msgEl.innerText = message;
+    toast.classList.remove('hidden');
+    toast.classList.remove('translate-y-2');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+      toast.classList.add('translate-y-2');
+    }, 4000);
+  }
+</script></main></div></body></html>

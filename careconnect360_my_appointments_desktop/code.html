@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#00504a","secondary-container":"#dae2fd","on-error-container":"#93000a","surface-container-highest":"#e0e3e5","surface-container-high":"#e6e8ea","secondary-fixed-dim":"#bec6e0","error":"#ba1a1a","tertiary-fixed-dim":"#6bd8cb","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","inverse-primary":"#80d5cb","on-error":"#ffffff","on-primary-fixed":"#00201d","error-container":"#ffdad6","secondary":"#565e74","on-secondary-fixed":"#131b2e","on-secondary-container":"#5c647a","surface":"#f7f9fb","on-secondary":"#ffffff","inverse-surface":"#2d3133","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","tertiary-container":"#00776d","on-tertiary":"#ffffff","on-primary":"#ffffff","tertiary":"#005c54","on-tertiary-fixed-variant":"#005049","on-background":"#191c1e","primary":"#005c55","on-surface-variant":"#3e4947","surface-dim":"#d8dadc","background":"#f7f9fb","on-primary-container":"#a3faef","surface-variant":"#e0e3e5","surface-container-low":"#f2f4f6","outline":"#6e7977","primary-container":"#0f766e","surface-bright":"#f7f9fb","on-tertiary-container":"#91fdef","outline-variant":"#bdc9c6","surface-container-lowest":"#ffffff","surface-tint":"#006a63","on-surface":"#191c1e","primary-fixed":"#9cf2e8","on-tertiary-fixed":"#00201d","tertiary-fixed":"#89f5e7","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-sm":"1rem","margin-sm":"1rem","space-2xl":"3rem","space-sm":"0.5rem","space-md":"1rem","margin":"2rem"},fontFamily:{"body-regular":["Inter"],"headline-3":["Inter"],"label-regular":["Inter"],"body-medium":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"display":["Inter"],"headline-2":["Inter"]},fontSize:{"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="prescriptions" href="#">Prescriptions</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive View State Controller -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-space-md bg-surface-container-low rounded-xl mb-space-lg shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></div>
+<span class="font-caption-caps text-caption-caps font-bold tracking-wider uppercase text-on-surface-variant">Prototype Interactive Views:</span>
+<div class="inline-flex rounded-lg bg-surface-container-lowest p-1 shadow-sm">
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium font-semibold bg-primary text-on-primary transition-all" id="btnViewStandard" onclick="switchState('standard')">
+          Upcoming Schedule (4)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="btnViewCompleted" onclick="switchState('completed')">
+          Completed &amp; AVS (12)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="btnViewCancelled" onclick="switchState('cancelled')">
+          Cancelled History (2)
+        </button>
+<button class="px-3 py-1.5 rounded-md font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="btnViewEmpty" onclick="switchState('empty')">
+          Empty Filter View
+        </button>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-error hover:bg-error-container hover:text-on-error-container transition-all font-label-medium text-label-medium font-semibold shadow-sm" onclick="toggleCancelModal(true)">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+        Preview Cancel Dialog
+      </button>
+</div>
+</div>
+<!-- Page Header -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col gap-1.5">
+<!-- Breadcrumb -->
+<nav class="flex items-center gap-1.5 font-label-medium text-label-medium text-on-surface-variant">
+<span>Patient Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Appointments</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">My Appointments</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-display text-display text-on-surface tracking-tight">My Appointments</h1>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-bold uppercase tracking-wider" id="activeCountPill">
+          4 Scheduled
+        </span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-2xl">
+        Manage scheduled clinical consultations, review past visit summaries, access Telehealth rooms, or make schedule changes.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-body-medium text-body-medium shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+        Sync with Calendar (.ics)
+      </button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-medium text-body-medium font-semibold shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+        Book New Appointment
+      </button>
+</div>
+</div>
+<!-- Telehealth Quick Priority Banner (Upcoming within 1 hour) -->
+<div class="p-space-lg rounded-2xl bg-gradient-to-r from-primary-container/20 via-primary-container/10 to-surface-container-low shadow-sm mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md" id="urgentTelehealthBanner">
+<div class="flex items-start md:items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-on-primary text-[26px]">video_call</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-caption-caps text-caption-caps font-bold tracking-wider text-primary uppercase">Starting in 35 minutes • Consult Ready</span>
+</div>
+<p class="font-headline-3 text-headline-3 text-on-surface mt-0.5">Cardiology Follow-up with Dr. Marcus Sterling, MD</p>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Encrypted Room #CC-9021 • Device Diagnostic Check Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-medium text-label-medium font-medium shadow-sm transition-all inline-flex items-center gap-1.5" onclick="testMediaDevices()">
+<span class="material-symbols-outlined text-[16px] text-primary">mic</span>
+        Test Audio/Video
+      </button>
+<a class="px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-medium text-body-medium font-semibold shadow-md inline-flex items-center gap-2 transition-all" href="#consult-1">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+        Enter Virtual Clinic Room
+      </a>
+</div>
+</div>
+<!-- Tab Switcher Navigation -->
+<div class="flex items-center gap-2 pb-2 mb-space-md">
+<button class="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-all shadow-sm" id="tabUpcoming" onclick="switchState('standard')">
+<span class="material-symbols-outlined text-[20px]">upcoming</span>
+<span>Upcoming Visits</span>
+<span class="px-2 py-0.5 rounded-full bg-on-primary-container/20 text-on-primary-container font-caption-caps text-caption-caps font-bold">4</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-3 text-headline-3 transition-all" id="tabCompleted" onclick="switchState('completed')">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Past &amp; Completed</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold">12</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-3 text-headline-3 transition-all" id="tabCancelled" onclick="switchState('cancelled')">
+<span class="material-symbols-outlined text-[20px]">cancel</span>
+<span>Cancelled</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold">2</span>
+</button>
+</div>
+<!-- Search & Filter Controls -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md items-center">
+<!-- Search Input -->
+<div class="md:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-11 pl-9 pr-8 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" id="searchInput" placeholder="Search by doctor, specialty, or confirmation ID..." type="text"/>
+<button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface text-[14px]" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Filters -->
+<div class="md:col-span-8 flex flex-wrap items-center gap-space-sm justify-start md:justify-end">
+<!-- Modality Filter -->
+<div class="relative">
+<select class="h-11 px-3 py-2 pr-8 rounded-lg bg-surface-container-low font-body-medium text-body-medium text-on-surface outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest">
+<option>All Modes (Video &amp; In-Person)</option>
+<option>Telehealth Video Only</option>
+<option>In-Clinic Visits Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Specialty Filter -->
+<div class="relative">
+<select class="h-11 px-3 py-2 pr-8 rounded-lg bg-surface-container-low font-body-medium text-body-medium text-on-surface outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest">
+<option>All Specialties</option>
+<option>Cardiology</option>
+<option>Dermatology</option>
+<option>Primary &amp; Family Care</option>
+<option>Clinical Psychology</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Date Range Filter -->
+<div class="relative">
+<select class="h-11 px-3 py-2 pr-8 rounded-lg bg-surface-container-low font-body-medium text-body-medium text-on-surface outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest">
+<option>Next 30 Days</option>
+<option>Next 60 Days</option>
+<option>Next 90 Days</option>
+<option>Past Year (2024)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">arrow_drop_down</span>
+</div>
+<!-- Sort -->
+<div class="relative">
+<select class="h-11 px-3 py-2 pr-8 rounded-lg bg-surface-container-low font-body-medium text-body-medium text-on-surface outline-none appearance-none cursor-pointer focus:bg-surface-container-lowest">
+<option>Date: Soonest First</option>
+<option>Date: Furthest First</option>
+<option>Doctor: A to Z</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">sort</span>
+</div>
+</div>
+</div>
+<!-- Active Filter Status Bar -->
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-medium text-label-medium">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span id="filterStatusText">Showing 4 upcoming appointments across 3 medical facilities</span>
+</div>
+<button class="text-primary hover:underline font-label-medium text-label-medium">Reset Filters</button>
+</div>
+</div>
+<!-- CONTAINER 1: UPCOMING APPOINTMENTS LIST (Default View) -->
+<div class="flex flex-col gap-space-lg" id="viewUpcoming">
+<!-- APPOINTMENT 1: Starting Soon Telehealth -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col" id="consult-1">
+<!-- Status bar strip -->
+<div class="px-space-lg py-2.5 bg-primary-container/15 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="px-2.5 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-caption-caps text-caption-caps font-bold uppercase tracking-wider">
+            CONFIRMED • STARTS IN 35 MINS
+          </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Confirmation ID: #CC-9021482</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-surface-container text-primary font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[13px]">task_alt</span>
+            Intake Complete • Vitals Synced
+          </span>
+</div>
+</div>
+<!-- Main Body -->
+<div class="p-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-center">
+<!-- Doctor Info -->
+<div class="xl:col-span-5 flex items-start gap-4">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover shadow-sm" data-alt="Professional clinical headshot of Dr. Marcus Sterling, interventional cardiologist, wearing clean lab coat with stethoscope in a bright, modern hospital setting with high contrast teal architectural accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1tXVJ_HNxzuTIyAx6HPvNM_OR79MoDCdacwAaAvtz5Fwtise2y0d0zR6e-6InFYrC54_n_6Q8IVYWGEqzkafhHVjANvjDLgrFMV-12e_Cdk5FeDiGGGQ9uT_ZZ3LWCZJuFSlaHUFlpgK4vSjgbbTfQN4lBpG_1zGqZIcHqtQSui0Dcra9dlwuJePRdHNaXJFzfSza1Pp26hiFAZPcwE4-E6UaQqSpoeNGj2_p2x3_"/>
+<span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm" title="Board Certified Specialist">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold truncate">Dr. Marcus Sterling, MD</h2>
+</div>
+<p class="font-body-medium text-body-medium text-primary font-medium">Interventional Cardiology</p>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant mt-0.5">St. Jude Memorial Health Network • Cardio Department</p>
+<div class="flex items-center gap-3 mt-2 text-on-surface-variant font-label-medium text-label-medium">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+                Telehealth Room #CC-9021
+              </span>
+<span class="text-surface-variant">•</span>
+<span>Patient: Eleanor Vance</span>
+</div>
+</div>
+</div>
+<!-- Schedule & Modality Meta -->
+<div class="xl:col-span-3 flex flex-col justify-center p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-primary font-headline-3 text-headline-3">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Today, Oct 28, 2024</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-medium text-body-medium mt-1 font-semibold">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span>10:30 AM - 11:20 AM EST</span>
+<span class="text-on-surface-variant font-normal font-caption-caps text-caption-caps">(50 min)</span>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between text-on-surface-variant font-caption-caps text-caption-caps">
+<span>Co-pay: Paid ($30.00)</span>
+<span class="text-primary font-semibold">HIPAA Level-4 Encrypted</span>
+</div>
+</div>
+<!-- Interactive Actions -->
+<div class="xl:col-span-4 flex flex-col sm:flex-row xl:flex-col justify-center items-stretch gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-body-medium text-body-medium font-semibold shadow-md flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+            Join Video Consultation
+          </button>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium font-medium transition-all inline-flex items-center justify-center gap-1.5" onclick="testMediaDevices()">
+<span class="material-symbols-outlined text-[16px] text-primary">sensors</span>
+              Test Audio/Video
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium transition-all inline-flex items-center justify-center gap-1" title="Changes within 2 hours require clinical line triage">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Late Reschedule
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- APPOINTMENT 2: Upcoming in 3 Days (Telehealth - Cancellation Available) -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col">
+<!-- Status bar strip -->
+<div class="px-space-lg py-2.5 bg-surface-container-low flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-bold uppercase tracking-wider">
+            CONFIRMED • IN 3 DAYS
+          </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Confirmation ID: #CC-BK-89204</span>
+</div>
+<div class="flex items-center gap-2 font-caption-caps text-caption-caps text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+          $25.00 Pre-authorized (Aetna POS II)
+        </div>
+</div>
+<!-- Main Body -->
+<div class="p-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-center">
+<!-- Doctor Info -->
+<div class="xl:col-span-5 flex items-start gap-4">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover shadow-sm" data-alt="Portrait of Dr. Elena Vance, MD, female dermatologist with warm clinical authority in modern teal medical consultation room with clinical charts in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI9METQZ7fhODhxBCXY-sMivDpYgZLR-6wYsyXD0nz7jPxni3YJkw2TRD4ZBRB-a5HFx6Mf1xGNXIyhV7w_FSK0407TneGQjrFDbmqfjkCttN_8Nq-2SITZxAREB6iFy8LbdzEMzPos0rwV7CDToDL10ZHJIz5B_8YLxoPYFLSHJoPDTIEYXKYKzBSzC8IYPHkmZHWGA_y1s_hxjD0sg4qRffbvPhQLUUbbOwUCk54"/>
+<span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold truncate">Dr. Elena Vance, MD</h2>
+<p class="font-body-medium text-body-medium text-primary font-medium">Board Certified Dermatology &amp; Oncology</p>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant mt-0.5">Metro Health Medical Center • Specialty Pavilion</p>
+<div class="flex items-center gap-3 mt-2 text-on-surface-variant font-label-medium text-label-medium">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+                Telehealth Room #CC-BK-89204
+              </span>
+<span class="text-surface-variant">•</span>
+<span class="text-on-secondary-container">Standard Annual Checkup</span>
+</div>
+</div>
+</div>
+<!-- Schedule & Modality Meta -->
+<div class="xl:col-span-3 flex flex-col justify-center p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-headline-3 text-headline-3">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span>
+<span>Thursday, Nov 7, 2024</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-medium text-body-medium mt-1 font-semibold">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span>10:30 AM - 11:20 AM EST</span>
+</div>
+<div class="mt-2 pt-2 text-on-surface-variant font-caption-caps text-caption-caps flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">lock_clock</span>
+            Room opens 15 mins before visit
+          </div>
+</div>
+<!-- Interactive Actions -->
+<div class="xl:col-span-4 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container-high text-outline cursor-not-allowed font-label-medium text-label-medium font-semibold inline-flex items-center justify-center gap-1" disabled="">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+              Join Video (Locked)
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium font-medium transition-all">
+              View Details
+            </button>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-primary hover:underline font-label-medium text-label-medium font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_calendar</span>
+              Reschedule
+            </button>
+<button class="text-error hover:text-on-error-container font-label-medium text-label-medium font-semibold inline-flex items-center gap-1 transition-colors" onclick="openCancelModalForElena()">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+              Cancel Appointment
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- APPOINTMENT 3: In-Clinic Visit (Action Required: Intake) -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col">
+<!-- Status bar strip -->
+<div class="px-space-lg py-2.5 bg-error-container/20 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-md bg-error-container text-on-error-container font-caption-caps text-caption-caps font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-error">warning</span>
+            ACTION REQUIRED: COMPLETE INTAKE
+          </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Confirmation ID: #CL-104921</span>
+</div>
+<div class="flex items-center gap-1.5 font-caption-caps text-caption-caps text-error font-medium">
+<span class="material-symbols-outlined text-[14px]">assignment_late</span>
+          Medical history questionnaire pending
+        </div>
+</div>
+<!-- Main Body -->
+<div class="p-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-center">
+<!-- Doctor Info -->
+<div class="xl:col-span-5 flex items-start gap-4">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover shadow-sm" data-alt="Professional clinical portrait of Dr. Aris Thorne, DO, friendly family medicine practitioner in modern clinic office with warm ambient light and medical diplomas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqEZ6rI5i8u4sEocZjJhiYdks8SXTfz-YYkPnF_38dkvAlQDAz5tTlWsetqvrOMsvIGtP6ysMQI6WpA5BxzAzoMtF7jgtcrLiS8gTxVSTkDvPUihhUQK5svaRqHMvTsgSzAsU5lvrIUTZSwIcG2yGN-loXXx0O1jEcTxVAqVseBgsuA5Q1BlesBVqsc8J0cO3NgJRV9MHP5EXfJs5amjCk24DcptCS4GRlFfw42Fo7"/>
+<span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_hospital</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold truncate">Dr. Aris Thorne, DO</h2>
+<p class="font-body-medium text-body-medium text-primary font-medium">Family &amp; Primary Comprehensive Care</p>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant mt-0.5">Metro Health Pavilion • Suite 410 (West Wing)</p>
+<div class="flex items-center gap-3 mt-2 text-on-surface-variant font-label-medium text-label-medium">
+<span class="inline-flex items-center gap-1 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">domain</span>
+                In-Clinic Office Consultation
+              </span>
+<span class="text-surface-variant">•</span>
+<a class="text-primary hover:underline inline-flex items-center gap-0.5 font-caption-caps text-caption-caps font-semibold" href="#">
+                Directions &amp; Pass
+                <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Schedule & Modality Meta -->
+<div class="xl:col-span-3 flex flex-col justify-center p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-headline-3 text-headline-3">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span>
+<span>Monday, Nov 18, 2024</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-medium text-body-medium mt-1 font-semibold">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span>9:15 AM - 10:00 AM EST</span>
+</div>
+<div class="mt-2 pt-2 text-on-surface-variant font-caption-caps text-caption-caps">
+            Please arrive 15 minutes early for vitals triage.
+          </div>
+</div>
+<!-- Interactive Actions -->
+<div class="xl:col-span-4 flex flex-col justify-center gap-2.5">
+<button class="w-full py-2.5 px-4 rounded-xl bg-tertiary-container hover:bg-tertiary text-on-tertiary font-body-medium text-body-medium font-semibold shadow-md flex items-center justify-center gap-2 transition-all">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+            Complete Pre-Visit Intake
+          </button>
+<div class="flex items-center justify-between">
+<button class="py-1.5 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium">
+              View Details
+            </button>
+<div class="flex items-center gap-2">
+<button class="text-primary hover:underline font-label-medium text-label-medium">Reschedule</button>
+<span class="text-surface-variant">•</span>
+<button class="text-error hover:underline font-label-medium text-label-medium" onclick="toggleCancelModal(true)">Cancel</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- APPOINTMENT 4: Telehealth - Future Routine Session -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col">
+<!-- Status bar strip -->
+<div class="px-space-lg py-2.5 bg-surface-container-low flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-md bg-surface-container-highest text-on-surface font-caption-caps text-caption-caps font-bold uppercase tracking-wider">
+            SCHEDULED
+          </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Confirmation ID: #MC-772910</span>
+</div>
+<div class="flex items-center gap-2 font-caption-caps text-caption-caps text-on-surface-variant">
+<span>Telehealth Session • MindCare Behavioral Health Network</span>
+</div>
+</div>
+<!-- Main Body -->
+<div class="p-space-lg grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-center">
+<!-- Doctor Info -->
+<div class="xl:col-span-5 flex items-start gap-4">
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-2xl bg-secondary-container text-on-secondary-container flex items-center justify-center font-display text-display font-bold">
+              SB
+            </div>
+<span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold truncate">Dr. Samantha Brooks, PhD</h2>
+<p class="font-body-medium text-body-medium text-primary font-medium">Clinical Psychology &amp; Cognitive Behavioral Therapy</p>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant mt-0.5">MindCare Network • Telehealth Division</p>
+<div class="flex items-center gap-3 mt-2 text-on-surface-variant font-label-medium text-label-medium">
+<span class="inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">videocam</span>
+                Video Consultation (Room opens 15m prior)
+              </span>
+</div>
+</div>
+</div>
+<!-- Schedule & Modality Meta -->
+<div class="xl:col-span-3 flex flex-col justify-center p-3 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2 text-on-surface font-headline-3 text-headline-3">
+<span class="material-symbols-outlined text-[20px] text-primary">calendar_today</span>
+<span>Monday, Dec 2, 2024</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-medium text-body-medium mt-1 font-semibold">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">schedule</span>
+<span>4:00 PM - 4:50 PM EST</span>
+</div>
+<div class="mt-2 pt-2 text-on-surface-variant font-caption-caps text-caption-caps">
+            Self-guided mood log pending
+          </div>
+</div>
+<!-- Interactive Actions -->
+<div class="xl:col-span-4 flex flex-col justify-center gap-2">
+<div class="flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium font-medium transition-all">
+              View Visit Preparation
+            </button>
+<button class="py-2 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium transition-all">
+              Reschedule
+            </button>
+</div>
+<div class="flex items-center justify-end pt-1">
+<button class="text-error hover:text-on-error-container font-label-medium text-label-medium inline-flex items-center gap-1" onclick="toggleCancelModal(true)">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+              Cancel Appointment
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- CONTAINER 2: COMPLETED & PAST VISITS VIEW (Simulated Tab) -->
+<div class="hidden flex-col gap-space-lg" id="viewCompleted">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Archived Telehealth Recordings &amp; Clinical Notes are retained per HIPAA 7-year records policy.</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium font-semibold shadow-sm">
+        Download Annual Health Summary
+      </button>
+</div>
+<!-- Completed Item 1 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold">COMPLETED</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">October 12, 2024 • 11:00 AM</span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-1">Dr. Marcus Sterling, MD — Cardiovascular Diagnostics Review</h3>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant">Diagnosis: Mild essential hypertension. Medication adjusted. 30-day follow-up ordered.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+          After-Visit Summary (AVS)
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">download</span>
+          Clinical Summary PDF
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-medium text-label-medium font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">medication</span>
+          Refill Rx
+        </button>
+</div>
+</div>
+<!-- Completed Item 2 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant">check_circle</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold">COMPLETED</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">September 19, 2024 • 3:30 PM</span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-1">Dr. Samantha Brooks, PhD — Cognitive Behavioral Intake</h3>
+<p class="font-caption-caps text-caption-caps text-on-surface-variant">Initial psychiatric wellness evaluation. Care plan established.</p>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+          Visit Summary
+        </button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">event_repeat</span>
+          Book Follow-up
+        </button>
+</div>
+</div>
+</div>
+<!-- CONTAINER 3: CANCELLED VISITS VIEW (Simulated Tab) -->
+<div class="hidden flex-col gap-space-lg" id="viewCancelled">
+<!-- Cancelled Card 1 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-error-container/20 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_busy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-md bg-error-container text-on-error-container font-caption-caps text-caption-caps font-bold uppercase">
+              CANCELLED BY PATIENT
+            </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Scheduled for: August 14, 2024</span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-1">Dr. Aris Thorne, DO — Routine Physical Exam</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Reason recorded: Schedule conflict (work travel). Co-pay pre-authorization fully refunded.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-medium text-label-medium font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">replay</span>
+          Rebook Consultation
+        </button>
+</div>
+</div>
+<!-- Cancelled Card 2 -->
+<div class="rounded-2xl bg-surface-container-lowest shadow-sm p-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-error-container/20 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">event_busy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-md bg-error-container text-on-error-container font-caption-caps text-caption-caps font-bold uppercase">
+              CANCELLED BY CLINIC (DOCTOR ON CALL)
+            </span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Scheduled for: July 02, 2024</span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-1">Dr. Marcus Sterling, MD — Emergency Surgery Coverage</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant">Doctor emergency callout. Priority reschedule credit issued to patient account.</p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-medium text-label-medium font-semibold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+          Redeem &amp; Reschedule
+        </button>
+</div>
+</div>
+</div>
+<!-- CONTAINER 4: EMPTY STATE VIEW (Zero Records View) -->
+<div class="hidden flex-col items-center justify-center p-space-2xl rounded-2xl bg-surface-container-lowest shadow-sm text-center" id="viewEmpty">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-outline mb-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary">event_available</span>
+</div>
+<h3 class="font-headline-1 text-headline-1 text-on-surface font-semibold tracking-tight">No upcoming appointments scheduled</h3>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-md mt-2 mb-space-lg">
+      You are completely up to date with your care plan. Search our provider directory to schedule a new telehealth consultation or an in-clinic visit.
+    </p>
+<div class="flex flex-wrap items-center justify-center gap-3">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-body-medium text-body-medium" onclick="switchState('standard')">
+        Clear Filter Criteria
+      </button>
+<button class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-body-medium text-body-medium font-semibold shadow-md">
+<span class="material-symbols-outlined text-[20px]">search</span>
+        Find a Doctor &amp; Book Now
+      </button>
+</div>
+</div>
+<!-- CANCELLATION CONFIRMATION MODAL OVERLAY -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-all duration-300 opacity-0 pointer-events-none" id="cancelModalOverlay">
+<div class="bg-surface-container-lowest rounded-2xl max-w-lg w-full shadow-2xl overflow-hidden transform scale-95 transition-all duration-300" id="cancelModalContent">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">event_busy</span>
+</div>
+<div>
+<h3 class="font-headline-2 text-headline-2 text-on-surface font-semibold">Cancel Scheduled Appointment?</h3>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Consultation ID: #CC-BK-89204</span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-1 rounded-lg" onclick="toggleCancelModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="font-body-medium text-body-medium font-semibold text-on-surface">
+            Dr. Elena Vance, MD • Dermatology Telehealth
+          </div>
+<div class="text-on-surface-variant font-caption-caps text-caption-caps">
+            Thursday, Nov 7, 2024 at 10:30 AM EST (In 3 days)
+          </div>
+</div>
+<!-- HIPAA Policy Reminder -->
+<div class="p-3 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">verified_user</span>
+<p class="font-caption-caps text-caption-caps leading-relaxed">
+<strong>24-Hour Policy Notice:</strong> Cancellations made more than 24 hours in advance incur no clinical fee. Your <strong>$25.00 co-pay pre-authorization</strong> will be fully voided and released immediately.
+          </p>
+</div>
+<!-- Cancellation Reason -->
+<div class="flex flex-col gap-2">
+<label class="font-label-medium text-label-medium font-semibold text-on-surface">Please select a reason for cancellation:</label>
+<div class="flex flex-col gap-2">
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input checked="" class="text-primary focus:ring-primary h-4 w-4" name="cancelReason" type="radio"/>
+<span class="font-body-regular text-body-regular text-on-surface">Schedule conflict / unavailable at this time</span>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="text-primary focus:ring-primary h-4 w-4" name="cancelReason" type="radio"/>
+<span class="font-body-regular text-body-regular text-on-surface">Symptoms resolved or improved</span>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="text-primary focus:ring-primary h-4 w-4" name="cancelReason" type="radio"/>
+<span class="font-body-regular text-body-regular text-on-surface">Found earlier slot with another specialist</span>
+</label>
+<label class="flex items-center gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors">
+<input class="text-primary focus:ring-primary h-4 w-4" name="cancelReason" type="radio"/>
+<span class="font-body-regular text-body-regular text-on-surface">Other personal reason</span>
+</label>
+</div>
+</div>
+<!-- Optional Comments -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Optional message for Dr. Vance's care coordinator:</label>
+<textarea class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="e.g. Would prefer to reschedule for early December..." rows="2"></textarea>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3">
+<button class="font-label-medium text-label-medium text-primary hover:underline order-2 sm:order-1 font-semibold" onclick="rescheduleInstead()">
+          Reschedule Instead
+        </button>
+<div class="flex items-center gap-2.5 w-full sm:w-auto order-1 sm:order-2">
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-body-medium text-body-medium transition-all shadow-sm" onclick="toggleCancelModal(false)">
+            Keep Appointment
+          </button>
+<button class="flex-1 sm:flex-none px-4 py-2 rounded-lg bg-error hover:bg-on-error-container text-on-error font-body-medium text-body-medium font-semibold transition-all shadow-sm" onclick="confirmCancellation()">
+            Yes, Cancel Appointment
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Help & Telehealth Guarantee Footnote -->
+<div class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 text-on-surface-variant font-caption-caps text-caption-caps">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>CareConnect360 Encrypted EHR Engine • 256-bit AES Patient Data Vault</span>
+</div>
+<div class="flex items-center gap-4">
+<a class="hover:text-primary transition-colors" href="#">Telehealth Policy</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">No-Show &amp; Cancellation Terms</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Technical Helpdesk (1-800-555-CARE)</a>
+</div>
+</div>
+</div>
+<script>
+  // State Controller Script
+  function switchState(stateName) {
+    const vUpcoming = document.getElementById('viewUpcoming');
+    const vCompleted = document.getElementById('viewCompleted');
+    const vCancelled = document.getElementById('viewCancelled');
+    const vEmpty = document.getElementById('viewEmpty');
+    const pill = document.getElementById('activeCountPill');
+    const filterText = document.getElementById('filterStatusText');
+    const urgentBanner = document.getElementById('urgentTelehealthBanner');
+
+    // Tab buttons
+    const tabUpcoming = document.getElementById('tabUpcoming');
+    const tabCompleted = document.getElementById('tabCompleted');
+    const tabCancelled = document.getElementById('tabCancelled');
+
+    // Prototype switcher buttons
+    const btnViewStandard = document.getElementById('btnViewStandard');
+    const btnViewCompleted = document.getElementById('btnViewCompleted');
+    const btnViewCancelled = document.getElementById('btnViewCancelled');
+    const btnViewEmpty = document.getElementById('btnViewEmpty');
+
+    // Reset view containers
+    vUpcoming.classList.add('hidden');
+    vCompleted.classList.add('hidden');
+    vCancelled.classList.add('hidden');
+    vEmpty.classList.add('hidden');
+
+    // Reset Prototype Button Styles
+    const protoBtns = [btnViewStandard, btnViewCompleted, btnViewCancelled, btnViewEmpty];
+    protoBtns.forEach(btn => {
+      btn.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all";
+    });
+
+    // Reset Tab Switcher Styles
+    const tabs = [tabUpcoming, tabCompleted, tabCancelled];
+    tabs.forEach(tab => {
+      tab.className = "flex items-center gap-2 px-5 py-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-headline-3 text-headline-3 transition-all";
+    });
+
+    if (stateName === 'standard') {
+      vUpcoming.classList.remove('hidden');
+      if (urgentBanner) urgentBanner.classList.remove('hidden');
+      pill.textContent = "4 Scheduled";
+      pill.className = "px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps font-bold uppercase tracking-wider";
+      filterText.textContent = "Showing 4 upcoming appointments across 3 medical facilities";
+      tabUpcoming.className = "flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-all shadow-sm";
+      btnViewStandard.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium font-semibold bg-primary text-on-primary transition-all";
+    } else if (stateName === 'completed') {
+      vCompleted.classList.remove('hidden');
+      if (urgentBanner) urgentBanner.classList.add('hidden');
+      pill.textContent = "12 Completed";
+      pill.className = "px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold uppercase tracking-wider";
+      filterText.textContent = "Showing past consultations and discharge summaries from the last 12 months";
+      tabCompleted.className = "flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-all shadow-sm";
+      btnViewCompleted.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium font-semibold bg-primary text-on-primary transition-all";
+    } else if (stateName === 'cancelled') {
+      vCancelled.classList.remove('hidden');
+      if (urgentBanner) urgentBanner.classList.add('hidden');
+      pill.textContent = "2 Cancelled";
+      pill.className = "px-3 py-1 rounded-full bg-error-container text-on-error-container font-caption-caps text-caption-caps font-bold uppercase tracking-wider";
+      filterText.textContent = "Showing 2 cancelled consultations with refund and waiver audit status";
+      tabCancelled.className = "flex items-center gap-2 px-5 py-3 rounded-xl bg-primary-container text-on-primary-container font-headline-3 text-headline-3 transition-all shadow-sm";
+      btnViewCancelled.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium font-semibold bg-primary text-on-primary transition-all";
+    } else if (stateName === 'empty') {
+      vEmpty.classList.remove('hidden');
+      if (urgentBanner) urgentBanner.classList.add('hidden');
+      pill.textContent = "0 Matches";
+      pill.className = "px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps font-bold uppercase tracking-wider";
+      filterText.textContent = "0 appointments matching the selected filter query";
+      btnViewEmpty.className = "px-3 py-1.5 rounded-md font-label-medium text-label-medium font-semibold bg-primary text-on-primary transition-all";
+    }
+  }
+
+  function toggleCancelModal(show) {
+    const modal = document.getElementById('cancelModalOverlay');
+    const content = document.getElementById('cancelModalContent');
+    if (show) {
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    } else {
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      modal.classList.remove('opacity-100');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+    }
+  }
+
+  function openCancelModalForElena() {
+    toggleCancelModal(true);
+  }
+
+  function confirmCancellation() {
+    toggleCancelModal(false);
+    switchState('cancelled');
+  }
+
+  function rescheduleInstead() {
+    toggleCancelModal(false);
+    alert("Opening interactive appointment reschedule calendar...");
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('searchInput');
+    if (input) input.value = '';
+  }
+
+  function testMediaDevices() {
+    alert("Running CareConnect360 Diagnostic:\n- Camera: HD Webcam detected\n- Microphone: Default input active\n- Connection: 85 Mbps (Optimal for 1080p Telehealth)");
+  }
+</script></main></div></body></html>

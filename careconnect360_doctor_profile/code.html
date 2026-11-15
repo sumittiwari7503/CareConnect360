@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#00504a","secondary-container":"#dae2fd","on-error-container":"#93000a","surface-container-highest":"#e0e3e5","surface-container-high":"#e6e8ea","secondary-fixed-dim":"#bec6e0","error":"#ba1a1a","tertiary-fixed-dim":"#6bd8cb","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","inverse-primary":"#80d5cb","on-error":"#ffffff","on-primary-fixed":"#00201d","error-container":"#ffdad6","secondary":"#565e74","on-secondary-fixed":"#131b2e","on-secondary-container":"#5c647a","surface":"#f7f9fb","on-secondary":"#ffffff","inverse-surface":"#2d3133","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","tertiary-container":"#00776d","on-tertiary":"#ffffff","on-primary":"#ffffff","tertiary":"#005c54","on-tertiary-fixed-variant":"#005049","on-background":"#191c1e","primary":"#005c55","on-surface-variant":"#3e4947","surface-dim":"#d8dadc","background":"#f7f9fb","on-primary-container":"#a3faef","surface-variant":"#e0e3e5","surface-container-low":"#f2f4f6","outline":"#6e7977","primary-container":"#0f766e","surface-bright":"#f7f9fb","on-tertiary-container":"#91fdef","outline-variant":"#bdc9c6","surface-container-lowest":"#ffffff","surface-tint":"#006a63","on-surface":"#191c1e","primary-fixed":"#9cf2e8","on-tertiary-fixed":"#00201d","tertiary-fixed":"#89f5e7","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2rem","gutter":"1.5rem","space-xs":"0.25rem","space-lg":"1.5rem","gutter-sm":"1rem","margin-sm":"1rem","space-2xl":"3rem","space-sm":"0.5rem","space-md":"1rem","margin":"2rem"},fontFamily:{"body-regular":["Inter"],"headline-3":["Inter"],"label-regular":["Inter"],"body-medium":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"display":["Inter"],"headline-2":["Inter"]},fontSize:{"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="prescriptions" href="#">Prescriptions</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Navigation & Breadcrumbs Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-primary hover:bg-surface-container shadow-sm transition-all font-body-medium text-body-medium" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back to Search</span>
+</a>
+<span class="text-outline-variant">/</span>
+<nav class="flex items-center gap-2 font-caption-caps text-caption-caps uppercase tracking-wider text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Patient Portal</a>
+<span class="text-outline-variant font-normal">/</span>
+<a class="hover:text-primary transition-colors" href="#">Find Doctors</a>
+<span class="text-outline-variant font-normal">/</span>
+<span class="text-primary font-semibold">Dr. Elena Vance, MD</span>
+</nav>
+</div>
+<!-- Quick Meta Chips -->
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant font-caption-caps text-caption-caps shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+        NPI: 1942084721
+      </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-caption-caps text-caption-caps font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+        Accepting New Patients
+      </span>
+</div>
+</div>
+<!-- Hero Header Profile Card -->
+<div class="relative overflow-hidden rounded-full bg-surface-container-lowest shadow-sm mb-space-xl p-space-xl">
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row gap-space-xl items-start lg:items-center justify-between">
+<!-- Doctor Portrait & Primary Identity -->
+<div class="flex flex-col sm:flex-row gap-space-lg items-start sm:items-center">
+<div class="relative shrink-0">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm and professional studio portrait of Dr. Elena Vance, an experienced female dermatologist in her late 30s with a reassuring demeanor, wearing a tailored clinical white coat and stethoscope, set against a soft muted teal-tinted background with soft clinical ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVGaUn50RqbBHDPIaS8t5XaqDajRYgUxd9_cCjlJNgff5nV7khv-5-2993m6dLuLadYGCGqclbg5edeXnLKJzvH49vqzPnT9_DmagrDzjxmiJIUzGGdQ9wZCkA4hnFVONRLRpMDzni1EjwtpSIZLX1GipWyQCYrsyv-EYWQFeX5b_rD_WkVxMpxxAL3nc-zXwizpqgwU1FS7tDvkd-xA-3ipyRJiyu8sg7ab2NnpD8"/>
+</div>
+<div class="absolute -bottom-1 -right-1 p-1 rounded-full bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-primary block" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex flex-wrap items-center gap-2">
+<h1 class="font-headline-1 text-headline-1 text-on-surface tracking-tight">Dr. Elena Vance, MD</h1>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-caption-caps text-caption-caps font-semibold uppercase">
+              Top Ranked Specialist
+            </span>
+</div>
+<p class="font-headline-3 text-headline-3 text-primary font-medium">
+            Board Certified Dermatologist • Clinical Associate Professor
+          </p>
+<div class="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1 font-body-regular text-body-regular text-on-surface-variant">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-3 text-headline-3 font-bold">4.9</span>
+<a class="text-primary hover:underline font-body-medium text-body-medium ml-0.5" href="#reviews">(184 verified patient reviews)</a>
+</div>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">clinical_notes</span>
+<span>14 Years Clinical Practice</span>
+</div>
+<span class="text-outline-variant hidden sm:inline">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">translate</span>
+<span>English (Native), Spanish (Fluent)</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2 mt-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">apartment</span>
+              Metro Health Medical Center
+            </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">videocam</span>
+              CareConnect Virtual Telehealth Network
+            </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">shield</span>
+              License #CA-892103
+            </span>
+</div>
+</div>
+</div>
+<!-- Quick Trust Metric Counters -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-1 gap-space-sm w-full lg:w-48 shrink-0">
+<div class="p-3 rounded-xl bg-surface-container-low text-left">
+<div class="font-headline-2 text-headline-2 text-primary font-bold">98.4%</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant uppercase mt-0.5">Diagnostic Accuracy</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-left">
+<div class="font-headline-2 text-headline-2 text-primary font-bold">12,500+</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant uppercase mt-0.5">Consultations Done</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low text-left col-span-2 sm:col-span-1 lg:col-span-1">
+<div class="font-headline-2 text-headline-2 text-primary font-bold">&lt; 4 Min</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant uppercase mt-0.5">Avg Video Wait Time</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric 2-Column Content Layout (65% / 35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: Clinical Credentials, Bio, Services & Feedback (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-xl">
+<!-- Care Modalities / Consultation Types -->
+<div class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Consultation Options &amp; Rates</h2>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Direct Pay &amp; In-Network Coverage</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Telehealth Card -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-3 cursor-pointer group">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">videocam</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-caption-caps text-caption-caps">
+                  Most Popular
+                </span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Telehealth Video Consult</h3>
+<p class="font-label-regular text-label-regular text-on-surface-variant leading-relaxed">
+                Comprehensive 50-minute high-definition digital examination with digital dermoscopy review.
+              </p>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-1 text-headline-1 text-primary font-bold">$25</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">with insurance</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant block mt-0.5">$110 standard direct-pay rate</span>
+</div>
+</div>
+<!-- In-Clinic Card -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-3 cursor-pointer group">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">apartment</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption-caps text-caption-caps">
+                  Suite 410
+                </span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface">In-Clinic Office Visit</h3>
+<p class="font-label-regular text-label-regular text-on-surface-variant leading-relaxed">
+                45-minute in-person physical screening, biopsy capability, and surgical derm evaluation.
+              </p>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-1 text-headline-1 text-on-surface font-bold">$30</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">with insurance</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant block mt-0.5">$130 direct-pay at Metro Pavilion</span>
+</div>
+</div>
+<!-- Async Card -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between gap-3 cursor-pointer group">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-caption-caps text-caption-caps">
+                  24h Turnaround
+                </span>
+</div>
+<h3 class="font-headline-3 text-headline-3 text-on-surface">Async Rx &amp; Skin Check</h3>
+<p class="font-label-regular text-label-regular text-on-surface-variant leading-relaxed">
+                Secure photo transmission for prescription refills, mild flare-ups, and routine acne management.
+              </p>
+</div>
+<div class="pt-2">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-1 text-headline-1 text-on-surface font-bold">$45</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">flat direct fee</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant block mt-0.5">Prescription sent directly to pharmacy</span>
+</div>
+</div>
+</div>
+</div>
+<!-- About Dr. Vance Section -->
+<div class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">About Dr. Vance</h2>
+</div>
+<div class="space-y-3 font-body-regular text-body-regular text-on-surface-variant leading-relaxed">
+<p>
+            Dr. Elena Vance, MD, is a nationally recognized, double-boarded dermatologist specializing in both clinical outpatient dermatology and digital teledermatology. With over 14 years of clinical leadership, Dr. Vance treats complex inflammatory skin diseases, acute dermatoses, acne vulgaris, and pediatric conditions.
+          </p>
+<p>
+            Her patient-first philosophy focuses on proactive, barrier-restoring dermatologic health and accessible virtual consultations. In addition to her active clinical load at Metro Health Medical Center, she directs the Digital Tele-Dermatology Triage Program, training resident physicians to harness high-resolution clinical imaging for expedited diagnostics.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary shrink-0 mt-0.5">favorite</span>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface font-semibold">Patient-Centered Empathy</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Holistic treatment protocols custom-tailored to lifestyle, stress, and skin tolerance.</span>
+</div>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-primary shrink-0 mt-0.5">neurology</span>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface font-semibold">Evidence-Based Formulations</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">Specialized in bio-compatible therapeutics and steroid-sparing topical immunomodulators.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Education, Credentials & Hospital Affiliations -->
+<div class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Education &amp; Clinical Credentials</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Timeline / Diplomas -->
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-primary font-semibold uppercase">Medical School</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Johns Hopkins University School of Medicine</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Doctor of Medicine (MD with Honors) • Class of 2010</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-primary font-semibold uppercase">Residency</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Johns Hopkins Hospital</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Dermatology Residency (Chief Resident) • 2010–2014</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[20px]">chips</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-primary font-semibold uppercase">Fellowship</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">UCSF Medical Center</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Fellow in Tele-dermatology &amp; Cutaneous Oncology</span>
+</div>
+</div>
+</div>
+<!-- Board Certs & Hospital Privileges -->
+<div class="flex flex-col gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Board Certifications</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-body-medium text-body-medium text-on-surface font-medium">American Board of Dermatology (ABD)</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant pl-7">Active Status • Maintenance of Certification (MOC) Current</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-semibold">Hospital Privileges</span>
+<div class="space-y-1.5 pl-1">
+<div class="flex items-center gap-2 text-on-surface font-body-regular text-body-regular">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Metro Health Medical Center (Senior Attending)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface font-body-regular text-body-regular">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>St. Jude Memorial Health Network (Consulting Staff)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Focus Areas & Conditions Treated -->
+<div class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Conditions Treated &amp; Clinical Focus</h2>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Tap to inspect protocol</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">healing</span>
+            Acne Vulgaris &amp; Hormonal Breakouts
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">grain</span>
+            Eczema &amp; Atopic Dermatitis
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">flare</span>
+            Plaque &amp; Inverse Psoriasis
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">wb_sunny</span>
+            Rosacea &amp; Facial Erythema
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">search</span>
+            Skin Lesion &amp; Mole Evaluation
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">brush</span>
+            Hair Loss &amp; Alopecia Diagnostics
+          </button>
+<button class="px-3.5 py-2 rounded-xl bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-body-medium text-body-medium transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">child_care</span>
+            Pediatric Dermatology (Age 2+)
+          </button>
+</div>
+</div>
+<!-- Patient Reviews & Clinical Quality Ratings -->
+<div class="bg-surface-container-lowest rounded-full p-space-xl shadow-sm flex flex-col gap-space-lg" id="reviews">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded-full bg-primary"></span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface">Verified Patient Feedback</h2>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+            100% Post-Visit Verified Responses
+          </div>
+</div>
+<!-- Rating Matrix & Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center p-space-md rounded-xl bg-surface-container-low">
+<div class="md:col-span-4 flex flex-col items-center justify-center text-center p-2">
+<span class="font-display text-display text-on-surface font-bold tracking-tight">4.9</span>
+<div class="flex items-center gap-0.5 text-amber-500 my-1">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase font-medium">Based on 184 reviews</span>
+</div>
+<div class="md:col-span-8 flex flex-col gap-2.5">
+<!-- Bedside Manner Bar -->
+<div class="flex items-center gap-3">
+<span class="font-label-medium text-label-medium text-on-surface w-32 shrink-0">Bedside Manner</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 100%;"></div>
+</div>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold w-8 text-right">5.0</span>
+</div>
+<!-- Clinical Clarity / Communication -->
+<div class="flex items-center gap-3">
+<span class="font-label-medium text-label-medium text-on-surface w-32 shrink-0">Communication</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 98%;"></div>
+</div>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold w-8 text-right">4.9</span>
+</div>
+<!-- Wait Time -->
+<div class="flex items-center gap-3">
+<span class="font-label-medium text-label-medium text-on-surface w-32 shrink-0">Wait Time Experience</span>
+<div class="flex-1 h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 96%;"></div>
+</div>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold w-8 text-right">4.8</span>
+</div>
+</div>
+</div>
+<!-- Sample Verified Reviews -->
+<div class="space-y-space-md">
+<!-- Review 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-label-medium">
+                  SM
+                </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Sarah M.</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Verified Telehealth Visit • Oct 18, 2024</span>
+</div>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface leading-relaxed">
+              "Dr. Vance was incredibly thorough during our video visit. She had me send high-res photos beforehand and walked me through each spot with total patience. Her treatment plan for my stubborn eczema worked within 5 days after months of frustration."
+            </p>
+</div>
+<!-- Review 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-label-medium">
+                  DK
+                </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">David K.</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Verified In-Clinic Visit • Oct 12, 2024</span>
+</div>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface leading-relaxed">
+              "Visited her clinic at Metro Health Pavilion. Outstanding bedside manner, zero rushed feeling, and seamless digital check-in through the portal. I really appreciate how clearly she explained biopsy results over the secure portal chat."
+            </p>
+</div>
+<!-- Review 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-medium">
+                  RP
+                </div>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium font-semibold text-on-surface">Rachel P.</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Verified Telehealth Visit • Sep 29, 2024</span>
+</div>
+</div>
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface leading-relaxed">
+              "The CareConnect video interface was seamless, and Dr. Vance adjusted my hormonal acne prescription in real time with electronic transmission to Walgreens. Couldn't have been easier."
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky Booking & Availability Widget (4 cols) -->
+<div class="lg:col-span-4 sticky top-20 flex flex-col gap-space-md">
+<!-- Primary Booking Card -->
+<div class="bg-surface-container-lowest rounded-full p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">calendar_add_on</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface font-semibold">Book Appointment</h2>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-caption-caps text-caption-caps font-semibold">
+            Live Schedule
+          </span>
+</div>
+<!-- Consultation Mode Switcher Pill -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Consultation Type</label>
+<div class="grid grid-cols-2 p-1 rounded-xl bg-surface-container-low gap-1" id="consultation-toggle">
+<button class="py-2 px-2 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium font-semibold shadow-sm transition-all flex items-center justify-center gap-1.5" id="mode-video" type="button">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span>Video (Telehealth)</span>
+</button>
+<button class="py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium font-medium transition-all flex items-center justify-center gap-1.5" id="mode-clinic" type="button">
+<span class="material-symbols-outlined text-[16px]">apartment</span>
+<span>In-Clinic Visit</span>
+</button>
+</div>
+</div>
+<!-- Insurance Verification Selector -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Insurance Provider</label>
+<span class="font-caption-caps text-caption-caps text-primary font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span> In-Network
+            </span>
+</div>
+<div class="relative">
+<select class="w-full h-10 pl-3 pr-8 rounded-xl bg-surface-container-low text-on-surface font-body-regular text-body-regular outline-none appearance-none cursor-pointer focus:bg-surface-container">
+<option selected="" value="aetna">Aetna Choice POS II (Verified)</option>
+<option value="bcbs">Blue Cross Blue Shield PPO</option>
+<option value="cigna">Cigna Open Access Plus</option>
+<option value="uhc">UnitedHealthcare Choice Plus</option>
+<option value="self">Direct Pay (Self-Insured / Out of Network)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="flex items-center justify-between px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface font-caption-caps text-caption-caps">
+<span class="text-on-surface-variant">Estimated Patient Co-Pay:</span>
+<span class="font-bold text-primary font-body-medium text-body-medium">$25.00</span>
+</div>
+</div>
+<!-- Date Carousel / Week Selector -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-medium text-label-medium text-on-surface-variant">Select Date (October 2024)</label>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-md text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="p-1 rounded-md text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-1.5 text-center">
+<!-- Mon Oct 28 -->
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" type="button">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Mon</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">28</span>
+<span class="font-caption-caps text-[10px] text-primary font-semibold mt-0.5">4 slots</span>
+</button>
+<!-- Tue Oct 29 (Selected Active) -->
+<button class="flex flex-col items-center p-2 rounded-xl bg-primary-container text-on-primary-container shadow-sm transition-colors" type="button">
+<span class="font-caption-caps text-caption-caps text-on-primary-container opacity-90">Tue</span>
+<span class="font-headline-3 text-headline-3 text-on-primary-container font-bold">29</span>
+<span class="font-caption-caps text-[10px] text-on-primary-container font-semibold mt-0.5">6 slots</span>
+</button>
+<!-- Wed Oct 30 -->
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" type="button">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Wed</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">30</span>
+<span class="font-caption-caps text-[10px] text-primary font-semibold mt-0.5">2 slots</span>
+</button>
+<!-- Thu Oct 31 (Full) -->
+<div class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low opacity-45 cursor-not-allowed">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Thu</span>
+<span class="font-headline-3 text-headline-3 text-on-surface-variant line-through font-medium">31</span>
+<span class="font-caption-caps text-[10px] text-on-surface-variant mt-0.5">Full</span>
+</div>
+</div>
+</div>
+<!-- Available Time Slots -->
+<div class="flex flex-col gap-space-sm">
+<!-- Morning Slots -->
+<div class="flex flex-col gap-1.5">
+<span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant font-semibold">Morning Availability</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-medium text-label-medium transition-colors" type="button">
+                9:00 AM
+              </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container-low text-outline-variant line-through font-label-medium text-label-medium cursor-not-allowed" type="button">
+                9:45 AM
+              </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-medium text-label-medium transition-colors" type="button">
+                10:30 AM
+              </button>
+<!-- 11:15 AM (Active selected state) -->
+<button class="py-2 px-2 rounded-lg bg-primary text-on-primary font-label-medium text-label-medium font-semibold shadow-sm flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">check</span>
+<span>11:15 AM</span>
+</button>
+</div>
+</div>
+<!-- Afternoon Slots -->
+<div class="flex flex-col gap-1.5 pt-1">
+<span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant font-semibold">Afternoon Availability</span>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-medium text-label-medium transition-colors" type="button">
+                1:30 PM
+              </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container-low text-outline-variant line-through font-label-medium text-label-medium cursor-not-allowed" type="button">
+                2:15 PM
+              </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-medium text-label-medium transition-colors" type="button">
+                3:00 PM
+              </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container-low hover:bg-primary-fixed hover:text-on-primary-fixed text-on-surface font-label-medium text-label-medium transition-colors" type="button">
+                4:00 PM
+              </button>
+</div>
+</div>
+</div>
+<!-- Appointment Order Summary Box -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant font-semibold">Appointment Summary</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">event</span>
+<div class="flex flex-col">
+<span class="font-body-medium text-body-medium text-on-surface font-semibold">Tue, Oct 29, 2024 at 11:15 AM EST</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Virtual Video Consultation (50 mins)</span>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between">
+<span class="font-label-medium text-label-medium text-on-surface-variant">Total Due Today</span>
+<span class="font-headline-3 text-headline-3 text-primary font-bold">$25.00 Co-Pay</span>
+</div>
+</div>
+<!-- Main Action CTA -->
+<button class="w-full py-3.5 px-space-md rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-3 text-headline-3 font-semibold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Continue to Booking &amp; Intake</span>
+</button>
+<p class="font-caption-caps text-caption-caps text-center text-on-surface-variant leading-tight">
+          Free cancellation or reschedule up to 24 hours prior to appointment time.
+        </p>
+</div>
+<!-- Clinical Hours & Clinic Location Card -->
+<div class="bg-surface-container-lowest rounded-full p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">Clinic Practice Location</span>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant">
+          Metro Health Medical Pavilion, Suite 410<br/>
+          742 Evergreen Healthcare Way, San Francisco, CA
+        </p>
+<!-- Static Location Preview Pin -->
+<div class="w-full h-24 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant font-caption-caps text-caption-caps shadow-inner" data-location="San Francisco, California" style="">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm shadow-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">pin_drop</span>
+            Metro Health Pavilion
+          </div>
+</div>
+<div class="pt-1 flex items-center justify-between text-on-surface-variant font-caption-caps text-caption-caps">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_parking</span>
+<span>Validated Patient Parking</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">accessible</span>
+<span>ADA Accessible</span>
+</div>
+</div>
+</div>
+<!-- Medical Emergency Safeguard Notice -->
+<div class="p-3.5 rounded-xl bg-surface-container-low text-on-surface-variant flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-error shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-caption-caps text-caption-caps text-error font-bold uppercase">Immediate Emergency Notice</span>
+<p class="font-caption-caps text-caption-caps leading-tight">
+            If you are experiencing severe swelling, anaphylaxis, or sudden acute lesions, please dial 911 or head directly to the nearest emergency facility.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive toggle for booking consultation modes
+  document.addEventListener('DOMContentLoaded', () => {
+    const videoBtn = document.getElementById('mode-video');
+    const clinicBtn = document.getElementById('mode-clinic');
+
+    if (videoBtn && clinicBtn) {
+      videoBtn.addEventListener('click', () => {
+        videoBtn.className = 'py-2 px-2 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium font-semibold shadow-sm transition-all flex items-center justify-center gap-1.5';
+        clinicBtn.className = 'py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium font-medium transition-all flex items-center justify-center gap-1.5';
+      });
+
+      clinicBtn.addEventListener('click', () => {
+        clinicBtn.className = 'py-2 px-2 rounded-lg bg-surface-container-lowest text-primary font-label-medium text-label-medium font-semibold shadow-sm transition-all flex items-center justify-center gap-1.5';
+        videoBtn.className = 'py-2 px-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-medium text-label-medium font-medium transition-all flex items-center justify-center gap-1.5';
+      });
+    }
+  });
+</script></main></div></body></html>

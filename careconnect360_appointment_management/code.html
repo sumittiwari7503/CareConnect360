@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary":"#ffffff","on-primary-fixed":"#00201d","surface":"#f7f9fb","outline-variant":"#bdc9c6","tertiary-fixed-dim":"#6bd8cb","inverse-on-surface":"#eff1f3","surface-tint":"#006a63","on-secondary-fixed":"#131b2e","primary-fixed":"#9cf2e8","tertiary":"#005c54","on-primary-fixed-variant":"#00504a","surface-container-highest":"#e0e3e5","on-tertiary-fixed":"#00201d","surface-container":"#eceef0","on-surface-variant":"#3e4947","on-tertiary":"#ffffff","outline":"#6e7977","primary-container":"#0f766e","on-surface":"#191c1e","surface-variant":"#e0e3e5","surface-container-lowest":"#ffffff","on-background":"#191c1e","on-secondary-fixed-variant":"#3f465c","on-secondary-container":"#5c647a","primary-fixed-dim":"#80d5cb","secondary-fixed-dim":"#bec6e0","tertiary-container":"#00776d","tertiary-fixed":"#89f5e7","secondary":"#565e74","on-primary-container":"#a3faef","on-secondary":"#ffffff","error":"#ba1a1a","on-error-container":"#93000a","on-tertiary-fixed-variant":"#005049","on-error":"#ffffff","surface-container-high":"#e6e8ea","secondary-fixed":"#dae2fd","error-container":"#ffdad6","inverse-surface":"#2d3133","primary":"#005c55","on-tertiary-container":"#91fdef","surface-dim":"#d8dadc","secondary-container":"#dae2fd","inverse-primary":"#80d5cb","surface-bright":"#f7f9fb","background":"#f7f9fb","surface-container-low":"#f2f4f6"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","gutter-sm":"1rem","space-2xl":"3rem","space-xl":"2rem","space-xs":"0.25rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem"},fontFamily:{"headline-3":["Inter"],"body-medium":["Inter"],"body-regular":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"],"display-mobile":["Inter"],"caption-caps":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"display":["Inter"]},fontSize:{"headline-3":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"body-medium":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"500"}],"body-regular":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-regular":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-2":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"caption-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"label-medium":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-1":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-inverse-surface z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-gutter flex items-center justify-between bg-inverse-surface"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-inverse-on-surface leading-tight">CareConnect360</span><span class="font-caption-caps text-caption-caps text-outline-variant tracking-wider uppercase">V3.2 Enterprise</span></div></div><span class="material-symbols-outlined text-outline-variant text-[20px]">verified_user</span></div><div class="px-gutter pt-space-md pb-space-sm"><span class="font-caption-caps text-caption-caps uppercase text-outline-variant tracking-wider">Administrative Modules</span></div><nav class="px-space-md flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-headline-3"><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="careconnect360-admin-dashboard" href="#">Overview</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="doctor-management" href="#">Doctors</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="patient-management" href="#">Patients</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-colors bg-primary-container text-on-primary-container font-headline-3" data-path="appointment-management" href="#">Appointments</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="reports" href="#">Reports</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md bg-inverse-surface/80 flex flex-col gap-space-md"><div class="bg-surface-container-highest/10 rounded-xl p-space-md flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary-fixed text-[16px]">security</span><span class="font-caption-caps text-caption-caps uppercase text-primary-fixed">Governance Active</span></div><span class="font-label-regular text-label-regular text-outline-variant">SOC2 Type II &amp; HIPAA Certified</span></div><div class="flex flex-col gap-space-xs"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-inverse-on-surface hover:bg-surface-container-highest/10 hover:text-inverse-on-surface transition-colors" data-path="audit-log-export" href="#"><span class="font-label-medium text-label-medium">Audit Log Quick Export</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span></a><button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-error/15 text-error-container hover:bg-error/25 transition-colors" type="button"><span class="font-label-medium text-label-medium">Emergency Lockout</span><span class="material-symbols-outlined text-[16px]">power_settings_new</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span><input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-lowest rounded-xl font-body-regular text-body-regular text-on-surface placeholder:text-outline focus:outline-none shadow-[0_1px_8px_rgba(0,0,0,0.04)]" placeholder="Search platform by doctor NPI, patient MRN, transaction ID, or facility..." type="text"/></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-sm"><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-low rounded-xl"><span class="w-2 h-2 rounded-full bg-primary"></span><span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant">HIPAA AUDIT LEVEL-4 • BAA ACTIVE • 99.98% UPTIME</span></div><div class="flex items-center gap-space-xs px-space-md py-space-xs bg-secondary-container rounded-xl"><span class="material-symbols-outlined text-on-secondary-container text-[16px]">dns</span><span class="font-label-medium text-label-medium text-on-secondary-container">Production Cluster US-East</span></div></div><div class="flex items-center gap-space-sm"><button class="relative w-10 h-10 rounded-xl bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors shadow-[0_1px_8px_rgba(0,0,0,0.04)]" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 bg-error rounded-full"></span></button></div><div class="flex items-center gap-space-md pl-space-md"><div class="flex flex-col text-right"><div class="flex items-center gap-space-xs justify-end"><span class="font-headline-3 text-headline-3 text-on-surface">Sarah Jenkins, MPH</span><span class="px-space-xs py-0.5 rounded-lg bg-primary-container text-on-primary-container font-caption-caps text-caption-caps">SUPER ADMIN</span></div><span class="font-label-regular text-label-regular text-on-surface-variant">Chief Healthcare Administrator &amp; Compliance Officer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive View State Controller -->
+<div class="w-full bg-surface-container-low px-space-md py-space-xs rounded-xl mb-space-md flex flex-wrap items-center justify-between gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-caption-caps text-caption-caps uppercase text-on-surface-variant tracking-wider">Simulation Sandbox:</span>
+<div class="flex items-center gap-space-xs bg-surface-container-highest/60 p-0.5 rounded-lg">
+<button class="px-space-sm py-1 rounded font-label-medium text-label-medium bg-surface-container-lowest text-primary shadow-sm transition-all" id="viewBtn-roster" onclick="switchView('roster')">Default Master Schedule</button>
+<button class="px-space-sm py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="viewBtn-drawer" onclick="switchView('drawer')">Encounter Drawer (#APT-9021)</button>
+<button class="px-space-sm py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="viewBtn-reschedule" onclick="switchView('reschedule')">Reschedule Dialog (#APT-9110)</button>
+<button class="px-space-sm py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface transition-all" id="viewBtn-conflict" onclick="switchView('conflict')">Conflict Resolution View</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-caption-caps text-caption-caps text-outline">Real-time Telemetry Stream Sync Active</span>
+</div>
+</div>
+<!-- Header & Breadcrumbs & Action Deck -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-regular text-label-regular">
+<span class="hover:text-primary cursor-pointer">Admin Portal</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer">Clinical Operations</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-label-medium text-label-medium">Appointment Management</span>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-1 text-headline-1 text-on-surface tracking-tight">Enterprise Appointment Master Roster</h1>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-4xl mt-0.5">
+          Central scheduling oversight, consultation mode triage, clinical encounter dispatch, rescheduling workflows, and WebRTC room capacity.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low transition-all shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">download</span>
+<span class="font-label-medium text-label-medium">Export Master Schedule (.csv / .xlsx)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="font-label-medium text-label-medium">+ Schedule Admin Encounter</span>
+</button>
+</div>
+</div>
+</div>
+<!-- High-level KPI Operational Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Today's Total Encounters</span>
+<div class="font-display text-display text-on-surface mt-1 tracking-tight">3,842</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">calendar_today</span>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant">
+<span class="font-label-regular text-label-regular"><strong class="text-primary font-label-medium">2,728</strong> Telehealth</span>
+<span class="text-outline-variant font-label-regular">•</span>
+<span class="font-label-regular text-label-regular"><strong class="text-on-surface font-label-medium">1,114</strong> In-Clinic</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-2 overflow-hidden flex">
+<div class="bg-primary h-full" style="width: 71%"></div>
+<div class="bg-secondary h-full" style="width: 29%"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-caption-caps text-caption-caps uppercase text-primary font-label-medium tracking-wider">Active Live</span>
+</div>
+<div class="font-display text-display text-on-surface mt-1 tracking-tight flex items-baseline gap-space-xs">
+            842
+            <span class="font-label-regular text-label-regular text-primary">In-Consultation</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">video_camera_front</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-regular text-label-regular">WebRTC Load: <strong class="text-on-surface font-label-medium">Optimal</strong></span>
+<span class="font-label-regular text-label-regular text-primary">16ms Avg Latency</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full" style="width: 84%"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Scheduled / Upcoming</span>
+<div class="font-display text-display text-on-surface mt-1 tracking-tight">2,610</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">upcoming</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-regular text-label-regular">Peak slot: <strong class="text-on-surface font-label-medium">02:00 PM EST</strong></span>
+<span class="font-label-regular text-label-regular text-secondary">64 Checked In</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-secondary h-full" style="width: 68%"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Completed Today</span>
+<div class="font-display text-display text-on-surface mt-1 tracking-tight">362</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[22px]">task_alt</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-regular text-label-regular">Signed EHRs: <strong class="text-on-surface font-label-medium">354 / 362</strong></span>
+<span class="font-label-regular text-label-regular text-primary font-label-medium">97.8%</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-primary h-full" style="width: 97.8%"></div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-caption-caps text-caption-caps uppercase text-outline tracking-wider">Cancelled / No-Show</span>
+<div class="font-display text-display text-error mt-1 tracking-tight flex items-baseline gap-space-xs">
+            28
+            <span class="font-caption-caps text-caption-caps text-error bg-error-container/60 px-1.5 py-0.5 rounded">0.7%</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container/40 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[22px]">event_busy</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between text-on-surface-variant">
+<span class="font-label-regular text-label-regular text-outline">Target Benchmark: &lt; 3.5%</span>
+<span class="font-caption-caps text-caption-caps text-primary uppercase font-label-medium">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-high h-1 rounded-full mt-2 overflow-hidden">
+<div class="bg-error h-full" style="width: 14%"></div>
+</div>
+</div>
+</div>
+<!-- Operational Filter Deck & Search -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md mb-space-lg">
+<!-- Search Bar -->
+<div class="relative w-full flex items-center">
+<span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full pl-11 pr-32 py-space-sm bg-surface-container-low rounded-xl font-body-regular text-body-regular text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" id="tableSearchInput" onkeyup="filterTableSearch()" placeholder="Search appointments by Appointment ID, Patient MRN, Patient Name, Attending Doctor, or Room ID..." type="text"/>
+<div class="absolute right-3 flex items-center gap-1.5 text-outline text-label-regular">
+<kbd class="px-1.5 py-0.5 bg-surface-container-high rounded font-caption-caps text-caption-caps">CTRL</kbd>
+<span>+</span>
+<kbd class="px-1.5 py-0.5 bg-surface-container-high rounded font-caption-caps text-caption-caps">K</kbd>
+</div>
+</div>
+<!-- Filter Selectors & Pickers -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- Date Picker Range -->
+<div class="flex flex-col gap-1">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Encounter Date</label>
+<div class="flex items-center justify-between bg-surface-container-low px-space-sm py-space-xs rounded-xl">
+<span class="font-label-medium text-label-medium text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">calendar_month</span>
+            Today (Nov 04, 2024)
+          </span>
+<span class="material-symbols-outlined text-outline text-[16px]">arrow_drop_down</span>
+</div>
+</div>
+<!-- Clinician Selector -->
+<div class="flex flex-col gap-1">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Attending Clinician</label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl font-label-medium text-label-medium text-on-surface focus:outline-none">
+<option selected="">All Doctors (Active Staff)</option>
+<option>Dr. Marcus Sterling, MD</option>
+<option>Dr. Elena Vance, MD</option>
+<option>Dr. Rajesh K. Nair, MD</option>
+<option>Dr. Aris Thorne, DO</option>
+<option>Dr. Samantha Brooks, PhD</option>
+</select>
+</div>
+<!-- Status Filter -->
+<div class="flex flex-col gap-1">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Clinical Status</label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl font-label-medium text-label-medium text-on-surface focus:outline-none">
+<option selected="">All Statuses</option>
+<option>Live / In-Consult</option>
+<option>Checked-In / Ready</option>
+<option>Upcoming Confirmed</option>
+<option>Completed &amp; Signed</option>
+<option>Conflict / Overlap</option>
+<option>Cancelled by Patient</option>
+</select>
+</div>
+<!-- Consultation Mode -->
+<div class="flex flex-col gap-1">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Consultation Mode</label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl font-label-medium text-label-medium text-on-surface focus:outline-none">
+<option selected="">All Modes (Telehealth &amp; In-Clinic)</option>
+<option>Telehealth Video (WebRTC)</option>
+<option>In-Clinic Physical Exam</option>
+<option>Hybrid Clinical Follow-up</option>
+</select>
+</div>
+<!-- Department / Clinic Hub -->
+<div class="flex flex-col gap-1">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Department Hub</label>
+<select class="bg-surface-container-low px-space-sm py-space-xs rounded-xl font-label-medium text-label-medium text-on-surface focus:outline-none">
+<option selected="">All Hubs</option>
+<option>Cardiology Pavilion 4B</option>
+<option>Dermatology Center</option>
+<option>Urgent Tele-Triage</option>
+<option>Neuropsychology Center</option>
+<option>Pediatric Tele-Health</option>
+</select>
+</div>
+</div>
+<!-- Quick Date Chips & Status Tabs Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<!-- Status Tabs -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium bg-primary-container text-on-primary-container shadow-sm transition-all" onclick="setTab(this, 'all')">
+          All Appointments (3,842)
+        </button>
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium text-on-surface-variant hover:bg-surface-container-low flex items-center gap-1.5 transition-all" onclick="setTab(this, 'live')">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Live Now (842)
+        </button>
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium text-on-surface-variant hover:bg-surface-container-low transition-all" onclick="setTab(this, 'checkedin')">
+          Checked-in &amp; Waiting (64)
+        </button>
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium text-on-surface-variant hover:bg-surface-container-low transition-all" onclick="setTab(this, 'upcoming')">
+          Upcoming (2,546)
+        </button>
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium text-on-surface-variant hover:bg-surface-container-low transition-all" onclick="setTab(this, 'completed')">
+          Completed (362)
+        </button>
+<button class="status-tab-btn px-space-md py-1.5 rounded-xl font-label-medium text-label-medium text-error hover:bg-error-container/40 transition-all flex items-center gap-1" onclick="setTab(this, 'conflict')">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+          Exceptions / Conflicts (28)
+        </button>
+</div>
+<!-- Quick Date chips -->
+<div class="flex items-center gap-1 bg-surface-container p-0.5 rounded-xl">
+<button class="px-space-sm py-1 rounded-lg font-caption-caps text-caption-caps bg-surface-container-lowest text-primary font-bold">Today</button>
+<button class="px-space-sm py-1 rounded-lg font-caption-caps text-caption-caps text-on-surface-variant hover:text-on-surface">Tomorrow</button>
+<button class="px-space-sm py-1 rounded-lg font-caption-caps text-caption-caps text-on-surface-variant hover:text-on-surface">This Week</button>
+<button class="px-space-sm py-1 rounded-lg font-caption-caps text-caption-caps text-on-surface-variant hover:text-on-surface">Custom Range</button>
+</div>
+</div>
+</div>
+<!-- Main View Workspace: Master Table + Dynamic Side Drawers/Modals -->
+<div class="relative w-full flex gap-space-lg items-start">
+<!-- Master Table Container -->
+<div class="flex-1 min-w-0 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col" id="masterTableContainer">
+<!-- Bulk Action Bar (Hidden by default unless items checked) -->
+<div class="hidden bg-surface-container px-space-md py-space-xs flex items-center justify-between transition-all" id="bulkActionBar">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-medium text-label-medium text-on-surface"><span id="checkedCount">0</span> encounters selected</span>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest text-primary text-label-medium font-label-medium hover:bg-surface-container-high transition-colors">Mass Reassign Doctor</button>
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-lowest text-on-surface text-label-medium font-label-medium hover:bg-surface-container-high transition-colors">Export Batch Vitals</button>
+</div>
+<button class="text-outline hover:text-on-surface font-caption-caps text-caption-caps uppercase" onclick="clearAllSelections()">Clear Selection</button>
+</div>
+<!-- Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-caption-caps text-caption-caps uppercase tracking-wider h-11">
+<th class="w-12 px-space-md py-space-xs">
+<input class="rounded text-primary focus:ring-0 cursor-pointer" onchange="toggleSelectAll(this)" type="checkbox"/>
+</th>
+<th class="px-space-md py-space-xs">Appt ID &amp; Time</th>
+<th class="px-space-md py-space-xs">Patient (MRN &amp; Demographics)</th>
+<th class="px-space-md py-space-xs">Attending Clinician</th>
+<th class="px-space-md py-space-xs">Mode &amp; Location</th>
+<th class="px-space-md py-space-xs">Encounter Status</th>
+<th class="px-space-md py-space-xs">Duration &amp; WebRTC Quality</th>
+<th class="px-space-md py-space-xs text-right">Operational Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-regular text-body-regular" id="appointmentRosterBody">
+<!-- ROW 1: #APT-2024-9021 (Live In-Consult) -->
+<tr class="appt-row hover:bg-surface-container-low/70 transition-colors group" data-search="apt-2024-9021 eleanor vance 849204 marcus sterling cc-9021 cardiology" data-status="live">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-primary">#APT-2024-9021</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface" title="Copy Appointment ID">content_copy</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">10:30 AM – 11:20 AM EST</div>
+<span class="font-caption-caps text-caption-caps text-outline">Slot: 50 mins</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-container/20 text-primary flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    EV
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Eleanor Vance</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #849204</span> • <span>68 y/o F</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 392-1084</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-on-surface">Dr. Marcus Sterling, MD</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Interventional Cardiology</div>
+<div class="font-caption-caps text-caption-caps text-outline">NPI: 1982740192 • Pav 4B</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Telehealth Video
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Room #CC-9021
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-fixed/30 text-primary font-label-medium text-label-medium">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                  Live - In Consult
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant mt-1">Elapsed: 24m 12s</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">network_check</span>
+                  Optimal (16ms)
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline-variant text-on-surface-variant mt-0.5">
+                  Loss: 0.02% • 1080p 60fps
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary-container font-label-medium text-label-medium hover:bg-primary transition-colors flex items-center gap-1 shadow-sm" onclick="openDrawer('APT-2024-9021')">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Monitor
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="openRescheduleModal('APT-2024-9021', 'Eleanor Vance', 'Dr. Marcus Sterling, MD')" title="Reschedule">
+<span class="material-symbols-outlined text-[18px]">save_as</span>
+</button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" title="More Options">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: #APT-2024-9022 (Checked In • Waiting) -->
+<tr class="appt-row hover:bg-surface-container-low/70 transition-colors group" data-search="apt-2024-9022 david k 851022 rajesh nair cc-9024 cardiothoracic" data-status="checkedin">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-on-surface">#APT-2024-9022</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface" title="Copy Appointment ID">content_copy</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">10:45 AM – 11:15 AM EST</div>
+<span class="font-caption-caps text-caption-caps text-outline">Slot: 30 mins</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    DK
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">David K.</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #851022</span> • <span>52 y/o M</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 720-9411</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-on-surface">Dr. Rajesh K. Nair, MD</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Cardiothoracic Surgery</div>
+<div class="font-caption-caps text-caption-caps text-outline">NPI: 1849201948 • Thoracic Core</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Telehealth Video
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Room #CC-9024
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface font-label-medium text-label-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Checked In • Waiting
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline mt-1">Waiting: 6m in Virtual Lobby</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                  Device Checked OK
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline-variant text-on-surface-variant mt-0.5">
+                  Mic/Cam Verified
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-medium text-label-medium hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span> Notify Doctor
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="openRescheduleModal('APT-2024-9022', 'David K.', 'Dr. Rajesh K. Nair, MD')" title="Reschedule">
+<span class="material-symbols-outlined text-[18px]">save_as</span>
+</button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: #APT-2024-9025 (Confirmed Upcoming / In-Clinic) -->
+<tr class="appt-row hover:bg-surface-container-low/70 transition-colors group" data-search="apt-2024-9025 sarah m 839104 elena vance dermatology pavilion suite 410" data-status="upcoming">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-on-surface">#APT-2024-9025</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface" title="Copy Appointment ID">content_copy</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">11:00 AM – 11:30 AM EST</div>
+<span class="font-caption-caps text-caption-caps text-outline">Slot: 30 mins</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    SM
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Sarah M.</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #839104</span> • <span>34 y/o F</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 890-4421</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-on-surface">Dr. Elena Vance, MD</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Dermatology</div>
+<div class="font-caption-caps text-caption-caps text-outline">NPI: 1049281924 • Center North</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+                  In-Clinic Physical
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Pavilion Suite 410
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/60 text-on-secondary-fixed font-label-medium text-label-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Confirmed Upcoming
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline mt-1">Starts in 25 mins</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-outline">badge</span>
+                  Front Desk Ready
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline-variant text-on-surface-variant mt-0.5">
+                  Copay Collected ($25)
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-medium text-label-medium hover:bg-surface-container-highest transition-colors">
+                    Check In Patient
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="openRescheduleModal('APT-2024-9025', 'Sarah M.', 'Dr. Elena Vance, MD')" title="Reschedule">
+<span class="material-symbols-outlined text-[18px]">save_as</span>
+</button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: #APT-2024-9030 (Confirmed Upcoming / Telehealth) -->
+<tr class="appt-row hover:bg-surface-container-low/70 transition-colors group" data-search="apt-2024-9030 robert b 862190 aris thorne family medicine cc-9030" data-status="upcoming">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-on-surface">#APT-2024-9030</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface" title="Copy Appointment ID">content_copy</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">11:30 AM – 12:00 PM EST</div>
+<span class="font-caption-caps text-caption-caps text-outline">Slot: 30 mins</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    RB
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Robert B.</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #862190</span> • <span>61 y/o M</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 438-9901</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-on-surface">Dr. Aris Thorne, DO</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Family Medicine</div>
+<div class="font-caption-caps text-caption-caps text-outline">NPI: 1729381903 • Primary Hub</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Telehealth Video
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Room #CC-9030
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/60 text-on-secondary-fixed font-label-medium text-label-medium">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Confirmed Upcoming
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline mt-1">Starts in 55 mins</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-outline">pending_actions</span>
+                  Pre-check Pending
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline-variant text-on-surface-variant mt-0.5">
+                  Link sent via SMS 09:00 AM
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container-high text-on-surface font-label-medium text-label-medium hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">send_to_mobile</span> Remind
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="openRescheduleModal('APT-2024-9030', 'Robert B.', 'Dr. Aris Thorne, DO')" title="Reschedule">
+<span class="material-symbols-outlined text-[18px]">save_as</span>
+</button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: #APT-2024-8842 (Completed & Signed) -->
+<tr class="appt-row hover:bg-surface-container-low/70 transition-colors group" data-search="apt-2024-8842 michael chen 821094 samantha brooks neuropsychology cc-8842" data-status="completed">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-primary focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-on-surface">#APT-2024-8842</span>
+<span class="material-symbols-outlined text-[14px] text-outline cursor-pointer hover:text-on-surface" title="Copy Appointment ID">content_copy</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">09:00 AM – 09:50 AM EST</div>
+<span class="font-caption-caps text-caption-caps text-outline">Slot: 50 mins</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    MC
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Michael Chen</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #821094</span> • <span>45 y/o M</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 601-2940</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-on-surface">Dr. Samantha Brooks, PhD</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Neuropsychology</div>
+<div class="font-caption-caps text-caption-caps text-outline">NPI: 1938201948 • Behavioral 2</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface-variant font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Telehealth Video
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Room #CC-8842 (Archived)
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+                  Completed &amp; Signed
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline mt-1">Chart Closed 09:54 AM</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">paid</span>
+                  Billed &amp; Settled
+                </div>
+<div class="font-caption-caps text-caption-caps text-outline-variant text-on-surface-variant mt-0.5">
+                  CPT 99214 • $220.00
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-surface-container text-on-surface font-label-medium text-label-medium hover:bg-surface-container-high transition-colors">
+                    Summary
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors" title="Billing Audit">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: #APT-2024-9110 (Conflict / Overlap Flag) -->
+<tr class="appt-row bg-error-container/10 hover:bg-error-container/20 transition-colors group" data-search="apt-2024-9110 amanda torres 891024 marcus sterling conflict cc-9110" data-status="conflict">
+<td class="px-space-md py-space-md align-top">
+<input class="row-checkbox rounded text-error focus:ring-0 cursor-pointer mt-1" onchange="rowCheckChanged()" type="checkbox"/>
+</td>
+<td class="px-space-md py-space-md align-top whitespace-nowrap">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-3 text-headline-3 text-error">#APT-2024-9110</span>
+<span class="material-symbols-outlined text-[14px] text-error cursor-pointer" title="Schedule Conflict">warning</span>
+</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-0.5">02:00 PM – 02:30 PM EST</div>
+<span class="font-caption-caps text-caption-caps text-error font-bold">Schedule Overlap Alert</span>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-headline-3 text-headline-3 font-semibold shrink-0">
+                    AT
+                  </div>
+<div>
+<div class="font-headline-3 text-headline-3 text-on-surface">Amanda Torres</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant flex items-center gap-1">
+<span>MRN #891024</span> • <span>29 y/o F</span>
+</div>
+<div class="font-caption-caps text-caption-caps text-outline">+1 (555) 912-3004</div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="font-body-medium text-body-medium text-error font-semibold">Dr. Marcus Sterling, MD</div>
+<div class="font-label-regular text-label-regular text-error">Trauma On-Call Duty Active</div>
+<div class="font-caption-caps text-caption-caps text-on-error-container bg-error-container/60 px-1 py-0.5 rounded w-max mt-0.5">
+                  Duty Buffer Conflict
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Telehealth Video
+                </div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-max mt-1">
+                  Room #CC-9110
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-error-container text-on-error-container font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[14px]">error</span>
+                  Conflict / Overlap Flag
+                </div>
+<div class="font-caption-caps text-caption-caps text-error mt-1">Provider double-booked 14:00</div>
+</td>
+<td class="px-space-md py-space-md align-top">
+<div class="flex items-center gap-1 text-on-surface font-label-medium text-label-medium">
+                  30m Scheduled
+                </div>
+<div class="font-caption-caps text-caption-caps text-error font-medium mt-0.5">
+                  Action Required: Reassign
+                </div>
+</td>
+<td class="px-space-md py-space-md align-top text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-space-sm py-1 rounded-lg bg-error text-on-error font-label-medium text-label-medium hover:bg-error/90 transition-colors flex items-center gap-1 shadow-sm" onclick="openRescheduleModal('APT-2024-9110', 'Amanda Torres', 'Dr. Marcus Sterling, MD')">
+<span class="material-symbols-outlined text-[16px]">build</span> Resolve Conflict
+                  </button>
+<button class="p-1 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Real-time WebRTC Mesh Health Bar -->
+<div class="px-space-md py-space-sm bg-surface-container-low/60 flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-label-regular text-label-regular text-on-surface-variant">Showing <strong class="text-on-surface">1 to 6</strong> of 3,842 encounters scheduled today</span>
+<div class="hidden lg:flex items-center gap-1 text-primary bg-primary-fixed/20 px-space-sm py-1 rounded-xl">
+<span class="material-symbols-outlined text-[16px]">lan</span>
+<span class="font-caption-caps text-caption-caps uppercase tracking-wide font-label-medium">Telehealth Mesh: 412 Concurrent Streams • 0.02% Packet Loss (Optimal) • 99.98% SLA</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-outline hover:text-on-surface disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-medium text-label-medium flex items-center justify-center shadow-sm">1</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-medium text-label-medium flex items-center justify-center transition-colors">2</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-medium text-label-medium flex items-center justify-center transition-colors">3</button>
+<span class="text-outline font-label-regular px-1">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:bg-surface-container hover:text-on-surface font-label-medium text-label-medium flex items-center justify-center transition-colors">641</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SIDE DRAWER: Encounter Operational Oversight Drawer (#APT-2024-9021) -->
+<aside class="hidden xl:flex flex-col w-[440px] shrink-0 bg-surface-container-lowest rounded-xl shadow-md p-space-md transition-all" id="encounterDetailDrawer">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-headline-3 text-headline-3 text-on-surface">Live Encounter Monitor</span>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Quick Summary Card -->
+<div class="mt-space-sm bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps uppercase text-primary font-bold">Session #APT-2024-9021</span>
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-caption-caps text-caption-caps">WebRTC Connected</span>
+</div>
+<div class="font-headline-2 text-headline-2 text-on-surface">Eleanor Vance</div>
+<div class="font-label-regular text-label-regular text-on-surface-variant">Cardiology Tele-Triage with <strong class="text-on-surface">Dr. Marcus Sterling, MD</strong></div>
+<div class="font-caption-caps text-caption-caps text-outline mt-1">Initiated 10:32 AM EST • Expected end 11:20 AM EST</div>
+</div>
+<!-- Live WebRTC Visualizer & Stream Status -->
+<div class="mt-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-caption-caps text-caption-caps uppercase text-outline">Real-Time WebRTC Telemetry Feed</span>
+<span class="font-caption-caps text-caption-caps text-primary">AES-256 GCM Encrypted</span>
+</div>
+<div class="relative w-full h-40 bg-inverse-surface rounded-xl overflow-hidden flex flex-col justify-between p-space-sm shadow-inner">
+<!-- Mock stream placeholder preview -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface via-inverse-surface/60 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-caption-caps text-caption-caps flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-bright animate-pulse"></span> REC 24:12
+            </span>
+<span class="text-inverse-on-surface font-caption-caps text-caption-caps">Room #CC-9021</span>
+</div>
+<!-- Live waveform simulation -->
+<div class="relative z-10 flex items-center justify-center gap-1 h-12">
+<div class="w-1 bg-primary-fixed-dim rounded-full h-8 animate-pulse"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-11 animate-pulse" style="animation-delay: 100ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-6 animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-10 animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-4 animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-9 animate-pulse" style="animation-delay: 75ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-12 animate-pulse" style="animation-delay: 220ms"></div>
+<div class="w-1 bg-primary-fixed-dim rounded-full h-5 animate-pulse" style="animation-delay: 180ms"></div>
+</div>
+<div class="relative z-10 flex items-center justify-between text-inverse-on-surface font-caption-caps text-caption-caps">
+<span>Latency: 16ms | Jitter: 1.2ms</span>
+<span>Packet Loss: 0.02% (Optimal)</span>
+</div>
+</div>
+</div>
+<!-- Device & Participant Telemetry -->
+<div class="mt-space-md grid grid-cols-2 gap-space-sm">
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<div class="font-caption-caps text-caption-caps uppercase text-outline">Patient Device</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-1">iPad Air (Safari 17.4)</div>
+<div class="font-caption-caps text-caption-caps text-primary mt-0.5">Dual Cam Active • 48kHz</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-xl">
+<div class="font-caption-caps text-caption-caps uppercase text-outline">Clinician Node</div>
+<div class="font-label-medium text-label-medium text-on-surface mt-1">Workstation Hub Pav 4B</div>
+<div class="font-caption-caps text-caption-caps text-primary mt-0.5">Gigabit Fiber • Certified</div>
+</div>
+</div>
+<!-- Quick Room Admin Controls -->
+<div class="mt-space-md flex flex-col gap-space-xs">
+<span class="font-caption-caps text-caption-caps uppercase text-outline mb-0.5">Operational Administration Override</span>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="extendBufferToast()">
+<span class="flex items-center gap-space-xs font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[18px] text-primary">more_time</span> Extend Encounter Buffer (+15m)
+          </span>
+<span class="font-caption-caps text-caption-caps text-outline">+15m</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="openRescheduleModal('APT-2024-9021', 'Eleanor Vance', 'Dr. Marcus Sterling, MD')">
+<span class="flex items-center gap-space-xs font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span> Emergency Clinician Reassignment
+          </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors" onclick="sendBroadcastModal()">
+<span class="flex items-center gap-space-xs font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[18px] text-primary">chat_bubble</span> Send Broadcast Message to Room
+          </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between px-space-md py-space-sm rounded-xl bg-error-container/40 text-on-error-container hover:bg-error-container/70 transition-colors mt-space-xs" onclick="terminateSessionToast()">
+<span class="flex items-center gap-space-xs font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[18px]">no_meeting_room</span> Disconnect &amp; Terminate Session
+          </span>
+<span class="font-caption-caps text-caption-caps text-error font-bold">Override</span>
+</button>
+</div>
+<!-- Action Footer -->
+<div class="mt-space-lg pt-space-sm border-t border-surface-container flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps text-outline">Security Protocol #HP-99214-E</span>
+<button class="px-space-md py-1.5 rounded-xl bg-primary text-on-primary font-label-medium text-label-medium hover:bg-primary-container transition-colors flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Join As Silent Observer
+        </button>
+</div>
+</aside>
+</div>
+<!-- MODAL: Reschedule & Clinician Reassignment Dialog (Overlay preview state) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm" id="rescheduleModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-2xl overflow-hidden flex flex-col">
+<!-- Modal Header -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">save_as</span>
+<h2 class="font-headline-2 text-headline-2 text-on-surface" id="rescheduleTitle">Reschedule Encounter #APT-2024-9110</h2>
+</div>
+<p class="font-label-regular text-label-regular text-on-surface-variant mt-0.5" id="rescheduleSubtitle">
+            Resolve schedule conflict for <span class="font-label-medium text-on-surface">Amanda Torres</span> (Dr. Marcus Sterling, MD)
+          </p>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" onclick="closeRescheduleModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg flex flex-col gap-space-md max-h-[768px] overflow-y-auto">
+<!-- Conflict Context Alert -->
+<div class="bg-error-container/30 text-on-error-container p-space-md rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">error</span>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-error">Current Conflict: Dr. Marcus Sterling on Trauma Shift</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant mt-0.5">
+              Dr. Sterling is assigned to Mandatory Emergency Surgery Buffer between 13:45 and 15:30. Select an available clinician in Cardiology or shift slot to after 15:45.
+            </span>
+</div>
+</div>
+<!-- Strategy 1: Select Available Peer Clinician -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Option A: Reassign to Available Attending (Same Slot: 02:00 PM EST)</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low border-2 border-primary cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="text-primary focus:ring-0" name="clinicianRadio" type="radio"/>
+<div>
+<div class="font-label-medium text-label-medium text-on-surface">Dr. Rajesh K. Nair, MD</div>
+<div class="font-caption-caps text-caption-caps text-primary">Cardiology • 100% Available 14:00</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</label>
+<label class="flex items-center justify-between p-space-sm rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="text-primary focus:ring-0" name="clinicianRadio" type="radio"/>
+<div>
+<div class="font-label-medium text-label-medium text-on-surface">Dr. Elena Vance, MD</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant">General Triage • Available 14:00</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">check_circle</span>
+</label>
+</div>
+</div>
+<!-- Strategy 2: Change Time Slot -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-caption-caps text-caption-caps uppercase text-outline">Option B: Keep Dr. Sterling &amp; Shift Slot</label>
+<div class="grid grid-cols-3 gap-space-sm">
+<button class="p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-left">
+<div class="font-label-medium text-label-medium">Today 03:45 PM</div>
+<div class="font-caption-caps text-caption-caps text-primary">Dr. Sterling Free</div>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-left">
+<div class="font-label-medium text-label-medium">Today 04:30 PM</div>
+<div class="font-caption-caps text-caption-caps text-primary">Dr. Sterling Free</div>
+</button>
+<button class="p-space-sm rounded-xl bg-surface-container text-on-surface-variant hover:bg-surface-container-high text-left">
+<div class="font-label-medium text-label-medium">Tomorrow 09:30 AM</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant">Regular Clinic</div>
+</button>
+</div>
+</div>
+<!-- Notification Options -->
+<div class="flex flex-col gap-space-xs pt-space-xs border-t border-surface-container">
+<span class="font-caption-caps text-caption-caps uppercase text-outline">Automatic Automated Notifications</span>
+<div class="flex flex-col gap-1.5">
+<label class="flex items-center gap-space-sm cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-label-medium text-label-medium text-on-surface">Send immediate SMS update to patient (+1-555-912-3004) with new room link</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-label-medium text-label-medium text-on-surface">Send electronic calendar and EHR calendar update to attending clinician</span>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer">
+<input class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span class="font-label-regular text-label-regular text-on-surface-variant">Log operational reschedule incident report in HIPAA compliance audit queue</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between border-t border-surface-container">
+<button class="px-space-md py-space-sm rounded-xl bg-surface-container-highest/60 text-on-surface hover:bg-surface-container-high font-label-medium text-label-medium transition-colors" onclick="closeRescheduleModal()">
+          Cancel &amp; Close
+        </button>
+<button class="px-space-lg py-space-sm rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-medium text-label-medium shadow-sm transition-all flex items-center gap-1.5" onclick="confirmRescheduleSuccess()">
+<span class="material-symbols-outlined text-[18px]">done</span> Confirm Reassignment &amp; Dispatch
+        </button>
+</div>
+</div>
+</div>
+<!-- Toast Notification Feedback -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-space-sm" id="toastNotification">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span>
+<span class="font-label-medium text-label-medium" id="toastMessage">Operation completed successfully</span>
+</div>
+</div>
+<script>
+  function switchView(viewName) {
+    const tableContainer = document.getElementById('masterTableContainer');
+    const drawer = document.getElementById('encounterDetailDrawer');
+    const modal = document.getElementById('rescheduleModal');
+    
+    // Reset buttons
+    ['roster', 'drawer', 'reschedule', 'conflict'].forEach(id => {
+      const btn = document.getElementById('viewBtn-' + id);
+      if (btn) {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+
+    const activeBtn = document.getElementById('viewBtn-' + viewName);
+    if (activeBtn) {
+      activeBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      activeBtn.classList.remove('text-on-surface-variant');
+    }
+
+    if (viewName === 'roster') {
+      drawer.classList.add('hidden');
+      modal.classList.add('hidden');
+      resetTableFilter();
+    } else if (viewName === 'drawer') {
+      drawer.classList.remove('hidden');
+      modal.classList.add('hidden');
+    } else if (viewName === 'reschedule') {
+      drawer.classList.add('hidden');
+      openRescheduleModal('APT-2024-9110', 'Amanda Torres', 'Dr. Marcus Sterling, MD');
+    } else if (viewName === 'conflict') {
+      drawer.classList.add('hidden');
+      modal.classList.add('hidden');
+      // Highlight conflict row
+      filterTableByStatus('conflict');
+    }
+  }
+
+  function openDrawer(apptId) {
+    const drawer = document.getElementById('encounterDetailDrawer');
+    drawer.classList.remove('hidden');
+    showToast('Encounter Live Telemetry Stream loaded for #' + apptId);
+  }
+
+  function closeDrawer() {
+    const drawer = document.getElementById('encounterDetailDrawer');
+    drawer.classList.add('hidden');
+  }
+
+  function openRescheduleModal(apptId, patientName, docName) {
+    const modal = document.getElementById('rescheduleModal');
+    document.getElementById('rescheduleTitle').innerText = 'Reschedule Encounter #' + apptId;
+    document.getElementById('rescheduleSubtitle').innerHTML = 'Resolve schedule conflict for <strong class="text-on-surface">' + patientName + '</strong> (' + docName + ')';
+    modal.classList.remove('hidden');
+  }
+
+  function closeRescheduleModal() {
+    document.getElementById('rescheduleModal').classList.add('hidden');
+  }
+
+  function confirmRescheduleSuccess() {
+    closeRescheduleModal();
+    showToast('Encounter #APT-2024-9110 successfully reassigned to Dr. Rajesh Nair');
+  }
+
+  function extendBufferToast() {
+    showToast('Encounter room CC-9021 buffer extended +15 minutes');
+  }
+
+  function terminateSessionToast() {
+    showToast('Session override triggered: Signal broadcast to end WebRTC stream');
+  }
+
+  function sendBroadcastModal() {
+    const msg = prompt('Enter admin message to send to Eleanor Vance & Dr. Sterling room:', 'Administrator notice: 5 minutes remaining in scheduled slot.');
+    if (msg) {
+      showToast('Broadcast message transmitted to Room #CC-9021');
+    }
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMessage');
+    toastMsg.innerText = msg;
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+    }, 3800);
+  }
+
+  // Tabs Filtering
+  function setTab(btn, status) {
+    document.querySelectorAll('.status-tab-btn').forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+      b.classList.add('text-on-surface-variant');
+    });
+    btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+    btn.classList.remove('text-on-surface-variant');
+
+    filterTableByStatus(status);
+  }
+
+  function filterTableByStatus(status) {
+    const rows = document.querySelectorAll('.appt-row');
+    rows.forEach(row => {
+      if (status === 'all') {
+        row.style.display = '';
+      } else {
+        const rowStatus = row.getAttribute('data-status');
+        if (rowStatus === status) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      }
+    });
+  }
+
+  function resetTableFilter() {
+    const rows = document.querySelectorAll('.appt-row');
+    rows.forEach(row => row.style.display = '');
+  }
+
+  function filterTableSearch() {
+    const query = document.getElementById('tableSearchInput').value.toLowerCase();
+    const rows = document.querySelectorAll('.appt-row');
+    rows.forEach(row => {
+      const searchData = row.getAttribute('data-search') || '';
+      if (searchData.includes(query) || query === '') {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  // Checkbox management
+  function toggleSelectAll(master) {
+    const checkboxes = document.querySelectorAll('.row-checkbox');
+    checkboxes.forEach(cb => cb.checked = master.checked);
+    rowCheckChanged();
+  }
+
+  function rowCheckChanged() {
+    const checkboxes = document.querySelectorAll('.row-checkbox:checked');
+    const bar = document.getElementById('bulkActionBar');
+    const countSpan = document.getElementById('checkedCount');
+    countSpan.innerText = checkboxes.length;
+    if (checkboxes.length > 0) {
+      bar.classList.remove('hidden');
+    } else {
+      bar.classList.add('hidden');
+    }
+  }
+
+  function clearAllSelections() {
+    document.querySelectorAll('.row-checkbox').forEach(cb => cb.checked = false);
+    const master = document.querySelector('thead input[type="checkbox"]');
+    if (master) master.checked = false;
+    rowCheckChanged();
+  }
+</script></main></div></body></html>

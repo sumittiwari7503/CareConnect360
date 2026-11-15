@@ -1,0 +1,74 @@
+spring:
+  application:
+    name: careconnect360-backend
+  profiles:
+    active: dev # Uses Oracle-compatible H2 in dev/test when Oracle is offline; switch to 'oracle' for live Oracle DB
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    # Use environment variable in production; fallback key for dev only
+    secret: ${JWT_SECRET:4c617265436f6e6e6563743336305365637572654a77745365637265744b657932303236456e74657270726973654b6579}
+    expiration-ms: 86400000 # 24 hours
+  cors:
+    allowed-origins: "http://localhost:4200,http://127.0.0.1:4200"
+  demo:
+    enabled: ${DEMO_MODE_ENABLED:true}
+  webrtc:
+    stun:
+      url1: ${WEBRTC_STUN_URL1:stun:stun.l.google.com:19302}
+      url2: ${WEBRTC_STUN_URL2:stun:stun1.l.google.com:19302}
+    turn:
+      enabled: ${WEBRTC_TURN_ENABLED:false}
+      url: ${WEBRTC_TURN_URL:}
+      username: ${WEBRTC_TURN_USERNAME:}
+      credential: ${WEBRTC_TURN_CREDENTIAL:}
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+---
+# Oracle Database Production Profile
+spring:
+  config:
+    activate:
+      on-profile: oracle
+  datasource:
+    url: ${ORACLE_URL:jdbc:oracle:thin:@localhost:1521/FREEPDB1}
+    username: ${ORACLE_USERNAME:careconnect}
+    password: ${ORACLE_PASSWORD:careconnect_pass}
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: validate
+app:
+  jwt:
+    secret: ${JWT_SECRET}
+  demo:
+    enabled: ${DEMO_MODE_ENABLED:false}
+---
+# Local Development & Fallback Profile (H2 Oracle Mode)
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:h2:mem:careconnectdb;MODE=Oracle;DB_CLOSE_DELAY=-1;DEFAULT_NULL_ORDERING=HIGH
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
+      path: /h2-console

@@ -1,0 +1,59 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Frontend Dependencies & Build Output
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+frontend/.cache/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Backend Build Output & Artifacts
+backend/target/
+backend/*.jar
+backend/*.war
+backend/*.nar
+backend/*.ear
+backend/*.zip
+backend/*.tar.gz
+backend/*.rar
+backend/hs_err_pid*
+
+# Logs & Temporary Files
+*.log
+logs/
+*.tmp
+*.temp
+
+# IDE & Editor Files
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
+
+# Environment Variables & Local Configs
+.env
+.env.local
+.env.*.local
+application-local.properties
+application-local.yml
+
+# Database / In-Memory Artifacts
+*.db
+*.h2.db
+*.trace.db

@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-surface":"#191c1e","on-surface-variant":"#3e4947","on-primary":"#ffffff","on-secondary":"#ffffff","secondary-container":"#dae2fd","primary-container":"#0f766e","on-error":"#ffffff","on-primary-fixed":"#00201d","on-secondary-fixed-variant":"#3f465c","inverse-on-surface":"#eff1f3","on-background":"#191c1e","error":"#ba1a1a","inverse-surface":"#2d3133","secondary-fixed-dim":"#bec6e0","surface-variant":"#e0e3e5","tertiary-fixed":"#89f5e7","outline-variant":"#bdc9c6","primary-fixed-dim":"#80d5cb","surface-container":"#eceef0","on-error-container":"#93000a","primary-fixed":"#9cf2e8","on-secondary-container":"#5c647a","on-tertiary-fixed-variant":"#005049","tertiary-container":"#00776d","tertiary":"#005c54","tertiary-fixed-dim":"#6bd8cb","surface":"#f7f9fb","surface-container-high":"#e6e8ea","surface-dim":"#d8dadc","surface-bright":"#f7f9fb","surface-container-low":"#f2f4f6","on-tertiary-container":"#91fdef","primary":"#005c55","on-secondary-fixed":"#131b2e","secondary":"#565e74","inverse-primary":"#80d5cb","on-tertiary-fixed":"#00201d","on-primary-container":"#a3faef","on-primary-fixed-variant":"#00504a","background":"#f7f9fb","surface-container-highest":"#e0e3e5","surface-tint":"#006a63","on-tertiary":"#ffffff","outline":"#6e7977","secondary-fixed":"#dae2fd"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-xl":"2rem","margin-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","gutter-sm":"1rem","space-2xl":"3rem"},fontFamily:{"headline-3":["Inter"],"label-medium":["Inter"],"headline-1":["Inter"],"caption-caps":["Inter"],"body-medium":["Inter"],"display":["Inter"],"body-regular":["Inter"],"display-mobile":["Inter"],"label-regular":["Inter"],"headline-2":["Inter"]},fontSize:{"headline-3":["16px",{lineHeight:"24px",letterSpacing:"-0.005em",fontWeight:"600"}],"label-medium":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"500"}],"headline-1":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"600"}],"caption-caps":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"600"}],"body-medium":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"500"}],"display":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-regular":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"400"}],"display-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"label-regular":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-2":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-regular text-body-regular text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="p-space-lg flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[20px]">health_and_safety</span></div><div class="flex flex-col"><span class="font-headline-3 text-headline-3 text-on-surface tracking-tight leading-none">CareConnect<span class="text-primary">360</span></span><span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-0.5">Patient Portal</span></div></div><div class="mt-space-sm inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-surface-container-low text-primary w-fit"><span class="material-symbols-outlined text-[13px]">verified_user</span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Compliant</span></div></div><nav class="px-space-md flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-semibold"><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="overview" href="#">Overview</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="find-doctors" href="#">Find Doctors</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="appointments" href="#">Appointments</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="consultations" href="#">Consultations</a><a aria-current="page" class="flex items-center px-3 py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold" data-path="prescriptions" href="#">Prescriptions</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="medical-records" href="#">Medical Records</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="billing" href="#">Billing</a><a class="flex items-center px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-medium text-body-medium" data-path="settings" href="#">Settings</a></nav></div><div class="p-space-md flex flex-col gap-space-sm"><div class="p-3 rounded-xl bg-error-container text-on-error-container flex flex-col gap-1"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-error">emergency</span><span class="font-label-medium text-label-medium font-semibold text-error">Medical Emergency?</span></div><p class="font-caption-caps text-caption-caps text-on-error-container leading-tight">Call 911 immediately or reach the Clinical Crisis Care Line at 1-800-273-TALK.</p></div><a class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" data-path="helpdesk" href="#"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">contact_support</span><span class="font-label-medium text-label-medium">Portal Helpdesk</span></div><span class="material-symbols-outlined text-[16px]">chevron_right</span></a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-10 pl-9 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search doctors, appointments, health records..." type="text"/></div><div class="hidden xl:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant shrink-0"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-caption-caps text-caption-caps font-semibold uppercase tracking-wider">HIPAA Encrypted • Level-4 PHI</span></div></div><div class="flex items-center gap-space-md"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">chat</span><span class="sr-only">Care Team Messages</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center font-caption-caps text-[9px] font-bold">3</span></button><div class="h-6 w-px bg-surface-container-high"></div><div class="flex items-center gap-3 pl-1"><div class="relative"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-fixed border-2 border-surface-container-lowest"></span></div><div class="flex flex-col text-left"><span class="font-label-medium text-label-medium text-on-surface leading-tight font-semibold">Eleanor Vance</span><span class="font-caption-caps text-caption-caps text-on-surface-variant leading-none">MRN-849204</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></header><main class="w-full pt-16 px-space-xl py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Demonstration Header Control / View Switcher (Interactive Prototype) -->
+<div class="mb-space-lg flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold">Demo State Selector:</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider hidden sm:inline">Switch prototype clinical states</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-lowest p-1 rounded-lg shadow-sm">
+<button class="state-btn px-3 py-1 rounded font-label-medium text-label-medium bg-primary text-on-primary font-semibold transition-all" id="btn-state-all" onclick="switchState('all')">
+        Active Prescriptions (4)
+      </button>
+<button class="state-btn px-3 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="btn-state-renewal" onclick="switchState('renewal')">
+        Renewal Required Only (1)
+      </button>
+<button class="state-btn px-3 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="btn-state-empty" onclick="switchState('empty')">
+        Empty State Mock
+      </button>
+</div>
+</div>
+<!-- Breadcrumb and Page Header -->
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<nav class="flex items-center gap-2 font-caption-caps text-caption-caps text-on-surface-variant tracking-wider uppercase">
+<a class="hover:text-primary transition-colors" href="#">Patient Portal</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Prescriptions &amp; Medications</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-1 text-headline-1 text-on-surface tracking-tight">Prescriptions &amp; Medications</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-medium text-label-medium font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span id="header-active-count">4 Active Rx</span>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container/60 text-error font-caption-caps text-caption-caps font-semibold">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+            1 Requires Renewal
+          </span>
+</div>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+          Review active prescriptions, verified dosage schedules, refill authorizations, and synchronized digital pharmacy orders under certified telehealth standards.
+        </p>
+</div>
+<!-- Quick Actions and Pharmacy Context -->
+<div class="flex flex-wrap items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container transition-all font-body-medium text-body-medium font-semibold" onclick="openModal('RX-8849-012')">
+<span class="material-symbols-outlined text-[18px] text-primary">print</span>
+<span>Print Medication List (.pdf)</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary shadow-sm hover:bg-primary-container transition-all font-body-medium text-body-medium font-semibold" onclick="requestGeneralRenewal()">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Request Refill Renewal</span>
+</button>
+</div>
+</div>
+<!-- Preferred Pharmacy Banner Pin -->
+<div class="mt-2 flex flex-col md:flex-row md:items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_pharmacy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Designated Fulfillment Pharmacy</span>
+<span class="inline-flex items-center gap-1 px-1.5 py-0.2 rounded bg-surface-container text-primary font-caption-caps text-[10px] font-bold">24-HR PICKUP</span>
+</div>
+<span class="font-headline-3 text-headline-3 text-on-surface">CVS Pharmacy #4082 • Downtown Medical Center</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">610 Main Street, Boston, MA 02118 • Phone: (617) 555-0199 • NCPDP #2214981</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low text-primary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[15px]">sensors</span>
+<span>Surescripts 2024 e-Prescribing Linked</span>
+</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-medium text-label-medium">
+          Change
+        </button>
+</div>
+</div>
+</div>
+<!-- Search & Multi-Faceted Filter Suite -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row gap-space-sm justify-between">
+<!-- Search input -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline font-body-regular text-body-regular outline-none focus:bg-surface-container-lowest transition-all" id="rx-search-input" onkeyup="filterCards()" placeholder="Search medication name, prescribing doctor, or Rx number (e.g. Lipitor, Dr. Sterling)..." type="text"/>
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface" id="search-clear-btn" onclick="clearSearch()">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Controls Right: Specialty Filter & Sort -->
+<div class="flex flex-wrap sm:flex-nowrap items-center gap-space-sm">
+<div class="relative w-full sm:w-auto">
+<select class="w-full sm:w-48 h-11 px-3.5 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-regular text-body-regular outline-none appearance-none cursor-pointer" id="specialty-filter" onchange="filterCards()">
+<option value="ALL">All Specialties</option>
+<option value="Cardiology">Cardiology</option>
+<option value="Dermatology">Dermatology</option>
+<option value="Endocrinology">Endocrinology</option>
+<option value="Family Medicine">Family Medicine</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">expand_more</span>
+</div>
+<div class="relative w-full sm:w-auto">
+<select class="w-full sm:w-56 h-11 px-3.5 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-regular text-body-regular outline-none appearance-none cursor-pointer" id="sort-filter" onchange="sortCards()">
+<option value="exp-soon">Sort: Expiration (Soonest)</option>
+<option value="date-recent">Sort: Prescribed (Newest)</option>
+<option value="name-asc">Sort: Medication Name (A-Z)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-outline pointer-events-none text-[18px]">sort</span>
+</div>
+</div>
+</div>
+<!-- Filter Chips Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-2" id="filter-chips">
+<button class="status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-primary text-on-primary font-semibold shadow-xs" data-status="ALL" onclick="setStatusChip('ALL')">
+          All Rx (5)
+        </button>
+<button class="status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-status="ACTIVE" onclick="setStatusChip('ACTIVE')">
+          Active (4)
+        </button>
+<button class="status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface flex items-center gap-1.5" data-status="RENEWAL" onclick="setStatusChip('RENEWAL')">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+          Pending Renewal (1)
+        </button>
+<button class="status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface" data-status="DISCONTINUED" onclick="setStatusChip('DISCONTINUED')">
+          Past / Discontinued (1)
+        </button>
+</div>
+<div class="flex items-center gap-2 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+<span>DEA Schedules Synced via Level-4 Auditing</span>
+</div>
+</div>
+</div>
+<!-- Safety Clinical Notice -->
+<div class="mb-space-lg p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Clinical Safety &amp; Drug Interaction Surveillance</span>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+          No contraindications or severe drug-drug interactions detected between active regimens. For acute reactions or adverse symptoms, contact your clinic or call 911 immediately.
+        </p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant shrink-0 font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>Auto-Screened Oct 28, 2024</span>
+</div>
+</div>
+<!-- Prescription Cards Container -->
+<div class="flex flex-col gap-space-lg" id="prescriptions-container">
+<!-- Card 1: Atorvastatin Calcium -->
+<div class="rx-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-space-md" data-date="2024-10-28" data-doctor="Marcus Sterling" data-exp-days="380" data-id="RX-8849-012" data-name="Atorvastatin Calcium Lipitor" data-specialty="Cardiology" data-status="ACTIVE">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">pill</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Atorvastatin Calcium (Lipitor)</span>
+<span class="font-headline-3 text-headline-3 text-primary font-bold">20mg</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps font-semibold">
+                Oral Tablet
+              </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-1">
+<span>Rx #RX-8849-012</span>
+<span>•</span>
+<span>NDC: 0071-0156-23</span>
+<span>•</span>
+<span>DEA Schedule: Non-Controlled</span>
+<span>•</span>
+<span class="text-primary font-semibold">Surescripts Synced</span>
+</div>
+</div>
+</div>
+<!-- Status Badge -->
+<div class="flex items-center gap-2 self-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-medium text-label-medium font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Active Regimen
+          </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface-variant font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[15px] text-primary">local_shipping</span>
+            Auto-Delivery Ready
+          </span>
+</div>
+</div>
+<!-- Instruction / Dosage Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col md:col-span-2 gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Dosage &amp; Patient Administration Instructions</span>
+<p class="font-body-medium text-body-medium text-on-surface">
+            Take 1 tablet (20mg) by mouth once daily at bedtime with or without food. Avoid excessive consumption of grapefruit juice during therapy.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Prescribing Clinician</span>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px] font-bold">MS</div>
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Dr. Marcus Sterling, MD</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Interventional Cardiology • Consult: Oct 28, 2024</span>
+</div>
+</div>
+<!-- Refill Status & Fulfillment Track -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Refills Remaining</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">3 of 4</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">(Next refill opens Nov 25, 2024)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Dispense Quantity</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-0.5">90 Tablets (90-Day Supply)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Pharmacy Fulfillment</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold mt-0.5">CVS Pharmacy #4082 • Ready for Reorder</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="openModal('RX-8849-012')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Verify Rx</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="downloadRxPdf('RX-8849-012')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-body-medium text-body-medium font-semibold" onclick="requestRefill('RX-8849-012', 'Atorvastatin Calcium 20mg')">
+<span class="material-symbols-outlined text-[18px]">local_pharmacy</span>
+<span>Request Refill</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Hydrocortisone Valerate Cream -->
+<div class="rx-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-space-md" data-date="2024-10-24" data-doctor="Elena Vance" data-exp-days="120" data-id="RX-7721-044" data-name="Hydrocortisone Valerate Cream Topical" data-specialty="Dermatology" data-status="ACTIVE">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">sanitizer</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Hydrocortisone Valerate Cream</span>
+<span class="font-headline-3 text-headline-3 text-primary font-bold">0.2%</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-caption-caps text-caption-caps font-semibold">
+                Topical Emulsion
+              </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-1">
+<span>Rx #RX-7721-044</span>
+<span>•</span>
+<span>NDC: 51672-1294-1</span>
+<span>•</span>
+<span>Non-Controlled Schedule VI</span>
+<span>•</span>
+<span>Short-Course Protocol</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface font-label-medium text-label-medium font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Active (Short-Course)
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col md:col-span-2 gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Dosage &amp; Application Protocol</span>
+<p class="font-body-medium text-body-medium text-on-surface">
+            Apply a thin film to affected skin areas on right forearm twice daily for 14 days. Discontinue if redness, itching, or local irritation persists beyond 5 consecutive days.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Prescribing Clinician</span>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center text-[11px] font-bold">EV</div>
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Dr. Elena Vance, MD</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Dermatology • Consult: Oct 24, 2024</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Refills Remaining</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">1 of 1</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">(Final authorized refill)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Packaging Size</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-0.5">45g Tube</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Fulfillment Status</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold mt-0.5">Dispensed Oct 25, 2024 • Active in Cabinet</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="openModal('RX-7721-044')">
+<span class="material-symbols-outlined text-[18px]">description</span>
+<span>View Rx Details</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="downloadRxPdf('RX-7721-044')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Download PDF</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Metformin Hydrochloride -->
+<div class="rx-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-space-md" data-date="2024-09-12" data-doctor="Robert Chen" data-exp-days="240" data-id="RX-6531-908" data-name="Metformin Hydrochloride ER" data-specialty="Endocrinology" data-status="ACTIVE">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">medication</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Metformin Hydrochloride ER</span>
+<span class="font-headline-3 text-headline-3 text-primary font-bold">500mg</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-primary font-caption-caps text-caption-caps font-semibold">
+                Extended Release Tablet
+              </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-1">
+<span>Rx #RX-6531-908</span>
+<span>•</span>
+<span>NDC: 68180-0338-01</span>
+<span>•</span>
+<span>DEA Schedule: Non-Controlled</span>
+<span>•</span>
+<span>Continuous Maintenance</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-medium text-label-medium font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Active Regimen
+          </span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col md:col-span-2 gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Dosage &amp; Administration Instructions</span>
+<p class="font-body-medium text-body-medium text-on-surface">
+            Take 1 tablet (500mg) once daily by mouth with the evening meal. Swallow whole; do not chew, crush, or divide extended-release tablets.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Prescribing Clinician</span>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[11px] font-bold">RC</div>
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Dr. Robert Chen, MD</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Endocrinology &amp; Metabolism • Consult: Sep 12, 2024</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Refills Remaining</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">2 of 3</span>
+<span class="font-label-regular text-label-regular text-on-surface-variant">(Next refill opens Dec 05, 2024)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Dispense Count</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-0.5">90 Tablets (90 Days)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Pharmacy</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold mt-0.5">CVS Pharmacy #4082</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="openModal('RX-6531-908')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>View Rx</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="downloadRxPdf('RX-6531-908')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>PDF</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-body-medium text-body-medium font-semibold" onclick="requestRefill('RX-6531-908', 'Metformin HCl 500mg ER')">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Request Refill</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Albuterol Sulfate (Needs Renewal) -->
+<div class="rx-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-space-md" data-date="2024-06-10" data-doctor="Aris Thorne" data-exp-days="15" data-id="RX-5120-332" data-name="Albuterol Sulfate Inhalation Aerosol ProAir" data-specialty="Family Medicine" data-status="RENEWAL">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container/40 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">air</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Albuterol Sulfate Inhalation</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-bold">90mcg / Actuation</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container/50 text-error font-caption-caps text-caption-caps font-semibold">
+                Rescue Inhaler
+              </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-1">
+<span>Rx #RX-5120-332</span>
+<span>•</span>
+<span>NDC: 59310-0579-22</span>
+<span>•</span>
+<span class="text-error font-bold">Expiration: Nov 15, 2024</span>
+<span>•</span>
+<span class="text-error font-bold">0 Refills Left</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-medium text-label-medium font-bold">
+<span class="material-symbols-outlined text-[15px] text-error">warning</span>
+            Refill Renewal Required
+          </span>
+</div>
+</div>
+<!-- Action Required Callout -->
+<div class="p-space-md bg-error-container/20 rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-error text-[22px]">notification_important</span>
+<p class="font-body-regular text-body-regular text-on-surface">
+<strong>Physician Renewal Mandated:</strong> All allocated refills have been exhausted. Dr. Thorne requires an e-signature reauthorization before CVS Pharmacy can dispense this inhaler.
+          </p>
+</div>
+<span class="font-caption-caps text-caption-caps text-error font-bold whitespace-nowrap uppercase tracking-wider">Expires in 15 days</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col md:col-span-2 gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Instructions for Use</span>
+<p class="font-body-medium text-body-medium text-on-surface">
+            Inhale 2 puffs every 4 to 6 hours as needed for bronchospasm, shortness of breath, or chest tightness. Rinse mouth after each use.
+          </p>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Prescribing Clinician</span>
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center text-[11px] font-bold">AT</div>
+<span class="font-label-medium text-label-medium font-semibold text-on-surface">Dr. Aris Thorne, DO</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">Family Medicine • Consult: Jun 10, 2024</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-lg">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Refills Remaining</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-3 text-headline-3 text-error font-bold">0 remaining</span>
+<span class="font-label-regular text-label-regular text-error">(Auth Expired)</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Device Spec</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold mt-0.5">8.5g Canister (200 Inhalations)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Prescription Archive</span>
+<span class="font-label-medium text-label-medium text-on-surface font-semibold mt-0.5">Active until Nov 15, 2024</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="openModal('RX-5120-332')">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>View Rx History</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-error text-on-error hover:bg-error/90 transition-all font-body-medium text-body-medium font-semibold shadow-sm" onclick="requestRenewalFromDoctor('RX-5120-332', 'Dr. Aris Thorne, DO', 'Albuterol Sulfate Inhalation')">
+<span class="material-symbols-outlined text-[18px]">outgoing_mail</span>
+<span>Request Renewal from Dr. Thorne</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Discontinued (Shown when All or Discontinued is clicked) -->
+<div class="rx-card bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-space-md opacity-85" data-date="2024-03-01" data-doctor="Aris Thorne" data-exp-days="0" data-id="RX-3301-891" data-name="Amoxicillin Clavulanate Augmentin" data-specialty="Family Medicine" data-status="DISCONTINUED">
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">medication_liquid</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Amoxicillin / Clavulanate (Augmentin)</span>
+<span class="font-headline-3 text-headline-3 text-on-surface font-semibold">875-125mg</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-caption-caps text-caption-caps">
+                Completed Course
+              </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-3 gap-y-1 font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider mt-1">
+<span>Rx #RX-3301-891</span>
+<span>•</span>
+<span>NDC: 0029-6086-12</span>
+<span>•</span>
+<span>Prescribed Mar 01, 2024</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Course Ended Mar 11, 2024</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-start">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-secondary font-label-medium text-label-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Course Completed
+          </span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Historical Direction</span>
+<p class="font-body-regular text-body-regular text-on-surface-variant">
+            Take 1 tablet every 12 hours for 10 days with meals for acute sinusitis. Finished course as directed.
+          </p>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium shrink-0" onclick="openModal('RX-3301-891')">
+          View Historical Record
+        </button>
+</div>
+</div>
+</div>
+<!-- Empty Prescriptions State View (Mock) -->
+<div class="hidden bg-surface-container-lowest rounded-2xl shadow-sm p-space-2xl flex-col items-center justify-center text-center my-space-lg" id="prescriptions-empty-state">
+<div class="w-20 h-20 rounded-full bg-surface-container-low flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-[42px]">prescriptions</span>
+</div>
+<h2 class="font-headline-1 text-headline-1 text-on-surface mb-2">No active prescriptions on file</h2>
+<p class="font-body-regular text-body-regular text-on-surface-variant max-w-lg mb-space-lg">
+      Patient Eleanor Vance currently has no pending or active pharmacy regimens linked to this record. You can request a transfer from an outside pharmacy or book a clinical telehealth consultation.
+    </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm">
+<button class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-body-medium text-body-medium font-semibold hover:bg-primary-container transition-all" onclick="switchState('all')">
+        Restore Active Prescriptions
+      </button>
+<button class="px-5 py-2.5 rounded-lg bg-surface-container text-on-surface font-body-medium text-body-medium hover:bg-surface-container-high transition-colors">
+        Transfer Pharmacy Prescription
+      </button>
+</div>
+</div>
+<!-- Clinical Telehealth & HIPAA Compliance Footer Note -->
+<div class="mt-space-2xl pt-space-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant leading-relaxed">
+<strong>HIPAA Level-4 Protected Health Information:</strong> All electronic prescription transmissions comply with 21 CFR Part 1311 (EPCS) and Surescripts v2017071 standards. Demo fictional clinical data only. Not valid for actual pharmacy dispensing.
+      </span>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<a class="font-caption-caps text-caption-caps text-primary hover:underline uppercase tracking-wider font-semibold" href="#">Drug Formulary</a>
+<span class="text-outline-variant">•</span>
+<a class="font-caption-caps text-caption-caps text-primary hover:underline uppercase tracking-wider font-semibold" href="#">Pharmacy Directory</a>
+<span class="text-outline-variant">•</span>
+<a class="font-caption-caps text-caption-caps text-primary hover:underline uppercase tracking-wider font-semibold" href="#">Contact Triage Nurse</a>
+</div>
+</div>
+<!-- Interactive Modal / Drawer: Electronic Prescription Verification Document -->
+<div class="fixed inset-0 z-50 hidden flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4 overflow-y-auto" id="rx-verification-modal">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-2xl w-full max-h-[942px] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-lowest flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">health_and_safety</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-2 text-headline-2 text-on-surface">Electronic Prescription Document</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/10 text-primary font-caption-caps text-[10px] font-bold">NIST LEVEL 3</span>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant tracking-wider uppercase">CareConnect360 Verified Telehealth e-Prescription</span>
+</div>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body (Printable Rx Format) -->
+<div class="px-space-lg py-space-md overflow-y-auto flex flex-col gap-space-md text-on-surface font-body-regular text-body-regular">
+<!-- Clinical Header Card -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row justify-between gap-space-sm">
+<div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Patient Identification</span>
+<div class="font-headline-3 text-headline-3 font-semibold text-on-surface">Eleanor Vance</div>
+<div class="font-caption-caps text-caption-caps text-on-surface-variant">DOB: 05/14/1982 • Gender: Female • MRN: #849204</div>
+</div>
+<div class="sm:text-right">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Authorization Timestamp</span>
+<div class="font-label-medium text-label-medium font-semibold text-on-surface" id="modal-rx-timestamp">Oct 28, 2024 14:32:04 EST</div>
+<div class="font-caption-caps text-caption-caps text-primary font-bold">TRANSACTION: #SURE-99214-AA</div>
+</div>
+</div>
+<!-- Prescribed Medication Details -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Medication &amp; Dispensing Specs</span>
+<span class="font-caption-caps text-caption-caps px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-bold" id="modal-rx-id">#RX-8849-012</span>
+</div>
+<div class="font-headline-2 text-headline-2 text-on-surface font-bold" id="modal-rx-drug">Atorvastatin Calcium 20mg Oral Tablet</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider font-semibold">Sig (Instructions):</span>
+<p class="font-body-medium text-body-medium text-on-surface mt-0.5" id="modal-rx-sig">
+              Take 1 tablet (20mg) by mouth daily at bedtime with or without food. Avoid grapefruit juice.
+            </p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-1">
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Quantity</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface" id="modal-rx-qty">90 Tablets</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Refills Authorized</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface" id="modal-rx-refills">4 total (3 remaining)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">DEA Schedule</span>
+<span class="font-label-medium text-label-medium font-bold text-on-surface">Non-Controlled</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase">Generic Sub Allowed</span>
+<span class="font-label-medium text-label-medium font-bold text-primary">Yes (Sub Allowed)</span>
+</div>
+</div>
+</div>
+<!-- Prescribing Clinician & Cryptographic Digital Signature -->
+<div class="p-space-md bg-surface-container-low rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-0.5">
+<span class="font-caption-caps text-caption-caps text-on-surface-variant uppercase tracking-wider">Prescribing Physician</span>
+<div class="font-headline-3 text-headline-3 font-semibold text-on-surface" id="modal-rx-doctor">Dr. Marcus Sterling, MD</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant">NPI: #1942084721 • State Lic: #MA-948201 • DEA: #BS8294019</span>
+</div>
+<!-- Cryptographic Seal Mock -->
+<div class="flex flex-col sm:items-end gap-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-caption-caps text-caption-caps font-semibold shadow-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">lock</span>
+<span>SHA-256 e-Signed: 8f2a...c014</span>
+</div>
+<span class="font-caption-caps text-[10px] text-on-surface-variant">Verified by CareConnect PKI Identity Authority</span>
+</div>
+</div>
+<!-- Dispensing Pharmacy Barcode Mock -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl flex flex-col items-center justify-center gap-2">
+<div class="h-10 w-full max-w-sm flex items-center justify-center bg-surface-container-low rounded px-4">
+<!-- Simulated barcode lines with SVG -->
+<svg class="h-8 w-full text-on-surface" preserveaspectratio="none" viewbox="0 0 200 40">
+<rect fill="currentColor" height="40" width="3" x="0" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="6" y="0"></rect>
+<rect fill="currentColor" height="40" width="5" x="12" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="22" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="28" y="0"></rect>
+<rect fill="currentColor" height="40" width="1" x="36" y="0"></rect>
+<rect fill="currentColor" height="40" width="6" x="42" y="0"></rect>
+<rect fill="currentColor" height="40" width="3" x="52" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="60" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="66" y="0"></rect>
+<rect fill="currentColor" height="40" width="3" x="74" y="0"></rect>
+<rect fill="currentColor" height="40" width="5" x="82" y="0"></rect>
+<rect fill="currentColor" height="40" width="1" x="91" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="96" y="0"></rect>
+<rect fill="currentColor" height="40" width="3" x="104" y="0"></rect>
+<rect fill="currentColor" height="40" width="6" x="111" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="122" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="128" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="136" y="0"></rect>
+<rect fill="currentColor" height="40" width="5" x="142" y="0"></rect>
+<rect fill="currentColor" height="40" width="3" x="151" y="0"></rect>
+<rect fill="currentColor" height="40" width="2" x="158" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="164" y="0"></rect>
+<rect fill="currentColor" height="40" width="1" x="172" y="0"></rect>
+<rect fill="currentColor" height="40" width="5" x="177" y="0"></rect>
+<rect fill="currentColor" height="40" width="3" x="186" y="0"></rect>
+<rect fill="currentColor" height="40" width="4" x="194" y="0"></rect>
+</svg>
+</div>
+<span class="font-caption-caps text-caption-caps text-on-surface-variant tracking-widest font-mono">
+            *RX-8849-012-NCPDP-2214981*
+          </span>
+</div>
+<!-- Legal Demonstration Disclaimer in Modal -->
+<div class="p-space-sm bg-error-container/20 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">info</span>
+<span class="font-caption-caps text-[10px] text-on-surface leading-tight">
+<strong>DEMO FICTIONAL CLINICAL DATA ONLY:</strong> Verified electronic prescription order under State Telehealth Standards. Not valid for actual dispensing without active clinical licensing authentication.
+          </span>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface-variant font-caption-caps text-caption-caps">
+<span class="material-symbols-outlined text-[16px]">print_connect</span>
+<span>Official Telehealth Audit Trail Copy</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-body-medium text-body-medium" onclick="closeModal()">
+            Close
+          </button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-body-medium text-body-medium font-semibold shadow-sm transition-all" onclick="triggerPrintMock()">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Official Record</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Micro-interaction feedback) -->
+<div class="fixed bottom-6 right-6 z-50 hidden translate-y-4 opacity-0 transition-all duration-300 bg-inverse-surface text-inverse-on-surface px-space-md py-3 rounded-xl shadow-xl flex items-center gap-3" id="rx-toast">
+<div class="w-7 h-7 rounded-lg bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]" id="toast-icon">check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-medium text-label-medium font-semibold" id="toast-title">Refill Request Sent</span>
+<span class="font-caption-caps text-caption-caps text-inverse-on-surface/80" id="toast-desc">Transmitted to CVS Pharmacy #4082 via Surescripts network.</span>
+</div>
+</div>
+</div>
+<script>
+  // Prototype State Switching
+  let activeStatusFilter = 'ALL';
+
+  function switchState(state) {
+    const cardsContainer = document.getElementById('prescriptions-container');
+    const emptyState = document.getElementById('prescriptions-empty-state');
+    const headerCount = document.getElementById('header-active-count');
+
+    // Update demo buttons style
+    document.querySelectorAll('.state-btn').forEach(btn => {
+      btn.className = 'state-btn px-3 py-1 rounded font-label-medium text-label-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all';
+    });
+
+    if (state === 'all') {
+      document.getElementById('btn-state-all').className = 'state-btn px-3 py-1 rounded font-label-medium text-label-medium bg-primary text-on-primary font-semibold transition-all';
+      cardsContainer.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      setStatusChip('ALL');
+      headerCount.innerText = '4 Active Rx';
+      showToast('Restored Prescriptions', 'Loaded all current active and past prescription records.');
+    } else if (state === 'renewal') {
+      document.getElementById('btn-state-renewal').className = 'state-btn px-3 py-1 rounded font-label-medium text-label-medium bg-primary text-on-primary font-semibold transition-all';
+      cardsContainer.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      setStatusChip('RENEWAL');
+      headerCount.innerText = '1 Renewal Required';
+      showToast('Renewal View Active', 'Filtered to 1 medication requiring physician re-authorization.');
+    } else if (state === 'empty') {
+      document.getElementById('btn-state-empty').className = 'state-btn px-3 py-1 rounded font-label-medium text-label-medium bg-primary text-on-primary font-semibold transition-all';
+      cardsContainer.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      headerCount.innerText = '0 Prescriptions';
+      showToast('Empty State Loaded', 'Simulating a new patient with no active medications.');
+    }
+  }
+
+  // Filter Chips Logic
+  function setStatusChip(status) {
+    activeStatusFilter = status;
+    document.querySelectorAll('.status-chip').forEach(btn => {
+      if (btn.dataset.status === status) {
+        btn.className = 'status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-primary text-on-primary font-semibold shadow-xs';
+      } else {
+        btn.className = 'status-chip px-3 py-1.5 rounded-lg font-label-medium text-label-medium bg-surface-container-low text-on-surface-variant hover:text-on-surface';
+      }
+    });
+    filterCards();
+  }
+
+  // Filter and Search Integration
+  function filterCards() {
+    const searchVal = document.getElementById('rx-search-input').value.toLowerCase().trim();
+    const specialtyVal = document.getElementById('specialty-filter').value;
+    const clearBtn = document.getElementById('search-clear-btn');
+    const cards = document.querySelectorAll('.rx-card');
+
+    if (searchVal.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    cards.forEach(card => {
+      const cardName = card.dataset.name.toLowerCase();
+      const cardDoctor = card.dataset.doctor.toLowerCase();
+      const cardId = card.dataset.id.toLowerCase();
+      const cardSpecialty = card.dataset.specialty;
+      const cardStatus = card.dataset.status;
+
+      const matchesSearch = !searchVal || cardName.includes(searchVal) || cardDoctor.includes(searchVal) || cardId.includes(searchVal);
+      const matchesSpecialty = specialtyVal === 'ALL' || cardSpecialty === specialtyVal;
+      
+      let matchesStatus = true;
+      if (activeStatusFilter === 'ALL') {
+        matchesStatus = true;
+      } else if (activeStatusFilter === 'ACTIVE') {
+        matchesStatus = (cardStatus === 'ACTIVE');
+      } else if (activeStatusFilter === 'RENEWAL') {
+        matchesStatus = (cardStatus === 'RENEWAL');
+      } else if (activeStatusFilter === 'DISCONTINUED') {
+        matchesStatus = (cardStatus === 'DISCONTINUED');
+      }
+
+      if (matchesSearch && matchesSpecialty && matchesStatus) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function clearSearch() {
+    document.getElementById('rx-search-input').value = '';
+    filterCards();
+  }
+
+  // Sorting
+  function sortCards() {
+    const sortVal = document.getElementById('sort-filter').value;
+    const container = document.getElementById('prescriptions-container');
+    const cards = Array.from(container.querySelectorAll('.rx-card'));
+
+    cards.sort((a, b) => {
+      if (sortVal === 'exp-soon') {
+        return parseInt(a.dataset.expDays) - parseInt(b.dataset.expDays);
+      } else if (sortVal === 'date-recent') {
+        return new Date(b.dataset.date) - new Date(a.dataset.date);
+      } else if (sortVal === 'name-asc') {
+        return a.dataset.name.localeCompare(b.dataset.name);
+      }
+      return 0;
+    });
+
+    cards.forEach(card => container.appendChild(card));
+  }
+
+  // Prescription Verification Document Modal
+  const mockRxData = {
+    'RX-8849-012': {
+      id: '#RX-8849-012',
+      drug: 'Atorvastatin Calcium (Lipitor) 20mg Oral Tablet',
+      sig: 'Take 1 tablet (20mg) by mouth daily at bedtime with or without food. Avoid grapefruit juice.',
+      qty: '90 Tablets (90-Day Supply)',
+      refills: '4 Total Authorized (3 remaining)',
+      doctor: 'Dr. Marcus Sterling, MD',
+      timestamp: 'Oct 28, 2024 • 14:32 EST'
+    },
+    'RX-7721-044': {
+      id: '#RX-7721-044',
+      drug: 'Hydrocortisone Valerate Cream 0.2% Topical Emulsion',
+      sig: 'Apply a thin film to affected skin areas on right forearm twice daily for 14 days.',
+      qty: '45 Gram Tube',
+      refills: '1 Authorized (1 remaining)',
+      doctor: 'Dr. Elena Vance, MD',
+      timestamp: 'Oct 24, 2024 • 11:15 EST'
+    },
+    'RX-6531-908': {
+      id: '#RX-6531-908',
+      drug: 'Metformin Hydrochloride 500mg ER Tablet',
+      sig: 'Take 1 tablet daily with evening meal to minimize gastrointestinal discomfort. Do not crush.',
+      qty: '90 Tablets (90-Day Supply)',
+      refills: '3 Authorized (2 remaining)',
+      doctor: 'Dr. Robert Chen, MD',
+      timestamp: 'Sep 12, 2024 • 09:40 EST'
+    },
+    'RX-5120-332': {
+      id: '#RX-5120-332',
+      drug: 'Albuterol Sulfate Inhalation Aerosol 90mcg',
+      sig: 'Inhale 2 puffs every 4-6 hours as needed for wheezing or acute bronchospasm.',
+      qty: '8.5g Inhalation Canister',
+      refills: '0 remaining (Renewal Mandated)',
+      doctor: 'Dr. Aris Thorne, DO',
+      timestamp: 'Jun 10, 2024 • 16:05 EST'
+    },
+    'RX-3301-891': {
+      id: '#RX-3301-891',
+      drug: 'Amoxicillin / Clavulanate (Augmentin) 875-125mg',
+      sig: 'Take 1 tablet every 12 hours for 10 days with meals for acute sinusitis.',
+      qty: '20 Tablets (Course Complete)',
+      refills: '0 remaining (Course Finalized)',
+      doctor: 'Dr. Aris Thorne, DO',
+      timestamp: 'Mar 01, 2024 • 10:18 EST'
+    }
+  };
+
+  function openModal(rxId) {
+    const data = mockRxData[rxId] || mockRxData['RX-8849-012'];
+    document.getElementById('modal-rx-id').innerText = data.id;
+    document.getElementById('modal-rx-drug').innerText = data.drug;
+    document.getElementById('modal-rx-sig').innerText = data.sig;
+    document.getElementById('modal-rx-qty').innerText = data.qty;
+    document.getElementById('modal-rx-refills').innerText = data.refills;
+    document.getElementById('modal-rx-doctor').innerText = data.doctor;
+    document.getElementById('modal-rx-timestamp').innerText = data.timestamp;
+
+    const modal = document.getElementById('rx-verification-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('rx-verification-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+  }
+
+  // Micro-interaction notifications
+  let toastTimer;
+  function showToast(title, desc, icon = 'check') {
+    const toast = document.getElementById('rx-toast');
+    const toastTitle = document.getElementById('toast-title');
+    const toastDesc = document.getElementById('toast-desc');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastTitle.innerText = title;
+    toastDesc.innerText = desc;
+    toastIcon.innerText = icon;
+
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.remove('translate-y-4', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+    }, 10);
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      toast.classList.add('translate-y-4', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      setTimeout(() => toast.classList.add('hidden'), 300);
+    }, 4000);
+  }
+
+  function requestRefill(rxId, drugName) {
+    showToast('Refill Authorized', `${drugName} order submitted to CVS Pharmacy #4082. Ready in 24 hrs.`, 'local_pharmacy');
+  }
+
+  function requestRenewalFromDoctor(rxId, doctor, drugName) {
+    showToast('Renewal Requested', `Clinical renewal request dispatched directly to ${doctor}'s EHR inbox.`, 'outgoing_mail');
+  }
+
+  function downloadRxPdf(rxId) {
+    showToast('Generating Patient Record', `Official cryptographic PDF generated for prescription #${rxId}.`, 'download_done');
+  }
+
+  function requestGeneralRenewal() {
+    showToast('Care Coordinator Alerted', 'Triage nurse Eleanor Smith will review expiring regimens within 4 hours.', 'contact_support');
+  }
+
+  function triggerPrintMock() {
+    showToast('Print Job Queued', 'Sending encrypted electronic prescription record to default printer.', 'print');
+  }
+</script></main></div></body></html>
